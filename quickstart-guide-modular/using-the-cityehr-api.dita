@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><topic id="using-the-cityehr-api"><title>Using the cityEHR API</title><body id="using-the-cityehr-api">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "topic.dtd">
+<topic id="using-the-cityehr-api">
+    <title>Using the cityEHR API</title>
+    <body>
             
             <p><b>Enabling API Access</b>
             </p>
@@ -92,4 +96,5 @@
         </ol>
         <p> </p>
         <p>/ehr/api/getComposition/?userId=admin&amp;sessionId=863fa22fd0253e00333d96bb4417973a&amp;applicationId=TSO-13606-EHR_Extract-cityEHR&amp;patientId=K123456789&amp;compositionId=2023-10-26T20-52-40.71*01-00-CityEHR-Form-BaseRegistration-admin&amp;mime=application/pdf </p>
-        </body></topic>
+        </body>
+</topic>

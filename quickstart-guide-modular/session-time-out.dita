@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><topic id="session-time-out"><title>Session Time Out</title><body id="session-time-out">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "topic.dtd">
+<topic id="session-time-out">
+    <title>Session Time Out</title>
+    <body>
     
         <p>The cityEHR session is set to time out after a period on inactivity – this is controlled
             by the underlying session management of the Tomcat application server. If such a timeout occurs you will see an error dialogue which allows you to restart the application – see Figure 13. </p>
@@ -28,4 +32,5 @@
       </image>
       </p>
     
-</body></topic>
+</body>
+</topic>

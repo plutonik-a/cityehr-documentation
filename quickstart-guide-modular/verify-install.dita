@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><topic id="verify-install"><title>Verifying the installation</title><body id="verify-install">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "topic.dtd">
+<topic id="verify-install">
+    <title>Verifying the installation</title>
+    <body>
             
             <p> this is a small blurb about the section </p>            
             <p><b>Log on</b></p>
@@ -210,4 +214,5 @@
             </image>
         </p>
         <p> </p>
-</body></topic>
+</body>
+</topic>

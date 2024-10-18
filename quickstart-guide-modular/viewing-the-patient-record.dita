@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><topic id="viewing-the-patient-record"><title>Viewing the Patient Record</title><body id="viewing-the-patient-record">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "topic.dtd">
+<topic id="viewing-the-patient-record">
+    <title>Viewing the Patient Record</title>
+    <body>
             
             <p><b>Summary View and Charting</b> </p>
         <p>When you first access a patient's record, you will be shown the Summary page, which
@@ -178,4 +182,5 @@
             </li>
         </ol>
         <p> </p>
-</body></topic>
+</body>
+</topic>
