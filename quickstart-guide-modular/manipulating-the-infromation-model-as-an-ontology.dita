@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><topic id="manipulating-the-information-model-as-an-ontology"><title>Manipulating the Information Model as an Ontology</title><body id="manipulating-the-information-model-as-an-ontology">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "topic.dtd">
+<topic id="manipulating-the-information-model-as-an-ontology">
+    <title>Manipulating the Information Model as an Ontology</title>
+    <body>
          
         <p> </p>
                 <p><b>Browse the Ontology in cityEHR</b></p>
@@ -86,4 +90,5 @@
             summary of the model it has imported. If there are errors these will be reported and the model will not be loaded. </p>
         <p>Once the model has loaded, return to the Patient Search screen, search for and select a
             patient then visit the form you changed in the model to see the changes. </p>
-</body></topic>
+</body>
+</topic>
