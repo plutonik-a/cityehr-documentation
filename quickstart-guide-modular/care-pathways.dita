@@ -1,5 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><topic id="care-pathways"><title>Care Pathways – documentation coming soon!</title><body id="care-pathways">
-            
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "topic.dtd">
+<topic id="care-pathways">
+    <title>Care Pathways – documentation coming soon!</title>
+    <body>
             <p><b>Health Lifestyle Pathway</b>
             </p>
     <ol>
@@ -50,4 +53,5 @@
         <p>- one with repeating loops </p>
         <p>--- a lifestyle assessment – takes BMI, if your BMI is &gt; 30 --&gt; diet and exercise plan </p>
         <p> </p>
-</body></topic>
+</body>
+</topic>

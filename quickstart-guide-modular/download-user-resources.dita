@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><topic id="download-user-resources"><title>Download User Resources</title><body id="download-user-resources">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "topic.dtd">
+<topic id="download-user-resources">
+    <title>Download User Resources</title>
+    <body>
             
         <p>Some of the features you will encounter later on in this Quick Start Guide will require
             the use of resources, such as sample patient records or information models. A set of

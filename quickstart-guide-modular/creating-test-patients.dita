@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><topic id="creating-test-patients"><title>Creating Test Patients</title><body id="creating-test-patients">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "topic.dtd">
+<topic id="creating-test-patients">
+    <title>Creating Test Patients</title>
+    <body>
             
         <p>To continue exploring cityEHR you will need a larger sample of test patients – these can
             be generated using functions available on the Administration page, which is accessed by

@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><topic id="cohort-search"><title>Cohort Search</title><body id="cohort-search">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "topic.dtd">
+<topic id="cohort-search">
+    <title>Cohort Search</title>
+    <body>
             
         <p>To run cohort searches, press the Patient Cohorts button in the main cityEHR navigation
             panel (available at the top of every page). We will work in here. </p>

@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><topic id="configuring-a-runtime-application"><title>Configuring a Runtime Application</title><body id="configuring-a-runtime-application">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "topic.dtd">
+<topic id="configuring-a-runtime-application">
+    <title>Configuring a Runtime Application</title>
+    <body>
             
         <p> </p>
         <p>There are two types of applications you can create. You can either create a new one from
