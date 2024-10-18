@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><topic id="introduction"><title>Introduction</title><body id="introduction">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "topic.dtd">
+<topic id="introduction">
+    <title>Introduction</title>
+    <body>
             
         <p>This document describes the basic setup and features of the cityEHR starting from a
             vanilla installation. </p>
@@ -27,4 +31,5 @@
             including creation of the information model, configuration of patient labels, patient
             search criteria and cohort selection terms. </p>
         <p> </p>
-</body></topic>
+</body>
+</topic>

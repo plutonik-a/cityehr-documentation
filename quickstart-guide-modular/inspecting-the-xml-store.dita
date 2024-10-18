@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><topic id="inspecting-the-xml-store"><title>Inspecting the XML Store</title><body id="inspecting-the-xml-store">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "topic.dtd">
+<topic id="inspecting-the-xml-store">
+    <title>Inspecting the XML Store</title>
+    <body>
             
         <p>The native XML database used in cityEHR can be browsed using tools in the Admin page.
             This can be useful for understanding how data are stored and can be used by
@@ -153,4 +157,5 @@
             </li>
         </ol>
         <p> </p>
-</body></topic>
+</body>
+</topic>

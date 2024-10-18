@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><topic id="exporting-patient-data-from-cityehr"><title>Exporting Patient Data from cityEHR</title><body id="exporting-patient-data-from-cityehr">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "topic.dtd">
+<topic id="exporting-patient-data-from-cityehr">
+    <title>Exporting Patient Data from cityEHR</title>
+    <body>
             
         <p>Patient data can be exported in a number of different formats for individual patients or
             for cohorts of patients found through the cohort search facility. </p>
@@ -141,4 +145,5 @@
             <p>Click the save button at the top right of the display window.</p>
         </li>
     </ol>
-</body></topic>
+</body>
+</topic>
