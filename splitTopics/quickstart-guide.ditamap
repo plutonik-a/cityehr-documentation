@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Map//EN" "map.dtd">
+<map id="topic_vkq_5nv_vcc">
+   <title>Quick Start Guide</title>
+   <topicref href="introduction.dita"/>
+   <topicref href="verify-install.dita"/>
+   <topicref href="session-time-out.dita"/>
+   <topicref href="exploring-the-default-cityehr-application.dita"/>
+   <topicref href="download-user-resources.dita"/>
+   <topicref href="creating-test-patients.dita"/>
+   <topicref href="viewing-the-patient-record.dita"/>
+   <topicref href="cohort-search.dita"/>
+   <topicref href="exporting-patient-data-from-cityehr.dita"/>
+   <topicref href="inspecting-the-xml-store.dita"/>
+   <topicref href="manipulating-the-information-model-as-an-ontology.dita"/>
+   <topicref href="manipulating-the-information-model-as-a-spreadsheet.dita"/>
+   <topicref href="configuring-a-runtime-application.dita"/>
+   <topicref href="creating-an-information-model.dita"/>
+   <topicref href="managing-information-directories.dita"/>
+   <topicref href="access-control.dita"/>
+   <topicref href="care-pathways.dita"/>
+   <topicref href="clinical-correspondence.dita"/>
+   <topicref href="interactive-image-maps.dita"/>
+   <topicref href="creating-language-variants.dita"/>
+   <topicref href="using-the-cityehr-api.dita"/>
+</map>

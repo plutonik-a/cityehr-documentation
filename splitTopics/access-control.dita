@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><topic id="access-control"><title>Access Control - documentation coming soon!</title><body id="access-control"> 
+            
+        <p>cityEHR has a role-based access control system that can be configured to restrict user
+            access to specific functions, based on the role of the user. </p>
+        <p>In addition, users can be restricted so that they can access only the data of patients
+            who are assigned to the care team(s) of which that user is a member. </p>
+        <ol id="ol_c1s_14v_vcc">
+            <li>
+                <p><b>Setting Up User Roles</b>
+                </p>
+            </li>
+        </ol>
+        <p> </p>
+        <ol id="ol_d1s_14v_vcc">
+            <li>
+                <p><b>Assigning Roles for a User</b>
+                </p>
+            </li>
+        </ol>
+        <p> </p>
+        <ol id="ol_e1s_14v_vcc">
+            <li>
+                <p><b>Role-based Access Control to Functions</b>
+                </p>
+            </li>
+        </ol>
+        <p> </p>
+        <ol id="ol_f1s_14v_vcc">
+            <li>
+                <p><b>Restricting Access to Care Team Patients</b>
+                </p>
+            </li>
+        </ol>
+        <p> </p>
+        <p> </p>
+</body></topic>

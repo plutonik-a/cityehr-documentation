@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><topic id="introduction"><title>Introduction</title><body id="introduction">
+            
+        <p>This document describes the basic setup and features of the cityEHR starting from a
+            vanilla installation. </p>
+        <p>If you don't have an installation of cityEHR yet then you need to follow the instructions in the cityEHR Installation Guide. </p>
+        <p>With the standard installation running under Tomcat, and if you have the Tomcat server
+                running on your local machine, cityEHR will be available on the URL
+                    <i>localhost:8080/cityehr </i>or if running on a remote server, substitute the
+                IP address of your server for 'localhost'. </p>
+        <p>cityEHR is an XML application which uses declarative code only: xhtml, xml, xforms, xslt
+            and xquery. The source code can be found at </p>
+        <p><i>CATALINA_HOME/webapps/cityehr/WEB-INF/resources/apps/ehr </i></p>
+        <p>where CATALINA_HOME is the location of your Tomcat installation. If you have cityEHR
+            installed with a different application server or you have changed the locations of the
+            standard installation then you will need to find where the resources/apps/ehr directory
+            is located in your installation. </p>
+        <p>The remaining sections of this Guide show how to register patients, enter and view
+            clinical data, annotate a patient record, view and plot historical data, find patients,
+            create cohorts of patients and export their data. </p>
+        <p>It also covers some administration functions (there are many such functions and only a
+            few of them are covered in this guide): accessing user resources, generating test data,
+            managing users and creating export data sets. </p>
+        <p>cityEHR is designed to be completely configurable, allowing clinicians to create
+            enterprise-scale, secure health records systems that gather clinical data to recognised
+            international standards, yet with data sets defined locally, by clinicians themselves. </p>
+        <p>So the Quick Start Guide also shows you how to create a new EHR system from scratch,
+            including creation of the information model, configuration of patient labels, patient
+            search criteria and cohort selection terms. </p>
+        <p> </p>
+</body></topic>
