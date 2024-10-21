@@ -1,0 +1,21 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  build:
+    name: Build and Test
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        jdk: [11]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          java-version: ${{ matrix.jdk }}
+          distribution: 'liberica'
+      - name: Build
+        run: mvn -B clean package
