@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
   xmlns:saxon="http://saxon.sf.net/"
   xmlns:file="http://expath.org/ns/file"
-  exclude-result-prefixes="xs"
+  exclude-result-prefixes="xs ditaarch"
   version="2.0">
 
   <!--
@@ -13,11 +14,10 @@
     Author: Adam Retter
   -->
 
-  <xsl:output indent="no"/>
+  <xsl:output indent="no" doctype-public="-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" doctype-system="topic.dtd"/>
   
   <!-- PARAMETER - the path to the folder where you want to output the image files -->
-<!--  <xsl:param name="output-folder">/tmp/cityehr-modular/images</xsl:param>-->
-  <xsl:param name="output-folder">/tmp/images</xsl:param>  
+  <xsl:param name="output-folder" select="replace(document-uri(root(/topic)), '(.+)/.+', '$1/images')"/>
   
   <xsl:template match="image[starts-with(@href, 'data:image/')]">
     <xsl:variable name="media-type" select="substring-before(substring-after(@href, 'data:'), ';')"/>
@@ -37,7 +37,7 @@
   </xsl:template>
 
   <xsl:template match="node()|@*">
-    <xsl:copy>
+    <xsl:copy validation="strip">
       <xsl:apply-templates select="node()|@*"/>
     </xsl:copy>
   </xsl:template>
