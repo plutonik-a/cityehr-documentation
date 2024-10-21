@@ -11,4 +11,6 @@
     <system systemId="map.dtd"
             uri="lwdita/lw-map.dtd"/>
 
+    <public publicId="http://www.w3.org/1999/XSL/Transform" uri="xslt2/schema-for-xslt20.xsd"/>
+
 </catalog>

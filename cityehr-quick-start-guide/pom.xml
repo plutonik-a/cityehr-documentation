@@ -69,6 +69,29 @@
                         </configuration>
                     </execution>
                     <execution>
+                        <id>validate-xslt</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>validate</goal>
+                        </goals>
+                        <configuration>
+                            <catalogHandling>strict</catalogHandling>
+                            <catalogs>
+                                <catalog>src/main/catalog/catalog.xml</catalog>
+                            </catalogs>
+                            <validationSets>
+                                <validationSet>
+                                    <schemaLanguage>http://www.w3.org/2001/XMLSchema</schemaLanguage>
+                                    <publicId>http://www.w3.org/1999/XSL/Transform</publicId>
+                                    <dir>src/main/xslt</dir>
+                                    <includes>
+                                        <include>*.xslt</include>
+                                    </includes>
+                                </validationSet>
+                            </validationSets>
+                        </configuration>
+                    </execution>
+                    <execution>
                         <id>generate-quick-start-guide-fo</id>
                         <phase>generate-resources</phase>
                         <goals>
