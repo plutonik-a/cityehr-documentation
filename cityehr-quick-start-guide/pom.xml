@@ -68,9 +68,83 @@
                             </validationSets>
                         </configuration>
                     </execution>
+                    <execution>
+                        <id>generate-quick-start-guide-fo</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>transform</goal>
+                        </goals>
+                        <configuration>
+                            <transformationSets>
+                                <transformationSet>
+                                    <dir>src/main/lwdita/quickstart-guide-modular</dir>
+                                    <includes>quickstart-guide.ditamap</includes>
+                                    <stylesheet>src/main/xslt/create-map-pdf.xslt</stylesheet>
+                                    <fileMappers>
+                                        <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
+                                            <targetExtension>.fo</targetExtension>
+                                        </fileMapper>
+                                    </fileMappers>
+                                </transformationSet>
+                            </transformationSets>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
 
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.4.1</version>
+                <executions>
+                    <execution>
+                        <id>generate-quick-start-guide-pdf</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <configuration>
+                            <addOutputToClasspath>false</addOutputToClasspath>
+                            <addResourcesToClasspath>false</addResourcesToClasspath>
+                            <includeProjectDependencies>false</includeProjectDependencies>
+                            <includePluginDependencies>true</includePluginDependencies>
+                            <executable>java</executable>
+                            <arguments>
+                                <argument>-classpath</argument>
+                                <classpath/>
+                                <argument>-Djavax.xml.transform.TransformerFactory=net.sf.saxon.TransformerFactoryImpl</argument>
+                                <argument>org.apache.fop.cli.Main</argument>
+                                <argument>-fo</argument>
+                                <argument>${project.build.directory}/generated-resources/xml/xslt/quickstart-guide.fo</argument>
+                                <argument>-pdf</argument>
+                                <argument>${project.build.directory}/quickstart-guide.pdf</argument>
+                            </arguments>
+                        </configuration>
+                    </execution>
+                </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.xmlgraphics</groupId>
+                        <artifactId>fop</artifactId>
+                        <version>2.10</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>slf4j-simple</artifactId>
+                        <version>2.0.16</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>net.sf.saxon</groupId>
+                        <artifactId>Saxon-HE</artifactId>
+                        <version>${saxon.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>com.evolvedbinary.thirdparty.xerces</groupId>
+                        <artifactId>xercesImpl</artifactId>
+                        <version>2.12.2.1</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
         </plugins>
     </build>
 
