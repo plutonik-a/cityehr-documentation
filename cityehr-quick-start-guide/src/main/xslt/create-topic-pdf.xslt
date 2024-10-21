@@ -17,21 +17,24 @@
   
   <xsl:output encoding="UTF-8" omit-xml-declaration="no" indent="yes"/>
 
-  <xsl:variable name="topic-page-sequence-id" as="xs:string" select="generate-id()"/>
+  <xsl:variable name="authors" as="xs:string+" select="('John Chelsom', 'Stephanie Cabrera', 'Catriona Hopper', 'Jennifer Ramirez')"/>
 
-  <xsl:template match="/">
-    <xsl:call-template name="com:fo-root">
-      <xsl:with-param name="page-sequence-id" select="$topic-page-sequence-id"/>
-    </xsl:call-template>
+  <xsl:template match="document-node()">
+    <xsl:call-template name="com:fo-root"/>
   </xsl:template>
   
   <!-- PAGE METADATA -->
   <xsl:template match="topic" mode="declarations">
     <xsl:call-template name="com:fo-declarations">
       <xsl:with-param name="title" select="title"/>
-      <xsl:with-param name="authors" select="('John Chelsom', 'Stephanie Cabrera', 'Catriona Hopper', 'Jennifer Ramirez')"/>
+      <xsl:with-param name="authors" select="$authors"/>
       <xsl:with-param name="description" select="p[1]"/>
     </xsl:call-template>
+  </xsl:template>
+  
+  <!-- PAGES -->
+  <xsl:template match="topic" mode="topic-pages">
+    <xsl:call-template name="com:topic-pages"/>
   </xsl:template>
   
   <!-- PAGE HEADER -->
@@ -47,7 +50,7 @@
       <fo:block margin-left="8pt" margin-right="8pt">
         <fo:inline>cityEHR Quick Start Guide</fo:inline>
         <fo:leader leader-pattern="space"/>
-        <fo:inline>Page <fo:page-number-citation ref-id="{$topic-page-sequence-id}"/> of <fo:page-number-citation-last ref-id="{$topic-page-sequence-id}"/></fo:inline>
+        <fo:inline>Page <fo:page-number/> of <fo:page-number-citation ref-id="endofdoc"/></fo:inline>
       </fo:block>
     </fo:block>
   </xsl:template>
@@ -69,7 +72,7 @@
   <!-- PAGE CONTENT -->
   
   <xsl:template match="body" mode="body">
-    <fo:block id="body">
+    <fo:block id="body-{generate-id()}">
       <xsl:apply-templates select="p" mode="body"/>
     </fo:block>
   </xsl:template>
@@ -100,12 +103,13 @@
   </xsl:template>
 
 
-<!--
+  <!-- NOTE(AR): left here to assist with debugging -->
+  <!--
   <xsl:template match="node()|@*">
     <xsl:copy>
       <xsl:apply-templates select="node()|@*"/>
     </xsl:copy>
   </xsl:template>
--->
+  -->
   
 </xsl:stylesheet>
