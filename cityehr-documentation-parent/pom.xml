@@ -1,0 +1,99 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.seveninformatics.cityehr.documentation</groupId>
+    <artifactId>cityehr-documentation-parent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>cityEHR Documentation Parent POM</name>
+    <description>Parent POM for cityEHR documentation projects</description>
+    <url>https://seveninformatics.com/cityehr/</url>
+    <inceptionYear>2024</inceptionYear>
+
+    <organization>
+        <name>Seven Informatics</name>
+        <url>https://seveninformatics.com</url>
+    </organization>
+
+    <licenses>
+        <license>
+            <name>GNU Lesser General Public License, version 2.1</name>
+            <url>https://opensource.org/licenses/LGPL-2.1</url>
+            <distribution>repo</distribution>
+            <comments>For XSLT and Maven Code</comments>
+        </license>
+        <license>
+            <name>Creative Commons Attribution NonCommercial ShareAlike 4.0</name>
+            <url>https://creativecommons.org/licenses/by-nc-sa/4.0/</url>
+            <distribution>repo</distribution>
+            <comments>For Documentation Content</comments>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>John Chelsom</name>
+            <organization>Seven Informatics</organization>
+            <organizationUrl>https://www.seveninformatics.com</organizationUrl>
+            <email>john.chelsom@seveninformatics.com</email>
+        </developer>
+    </developers>
+
+    <contributors>
+    	<contributor>
+    	    <name>Stephanie Cabrera</name>
+    	</contributor>
+    	<contributor>
+            <name>Catriona Hopper</name>
+        </contributor>
+    	<contributor>
+            <name>Jennifer Ramirez</name>
+        </contributor>
+        <contributor>
+            <name>Adam Retter</name>
+            <organization>Evolved Binary</organization>
+            <organizationUrl>https://www.evolvedbinary.com</organizationUrl>
+            <email>adam@evolvedbinary.com</email>
+        </contributor>
+    </contributors>
+
+    <scm>
+        <connection>scm:git:https://github.com/cityehr/cityehr-documentation.git</connection>
+        <developerConnection>scm:git:https://github.com/cityehr/cityehr-documentation.git</developerConnection>
+        <url>scm:git:https://github.com/cityehr/cityehr-documentation.git</url>
+    </scm>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <saxon.version>12.5</saxon.version>
+    </properties>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>3.3.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>xml-maven-plugin</artifactId>
+                    <version>1.1.0</version>
+                    <configuration>
+                        <transformerFactory>net.sf.saxon.TransformerFactoryImpl</transformerFactory>
+                    </configuration>
+                    <dependencies>
+                        <dependency>
+                            <groupId>net.sf.saxon</groupId>
+                            <artifactId>Saxon-HE</artifactId>
+                            <version>${saxon.version}</version>
+                        </dependency>
+                    </dependencies>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+</project>
