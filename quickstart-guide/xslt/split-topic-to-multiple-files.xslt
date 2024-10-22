@@ -17,7 +17,7 @@
   <xsl:output indent="no"/>
   
   <!-- PARAMETER - the path to the folder where you want to output the Map and Topics -->
-  <xsl:param name="output-folder">/Users/jenniferramirez/Desktop/John Chelsom/QuickstartGuide/modules</xsl:param>
+  <xsl:param name="output-folder">/tmp/modules</xsl:param>
   
   <xsl:template match="topic">
     <!-- Generate an LwDITA Map -->
