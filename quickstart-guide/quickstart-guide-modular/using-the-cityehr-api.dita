@@ -38,7 +38,7 @@
             <p>/ehr/api/?command=authenticate&amp;userId=user&amp;password=secret </p>
             <p> </p>
         </section>
-        <section id="Using the cityEHR API">
+        <section id="Using-the-cityEHR-API">
             <title>Using the cityEHR API</title>
             <ol id="ol_wbs_14v_vcc">
                 <li>
