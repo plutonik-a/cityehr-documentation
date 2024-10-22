@@ -3,6 +3,7 @@
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
   xmlns:hcom="http://cityehr/html/common"
+  xmlns:com="http://cityehr/common"
   exclude-result-prefixes="xs hcom ditaarch"
   version="2.0">
   
@@ -10,11 +11,18 @@
     Generates a simple HTML page from an LwDITA 'topic'.
     Author: Adam Retter
   -->
-  
+
+  <xsl:import href="common.xslt"/>
   <xsl:import href="common-html.xslt"/>
-  
+
   <xsl:output method="html" version="5.0" encoding="UTF-8" indent="yes"/>
-  
+
+  <xsl:param name="petal-api-url" />
+  <xsl:param name="petal-github-org-name" />
+  <xsl:param name="petal-github-repo-name" />
+  <xsl:param name="petal-github-branch" />
+  <xsl:param name="petal-referrer-base-url" />
+
   <xsl:variable name="authors" as="xs:string+" select="('John Chelsom', 'Stephanie Cabrera', 'Catriona Hopper', 'Jennifer Ramirez')"/>
   
   <xsl:template match="topic">
@@ -25,15 +33,27 @@
         </xsl:call-template>
       </head>
       <body>
-        <div id="top-nav">
+        <nav id="top-nav">
           <xsl:apply-templates select="." mode="top-nav"/>
+        </nav>
+
+        <!-- Petal Edit Button -->
+        <div id="petal-edit-page-button">
+          <xsl:variable name="petal-source-file-uri" select="com:document-uri(.)" />
+          <xsl:variable name="petal-source-file" select="substring-after($petal-source-file-uri, $petal-github-repo-name || '/')" />
+          <xsl:variable name="petal-webpage-filename" select="hcom:dita-filename-to-html(com:filename($petal-source-file-uri))" />
+          <xsl:variable name="petal-full-url" select="concat($petal-api-url, '?ghrepo=', $petal-github-org-name, '/', $petal-github-repo-name, '&amp;source=', $petal-source-file, '&amp;branch=', $petal-github-branch, '&amp;referer=', $petal-referrer-base-url, '/', $petal-webpage-filename)" />
+          <a href="{$petal-full-url}">
+            <input type="button" value="Edit this page" />
+          </a>
         </div>
+
         <article>
           <xsl:apply-templates select="element()" mode="body"/>
         </article>
-        <div id="bottom-nav">
+        <nav id="bottom-nav">
           <xsl:apply-templates select="." mode="bottom-nav"/>
-        </div>
+        </nav>
       </body>
     </html>
   </xsl:template>
