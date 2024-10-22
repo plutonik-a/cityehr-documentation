@@ -4,7 +4,8 @@
   xmlns:fo="http://www.w3.org/1999/XSL/Format"
   xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
   xmlns:pcom="http://cityehr/pdf/common"
-  exclude-result-prefixes="xs pcom ditaarch"
+  xmlns:com="http://cityehr/common"
+  exclude-result-prefixes="xs pcom com ditaarch"
   version="2.0">
   
   <!--
@@ -13,6 +14,7 @@
     Author: Adam Retter
   -->
   
+  <xsl:import href="common.xslt"/>
   <xsl:import href="common-pdf.xslt"/>
   
   <xsl:output encoding="UTF-8" omit-xml-declaration="no" indent="yes"/>
@@ -93,7 +95,7 @@
   
   <xsl:template match="image" mode="body">
     <fo:block>
-      <fo:external-graphic src="{@href}"/>
+      <fo:external-graphic src="{com:abs-uri(., @href)}"/>
       <xsl:apply-templates select="alt" mode="body"/>
     </fo:block>
   </xsl:template>
