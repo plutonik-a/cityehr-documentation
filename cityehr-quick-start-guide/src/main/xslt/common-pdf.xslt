@@ -78,6 +78,7 @@
   
   <xsl:template name="pcom:page-sequences">
     <xsl:apply-templates select="map" mode="cover-page"/>
+    <xsl:apply-templates select="map" mode="toc"/>
     <xsl:apply-templates select="topic|map/topicref" mode="topic-pages"/>
   </xsl:template>
   
@@ -132,6 +133,32 @@
     </fo:page-sequence>
   </xsl:template>
   
+  <!-- TOC (Table of Contents) -->
+  <xsl:template name="pcom:toc">
+    <xsl:param name="sections" as="element()+"/>
+    <fo:page-sequence master-reference="PageMaster" id="toc-sequence">
+      <fo:title>Table of Contents</fo:title>
+      <fo:flow flow-name="xsl-region-body" hyphenate="true">
+        <fo:block background-color="#B84747" color="#FFFFFF" font-weight="bold" font-size="14pt" display-align="center" margin-bottom="11pt" id="toc-{generate-id()}">
+          <fo:block margin-left="8pt">Table of Contents</fo:block>
+        </fo:block>
+        <xsl:for-each select="$sections">
+          <xsl:variable name="topic" select="com:get-topic(., .)"/>
+          <xsl:variable name="topic-id" select="generate-id($topic)"/>
+          <fo:block text-align-last="justify">
+            <fo:basic-link internal-destination="topic-{$topic-id}">
+              <xsl:number level="single" count="$sections"/>
+              <xsl:text>. </xsl:text><xsl:value-of select="$topic/title"/>
+              <fo:leader leader-length.minimum="12pt" leader-length.optimum="40pt" leader-length.maximum="100%" leader-pattern="dots"/>
+              <xsl:text> </xsl:text>
+              <fo:page-number-citation ref-id="topic-{$topic-id}"/>
+            </fo:basic-link>
+          </fo:block>
+        </xsl:for-each>
+      </fo:flow>
+    </fo:page-sequence>
+  </xsl:template>
+
   <!-- LAST PAGE -->
   <xsl:template name="pcom:last-page">  
     <fo:page-sequence master-reference="PageMaster" id="last-page">
