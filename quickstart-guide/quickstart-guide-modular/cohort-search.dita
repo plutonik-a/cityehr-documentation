@@ -33,8 +33,8 @@
         </ul>
         <p>The sections below show cohort search features, used with a small database of test
             patients (such as the data generated in the Section above, Generate Test Data). </p>
-
-                <p><b>Demographics</b></p>
+        <section id="demographics">
+            <title>Demographics</title>
     <ol>
         <li>
             <p>Navigate back to cityEHR Feature Demo</p>
@@ -82,7 +82,9 @@
             </image>
         </p>
         <p>6. You can now print or export this list. Please navigate to section 8.5 for instructions on how to print and section 9.2 for instructions on how to export data for a cohort. </p>
-       <p><b>Administrative Data</b></p>
+        </section>
+        <section id="administrative-data">
+            <title>Administrative Data</title>
     <ol>
         <li>
             <p>Select Administration from the left hand search selection menu to search for cohorts based on the effective time or author of specific compositions. The Context selection allows you to specify the composition (i.e. document type) to search for – or you can leave this as 'Any Context' for a general search.</p>
@@ -127,7 +129,9 @@
             <p>Navigate to the Cohort tab to view a patient list of your search results.</p>
         </li>
     </ol>
-    <p><b>Observations</b></p>
+        </section>
+        <section id="observations">
+            <title>Observations</title>
     <ol>
         <li>
             <p>Change the search term to Observation. You can change the parameters to run more
@@ -154,7 +158,9 @@
                 cohort search data to see what you retrieve!</p>
         </li>
     </ol>
-    <p><b>Combining Cohorts</b></p>
+        </section>
+        <section id="combining-cohorts">
+            <title>Combining Cohorts</title>
         <p>Cohort searches can also be combined. This section will show you what that means and how
             to do that. </p>
     <ol>
@@ -246,4 +252,6 @@
                 <alt>Text Box</alt>
             </image>
         </p>
-</body></topic>
+        </section>
+</body>
+</topic>
