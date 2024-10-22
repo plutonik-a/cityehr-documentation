@@ -3,8 +3,8 @@
 <topic id="care-pathways">
     <title>Care Pathways – documentation coming soon!</title>
     <body>
-            <p><b>Health Lifestyle Pathway</b>
-            </p>
+        <section id="Health-Lifestyle-Pathway">
+            <title>Health Lifestyle Pathway</title>
     <ol>
         <li><p>To review the pathways functionality in cityEHR, we will navigate through the Healthy Lifestyle pathway in the cityEHR Feature Demo application.</p>
         </li>
@@ -36,22 +36,15 @@
             of your pathway has been completed. You can now click the icon called “Progress” to
             continue documenting in the section Assessment Follow Up. See screenshot below. </p>
         <p> </p>
-        <ol id="ol_p1s_14v_vcc">
-            <li>
-                <p><b>Using Sub-Pathways</b>
-                </p>
-            </li>
-        </ol>
+        </section>
+        <section id="Using-Sub-Pathways">
+            <title>Using Sub-Pathways</title>
         <p>- one with sub pathways </p>
-        <p> </p>
-        <ol id="ol_q1s_14v_vcc">
-            <li>
-                <p><b>Pathways with Repeating Loops</b>
-                </p>
-            </li>
-        </ol>
+        </section>
+        <section id="Pathways-with-Repeating-Loops">
+            <title>Pathways with Repeating Loops</title>
         <p>- one with repeating loops </p>
         <p>--- a lifestyle assessment – takes BMI, if your BMI is &gt; 30 --&gt; diet and exercise plan </p>
-        <p> </p>
+        </section>
 </body>
 </topic>
