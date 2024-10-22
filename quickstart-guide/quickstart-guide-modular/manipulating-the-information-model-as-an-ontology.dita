@@ -2,10 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "topic.dtd">
 <topic id="manipulating-the-information-model-as-an-ontology">
     <title>Manipulating the Information Model as an Ontology</title>
+    <shortdesc></shortdesc>
     <body>
-         
-        <p> </p>
-                <p><b>Browse the Ontology in cityEHR</b></p>
+        <section id="browse-the-ontology-in-cityEHR">
+             <title>Browse the Ontology in cityEHR</title>
         <p>Move to the Administration screen by pressing the button in the top right corner of the
             screen. Then, move to Information Model in the Menu on the Left of the Screen. You
             should land on “Manage Information Model”. You will see a summary of the information
@@ -34,7 +34,9 @@
             dictionary contents, class hierarchies and class nodes, depending on the type of the
             model (specialty or class hierarchy). </p>
         <p> </p>
-        <p><b>Export the Ontology and Open in Protege</b></p>
+        </section>
+        <section id="export-the-ontology-and-open-in-protege">
+            <title>Export the Ontology and Open in Protege</title>
     <ol>
         <li> <p>You can now export the ontology by pressing the Export button in the top right - this
             will take the ontology from the cityEHR database and return it to the browser as a zip
@@ -77,17 +79,22 @@
             Property to show a list of all the data properties available in cityEHR</p>
         </li>
     </ol>
-    <p><b>Edit the Ontology</b></p>
+        </section>
+        <section id="edit-the-ontology">
+            <title>Edit the Ontology</title>
         <p>In Protege, try adding a new section to one of the forms and some new entries to the
             section. Save the file using Save As (in case you have made a mistake). </p>
         <p>Your workshop instructor will guide you through these edits. </p>
         <p> </p>
-   
-    <p><b>Load the Model to cityEHR</b></p>
+        </section>
+        <section id="load-the-model-to-cityEHR">
+            <title>Load the Model to cityEHR</title>
         <p>Return to the cityEHR Admin page and select Import Information Model form the left hand
             menu. Browse to you OWL/XML model and press Upload. Once the file has been uploaded you
             can then press the Import button. This will take a few seconds before displaying a
             summary of the model it has imported. If there are errors these will be reported and the model will not be loaded. </p>
         <p>Once the model has loaded, return to the Patient Search screen, search for and select a
             patient then visit the form you changed in the model to see the changes. </p>
-</body></topic>
+        </section>
+</body>
+</topic>
