@@ -2,14 +2,13 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "topic.dtd">
 <topic id="inspecting-the-xml-store">
     <title>Inspecting the XML Store</title>
-    <body>
-            
-        <p>The native XML database used in cityEHR can be browsed using tools in the Admin page.
+    <shortdesc>The native XML database used in cityEHR can be browsed using tools in the Admin page.
             This can be useful for understanding how data are stored and can be used by
-            administrators to remove information from the database. </p>
-        <p>The facility to remove data must be used with extreme caution, since it may invalidate
-            the overall structure of the xmlstore and/or compromise patient records. </p>
-        <p><b>Browsing Logical Databases</b></p>
+            administrators to remove information from the database.The facility to remove data must be used with extreme caution, since it may invalidate
+            the overall structure of the xmlstore and/or compromise patient records.</shortdesc>
+    <body>
+        <section id="browsing-logical-databases">
+              <title>Browsing Logical Databases</title>
         <ol id="ol_ovr_14v_vcc">
             <li>
                 <p>Open the Administration page and select ‘Browse Logical Databases’ within
@@ -20,7 +19,9 @@
                 <alt>Text Box</alt>
             </image>
         </p>
-        <p><b>Browsing Physical Databases</b></p>
+        </section>
+        <section id="browsing-physical-databases">
+            <title>Browsing Physical Databases</title>
         <ol id="ol_rvr_14v_vcc">
             <li>
                 <p>Open the Administration page and select Browse Physical Databases from the list
@@ -156,6 +157,6 @@
                     well as the full data dictionary for the application. </p>
             </li>
         </ol>
-        <p> </p>
+        </section>
 </body>
 </topic>
