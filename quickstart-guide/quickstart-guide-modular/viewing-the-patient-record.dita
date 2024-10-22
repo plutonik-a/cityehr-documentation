@@ -3,8 +3,8 @@
 <topic id="viewing-the-patient-record">
     <title>Viewing the Patient Record</title>
     <body>
-            
-            <p><b>Summary View and Charting</b> </p>
+        <section id="summary-view-and-charting">
+            <title>Summary View and Charting</title>
         <p>When you first access a patient's record, you will be shown the Summary page, which
             includes a selection of various summary views. </p>
         <ol id="ol_dsr_14v_vcc">
@@ -94,7 +94,9 @@
                 <alt>Text Box</alt>
             </image>
         </p>
-                <p><b>Viewing the Longitudinal Record</b></p>
+        </section>
+        <section id="viewing-the-longitudinal-record">
+            <title>Viewing the Longitudinal Record</title>
         <p>To view all the events in the patient record, press the Events tab at the top of the
             viewing pane. </p>
         <p><image href="data:image/png;id=image_ssr_14v_vcc;base64,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">
@@ -112,8 +114,9 @@
                     main viewing pane. </p>
             </li>
         </ol>
-                <p><b>Annotations and Notifications</b></p>
-            
+        </section>
+        <section id="annotations-and-notifications">
+            <title>Annotations and Notifications</title>
         <p>The Events page is used to access the full longitudinal record of events recorded for the patient. Since cityEHR must preserve a proper history of the patient's information, it is not possible to change any of the recorded events that have been committed (published); but it is possible to add annotations. </p>
         <ol id="ol_wsr_14v_vcc">
             <li>
@@ -181,6 +184,6 @@
                 <p>Once saved, the annotation is stored with details of the users you have chosen to notify and they will be altered through a message in their InTray (as we will see later on in this Quick Guide </p>
             </li>
         </ol>
-        <p> </p>
+        </section>
 </body>
 </topic>
