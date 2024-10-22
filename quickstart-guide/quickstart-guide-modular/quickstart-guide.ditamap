@@ -7,7 +7,6 @@
    </topicmeta>
    <topicref href="introduction.dita"/>
    <topicref href="verify-install.dita"/>
-   <topicref href="session-time-out.dita"/>
    <topicref href="exploring-the-default-cityehr-application.dita"/>
    <topicref href="download-user-resources.dita"/>
    <topicref href="creating-test-patients.dita"/>
