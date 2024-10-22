@@ -2,18 +2,13 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "topic.dtd">
 <topic id="interactive-image-maps">
     <title>Interactive Image Maps</title>
-    <body>
-            
-        <p>There are two ways in which an Entry in the clinical model can be linked to an image for
+    <shortdesc>There are two ways in which an Entry in the clinical model can be linked to an image for
             data entry and several ways in which the image maps themselves can be created. This
             section explains how the different types of linkage work, using the sample image maps
-            that ship with the Feature Demo application. </p>
-        <ol id="ol_dbs_14v_vcc">
-            <li>
-                <p><b>Linking to a Simple Entry</b>
-                </p>
-            </li>
-        </ol>
+            that ship with the Feature Demo application.</shortdesc>
+    <body>
+        <section id="Linking-to-a-Simple-Entry">
+            <title>Linking to a Simple Entry</title>
         <p>The DAS 28 and DAS 68 forms in the Feature Demo contain examples of linking simple
             entries. The image map is used to set the values of Elements in the Entry. </p>
         <p><image href="data:image/png;id=image_ebs_14v_vcc;base64,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">
@@ -22,17 +17,9 @@
                 <alt>Text Box</alt>
             </image>
         </p>
-        <p> </p>
-        <p> </p>
-        <p> </p>
-        <p> </p>
-        <p> </p>
-        <ol id="ol_gbs_14v_vcc">
-            <li>
-                <p><b>Linking to a Multiple Entry</b>
-                </p>
-            </li>
-        </ol>
+        </section>
+        <section id="Linking-to-a-Multiple-Entry">
+            <title>Linking to a Multiple Entry</title>
         <p>The Family History form in the Feature Demo contains an example of an image map linked to
             a multiple entry; each click in the image map adds another entry, with the value of an
             enumerated value element set through the selection in the map. </p>
@@ -40,31 +27,23 @@
                 <alt>Text Box</alt>
             </image>
         </p>
-        <p> </p>
-        <ol id="ol_ibs_14v_vcc">
-            <li>
-                <p><b>Creating a New Image Map</b>
-                </p>
-            </li>
-        </ol>
+        </section>
+        <section id="Creating-a-New-Image-Map">
+            <title>Creating a New Image Map</title>
         <p>There are several steps to creating a new image map for an Entry in the clinical
             information model: </p>
         <ol id="ol_jbs_14v_vcc">
             <li>
                 <p>Set the Rendition of the Entry to ImageMap </p>
             </li>
-        </ol>
-        <ol id="ol_kbs_14v_vcc">
             <li>
                 <p>Create the SVG image map in an external file </p>
             </li>
-        </ol>
-        <ol id="ol_lbs_14v_vcc">
             <li>
                 <p>Upload the SVG image map, linked to the Entry </p>
             </li>
         </ol>
-        <p> </p>
         <p>To illustrate this process you can create a new image map for the </p>
-        <p> </p>
-        </body></topic>
+        </section>
+   </body>
+</topic>
