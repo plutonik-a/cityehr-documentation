@@ -2,10 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "topic.dtd">
 <topic id="using-the-cityehr-api">
     <title>Using the cityEHR API</title>
+    <shortdesc></shortdesc>
     <body>
-            
-            <p><b>Enabling API Access</b>
-            </p>
+        <section id="Enabling-API-Access">
+            <title>Enabling API Access</title>
         <p>cityEHR has an Application Programming Interface (API) exposed as a RESTful web service.
             API For any installation API access can be enabled in the Administration page System |
             Manage System Parameters by clicking the Edit check box, then checking API Access and
@@ -37,12 +37,9 @@
         <p>or </p>
         <p>/ehr/api/?command=authenticate&amp;userId=user&amp;password=secret </p>
         <p> </p>
-        <ol id="ol_vbs_14v_vcc">
-            <li>
-                <p><b>Using the cityEHR API</b>
-                </p>
-            </li>
-        </ol>
+        </section>
+        <section id="Using the cityEHR API">
+            <title>Using the cityEHR API</title>
         <ol id="ol_wbs_14v_vcc">
             <li>
                 <p><b>Authenticate and Start a Session</b>
@@ -96,5 +93,6 @@
         </ol>
         <p> </p>
         <p>/ehr/api/getComposition/?userId=admin&amp;sessionId=863fa22fd0253e00333d96bb4417973a&amp;applicationId=TSO-13606-EHR_Extract-cityEHR&amp;patientId=K123456789&amp;compositionId=2023-10-26T20-52-40.71*01-00-CityEHR-Form-BaseRegistration-admin&amp;mime=application/pdf </p>
+        </section>
         </body>
 </topic>
