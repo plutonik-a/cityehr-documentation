@@ -3,8 +3,8 @@
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:fo="http://www.w3.org/1999/XSL/Format"
   xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
-  xmlns:com="http://cityehr/pdf/common"
-  exclude-result-prefixes="xs com ditaarch"
+  xmlns:pcom="http://cityehr/pdf/common"
+  exclude-result-prefixes="xs pcom ditaarch"
   version="2.0">
   
   <!--
@@ -20,12 +20,12 @@
   <xsl:variable name="authors" as="xs:string+" select="('John Chelsom', 'Stephanie Cabrera', 'Catriona Hopper', 'Jennifer Ramirez')"/>
 
   <xsl:template match="document-node()">
-    <xsl:call-template name="com:fo-root"/>
+    <xsl:call-template name="pcom:fo-root"/>
   </xsl:template>
   
   <!-- PAGE METADATA -->
   <xsl:template match="topic" mode="declarations">
-    <xsl:call-template name="com:fo-declarations">
+    <xsl:call-template name="pcom:fo-declarations">
       <xsl:with-param name="title" select="title"/>
       <xsl:with-param name="authors" select="$authors"/>
       <xsl:with-param name="description" select="p[1]"/>
@@ -34,7 +34,7 @@
   
   <!-- PAGES -->
   <xsl:template match="topic" mode="topic-pages">
-    <xsl:call-template name="com:topic-pages"/>
+    <xsl:call-template name="pcom:topic-pages"/>
   </xsl:template>
   
   <!-- PAGE HEADER -->
