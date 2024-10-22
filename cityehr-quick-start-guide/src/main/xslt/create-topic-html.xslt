@@ -25,13 +25,23 @@
         </xsl:call-template>
       </head>
       <body>
+        <div id="top-nav">
+          <xsl:apply-templates select="." mode="top-nav"/>
+        </div>
         <article>
           <xsl:apply-templates select="element()" mode="body"/>
         </article>
+        <div id="bottom-nav">
+          <xsl:apply-templates select="." mode="bottom-nav"/>
+        </div>
       </body>
     </html>
   </xsl:template>
   
+  <xsl:template match="topic" mode="top-nav bottom-nav">
+    <div id="contents-link"><a href="index.html">Return to Contents...</a></div>
+  </xsl:template>
+
   <xsl:template match="title" mode="metadata">
     <title><xsl:value-of select="."/></title>
   </xsl:template>
