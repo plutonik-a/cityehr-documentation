@@ -62,6 +62,13 @@
     </xsl:call-template>
   </xsl:template>
   
+  <!-- TOC (Table of Contents) -->
+  <xsl:template match="map" mode="toc">
+    <xsl:call-template name="pcom:toc">
+      <xsl:with-param name="sections" select="topicref"/>
+    </xsl:call-template>
+  </xsl:template>
+
   <!-- TOPIC - each is loaded from a 'topicref/@href' and processed -->
   <xsl:template match="topicref" mode="topic-pages">
     <xsl:apply-templates select="doc(com:abs-uri(., @href))/topic" mode="topic-pages"/>

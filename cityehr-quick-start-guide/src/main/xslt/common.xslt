@@ -52,12 +52,19 @@
     <xsl:param name="rel-href" as="xs:string" required="yes"/>
     <xsl:sequence select="concat(com:parent-path(com:document-uri($context)), '/', $rel-href)"/>
   </xsl:function>
-  
+
+  <!-- Get the topic by loading the topic from a topicref -->
+  <xsl:function name="com:get-topic" as="element(topic)">
+    <xsl:param name="context" as="node()" required="yes"/>
+    <xsl:param name="topicref" as="element(topicref)" required="yes"/>
+    <xsl:sequence select="doc(com:abs-uri($context, $topicref/@href))/topic"/>
+  </xsl:function>
+
   <!-- Get the title of a topic by loading the topic from a topicref -->
   <xsl:function name="com:get-topic-title" as="xs:string">
     <xsl:param name="context" as="node()" required="yes"/>
     <xsl:param name="topicref" as="element(topicref)" required="yes"/>
-    <xsl:sequence select="doc(com:abs-uri($context, $topicref/@href))/topic/title"/>
+    <xsl:sequence select="com:get-topic($context, $topicref)/title"/>
   </xsl:function>
 
 </xsl:stylesheet>

@@ -64,7 +64,7 @@
 
   <!-- PAGE CONTENT HEADER -->
   <xsl:template match="topic" mode="body">
-    <fo:block background-color="#B84747" color="#FFFFFF" font-weight="bold" font-size="14pt" display-align="center" margin-bottom="11pt">
+    <fo:block background-color="#B84747" color="#FFFFFF" font-weight="bold" font-size="14pt" display-align="center" margin-bottom="11pt" id="topic-{generate-id()}">
       <fo:block margin-left="8pt"><xsl:value-of select="title"/></fo:block>
     </fo:block>
     <xsl:apply-templates select="body" mode="body"/>
