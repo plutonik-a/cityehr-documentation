@@ -7,8 +7,9 @@
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:xmp="http://ns.adobe.com/xap/1.0/"
   xmlns:pdf="http://ns.adobe.com/pdf/1.3/"
-  xmlns:com="http://cityehr/pdf/common"
-  exclude-result-prefixes="xs com"
+  xmlns:pcom="http://cityehr/pdf/common"
+  xmlns:com="http://cityehr/common"
+  exclude-result-prefixes="xs pcom com"
   version="2.0">
   
   <!--
@@ -17,19 +18,21 @@
     Author: Adam Retter
   -->
   
-  <xsl:template name="com:fo-root">
+  <xsl:import href="common.xslt"/>
+  
+  <xsl:template name="pcom:fo-root">
     <fo:root xml:lang="en" font-family="Arial,Helvetica,sans-serif" font-size="11pt">
-      <xsl:call-template name="com:fo-layout-master-set"/>
+      <xsl:call-template name="pcom:fo-layout-master-set"/>
 
       <xsl:apply-templates mode="declarations"/>
 
-      <xsl:call-template name="com:page-sequences"/>
+      <xsl:call-template name="pcom:page-sequences"/>
       
-      <xsl:call-template name="com:last-page"/>
+      <xsl:call-template name="pcom:last-page"/>
     </fo:root>
   </xsl:template>
   
-  <xsl:template name="com:fo-layout-master-set">
+  <xsl:template name="pcom:fo-layout-master-set">
     <fo:layout-master-set>
       <!-- NOTE(AR): A4 print size -->
       <fo:simple-page-master master-name="PageMaster" page-height="297mm" page-width="210mm" margin-top="10mm" margin-left="20mm" margin-right="20mm" margin-bottom="10mm">
@@ -40,7 +43,7 @@
     </fo:layout-master-set>
   </xsl:template>
   
-  <xsl:template name="com:fo-declarations">
+  <xsl:template name="pcom:fo-declarations">
     <xsl:param name="title"       as="xs:string"    required="yes"/>
     <xsl:param name="authors"     as="xs:string+"   required="yes"/>
     <xsl:param name="description" as="xs:string?"   required="no"/>
@@ -65,20 +68,20 @@
             <xsl:if test="$producer">
               <pdf:Producer><xsl:value-of select="$producer"/></pdf:Producer>
             </xsl:if>
-            <xmp:CreationDate><xsl:value-of select="com:iso8601-dateTime-utc($created)"/></xmp:CreationDate>
-            <xmp:ModifyDate><xsl:value-of select="com:iso8601-dateTime-utc($modified)"/></xmp:ModifyDate>
+            <xmp:CreationDate><xsl:value-of select="pcom:iso8601-dateTime-utc($created)"/></xmp:CreationDate>
+            <xmp:ModifyDate><xsl:value-of select="pcom:iso8601-dateTime-utc($modified)"/></xmp:ModifyDate>
           </rdf:Description>
         </rdf:RDF>
       </x:xmpmeta>
     </fo:declarations>
   </xsl:template>
   
-  <xsl:template name="com:page-sequences">
+  <xsl:template name="pcom:page-sequences">
     <xsl:apply-templates select="map" mode="cover-page"/>
     <xsl:apply-templates select="topic|map/topicref" mode="topic-pages"/>
   </xsl:template>
   
-  <xsl:template name="com:topic-pages">
+  <xsl:template name="pcom:topic-pages">
     <fo:page-sequence master-reference="PageMaster" id="topic-page-sequence-{generate-id()}">
       <xsl:apply-templates select="." mode="page-sequence-setup"/>
       <fo:static-content flow-name="xsl-region-before">
@@ -98,7 +101,7 @@
   </xsl:template>
   
   <!-- COVER PAGE -->
-  <xsl:template name="com:cover-page">
+  <xsl:template name="pcom:cover-page">
     <xsl:param name="title" as="xs:string" required="yes"/>
     <xsl:param name="sub-title" as="xs:string?" required="no"/>
     <xsl:param name="authors" as="xs:string+" required="yes"/>
@@ -123,14 +126,14 @@
           <fo:block font-size="14pt"><xsl:value-of select="$title"/></fo:block>
           <fo:block font-size="14pt"><xsl:value-of select="$sub-title"/></fo:block>
           <fo:block font-size="12pt"><xsl:value-of select="com:format-inline-text-list($authors)"/></fo:block>
-          <fo:block font-size="12pt"><xsl:value-of select="com:simple-date-utc($date)"/></fo:block>          
+          <fo:block font-size="12pt"><xsl:value-of select="pcom:simple-date-utc($date)"/></fo:block>          
         </fo:block>
       </fo:flow>
     </fo:page-sequence>
   </xsl:template>
   
   <!-- LAST PAGE -->
-  <xsl:template name="com:last-page">  
+  <xsl:template name="pcom:last-page">  
     <fo:page-sequence master-reference="PageMaster" id="last-page">
       <!-- TODO(AR) should we add some content to the last page? -->
       <!--
@@ -150,21 +153,12 @@
       </fo:flow>
     </fo:page-sequence>
   </xsl:template>
-
-  <!--
-    Creates a comman and (finally) 'and' separated list, includes an Oxford comma before the 'and'.
-    e.g. ('a', 'b', 'c') => 'a, b, and c'
-  -->
-  <xsl:function name="com:format-inline-text-list" as="xs:string?">
-    <xsl:param name="items" as="xs:string*" required="yes"/>
-    <xsl:sequence select="replace(string-join($items, ', '), '^(.+,)\s([^,]+)$', '$1 and $2')"/>
-  </xsl:function>
   
   <!--
     Adjust a dateTime to UTC timezone and then formats it as
     ISO-8601 format.
   -->
-  <xsl:function name="com:iso8601-dateTime-utc" as="xs:string">
+  <xsl:function name="pcom:iso8601-dateTime-utc" as="xs:string">
     <xsl:param name="dateTime" as="xs:dateTime" required="yes"/>
     <xsl:sequence select="format-dateTime(adjust-dateTime-to-timezone($dateTime, xs:dayTimeDuration('PT0H')), '[Y0001]-[M01]-[D01]T[H01]:[m01]:[s01]Z')"/>
   </xsl:function>
@@ -173,34 +167,9 @@
     Adjust a date to UTC timezone and then formats it as
     nth Month Year.
   -->
-  <xsl:function name="com:simple-date-utc" as="xs:string">
+  <xsl:function name="pcom:simple-date-utc" as="xs:string">
     <xsl:param name="date" as="xs:date" required="yes"/>
     <xsl:sequence select="format-date(adjust-date-to-timezone($date, xs:dayTimeDuration('PT0H')), '[D1o] [MNn] [Y0001]')"/>
-  </xsl:function>
-  
-  <!--
-    Finds the URI of the document from which a node originated.
-  -->
-  <xsl:function name="com:document-uri" as="xs:string">
-    <xsl:param name="node" as="node()" required="yes"/>
-    <xsl:sequence select="document-uri(root($node))"/>
-  </xsl:function>
-  
-  <!--
-   Given a file path, return the parent path (e.g. folder path).
-  -->
-  <xsl:function name="com:parent-path" as="xs:string">
-    <xsl:param name="uri" as="xs:string" required="yes"/>
-    <xsl:sequence select="replace($uri, '(.+)/.+', '$1')"/>
-  </xsl:function>
-  
-  <!--
-   Given a node as context and a reletaive HREF, create an absolute URI.
-  -->
-  <xsl:function name="com:abs-uri" as="xs:string">
-    <xsl:param name="context" as="node()" required="yes"/>
-    <xsl:param name="rel-href" as="xs:string" required="yes"/>
-    <xsl:sequence select="concat(com:parent-path(com:document-uri($context)), '/', $rel-href)"/>
   </xsl:function>
 
 </xsl:stylesheet>

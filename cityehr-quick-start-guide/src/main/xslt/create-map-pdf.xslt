@@ -3,8 +3,9 @@
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:fo="http://www.w3.org/1999/XSL/Format"
   xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
-  xmlns:com="http://cityehr/pdf/common"
-  exclude-result-prefixes="xs com ditaarch"
+  xmlns:pcom="http://cityehr/pdf/common"
+  xmlns:com="http://cityehr/common"
+  exclude-result-prefixes="xs pcom com ditaarch"
   version="2.0">
   
   <!--
@@ -13,6 +14,7 @@
     Author: Adam Retter
   -->
   
+  <xsl:import href="common.xslt"/>
   <xsl:import href="common-pdf.xslt"/>
   <xsl:import href="create-topic-pdf.xslt"/>
   
@@ -22,12 +24,12 @@
   <xsl:variable name="map-date" as="xs:date" select="xs:date('2023-08-05Z')"/>
   
   <xsl:template match="document-node()">
-    <xsl:call-template name="com:fo-root"/>
+    <xsl:call-template name="pcom:fo-root"/>
   </xsl:template>
   
   <!-- PAGE METADATA -->
   <xsl:template match="map" mode="declarations">
-    <xsl:call-template name="com:fo-declarations">
+    <xsl:call-template name="pcom:fo-declarations">
       <xsl:with-param name="title" select="topicmeta/navtitle"/>
       <xsl:with-param name="authors" select="$authors"/>
       <xsl:with-param name="description" select="doc(com:abs-uri(., topicref[1]/@href))/topic/body/p[1]"/>
@@ -52,7 +54,7 @@
 
   <!-- COVER PAGE -->
   <xsl:template match="map" mode="cover-page">
-    <xsl:call-template name="com:cover-page">
+    <xsl:call-template name="pcom:cover-page">
       <xsl:with-param name="title" select="topicmeta/navtitle"/>
       <xsl:with-param name="sub-title">Open Health Informatics</xsl:with-param>
       <xsl:with-param name="authors" select="$authors"/>
