@@ -37,6 +37,14 @@
   </xsl:function>
   
   <!--
+   Given a file path, return just the filename.
+  -->
+  <xsl:function name="com:filename" as="xs:string">
+    <xsl:param name="uri" as="xs:string" required="yes"/>
+    <xsl:sequence select="replace($uri, '.+/(.+)', '$1')"/>
+  </xsl:function>
+
+  <!--
    Given a node as context and a reletaive HREF, create an absolute URI.
   -->
   <xsl:function name="com:abs-uri" as="xs:string">
@@ -45,4 +53,11 @@
     <xsl:sequence select="concat(com:parent-path(com:document-uri($context)), '/', $rel-href)"/>
   </xsl:function>
   
+  <!-- Get the title of a topic by loading the topic from a topicref -->
+  <xsl:function name="com:get-topic-title" as="xs:string">
+    <xsl:param name="context" as="node()" required="yes"/>
+    <xsl:param name="topicref" as="element(topicref)" required="yes"/>
+    <xsl:sequence select="doc(com:abs-uri($context, $topicref/@href))/topic/title"/>
+  </xsl:function>
+
 </xsl:stylesheet>
