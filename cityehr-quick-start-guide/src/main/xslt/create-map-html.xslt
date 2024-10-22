@@ -36,6 +36,11 @@
         </xsl:call-template>
       </head>
       <body>
+        <div id="cover-page">
+          <div id="cover-page-logo">
+            <img src="images/cityehr-logo.png"/>
+          </div>
+        </div>
         <article>
           <time datetime="{$map-date}" pubdate="pubdate"></time>
           <xsl:apply-templates select="topicmeta" mode="body"/>
