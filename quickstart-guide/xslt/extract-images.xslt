@@ -17,7 +17,7 @@
   
   <!-- PARAMETER - the path to the folder where you want to output the image files -->
 <!--  <xsl:param name="output-folder">/tmp/cityehr-modular/images</xsl:param>-->
-  <xsl:param name="output-folder">/Users/jenniferramirez/Desktop/John Chelsom/QuickstartGuide/Images</xsl:param>  
+  <xsl:param name="output-folder">/tmp/images</xsl:param>  
   
   <xsl:template match="image[starts-with(@href, 'data:image/')]">
     <xsl:variable name="media-type" select="substring-before(substring-after(@href, 'data:'), ';')"/>
