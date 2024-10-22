@@ -2,13 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "topic.dtd">
 <topic id="configuring-a-runtime-application">
     <title>Configuring a Runtime Application</title>
+    <shortdesc>There are two types of applications you can create. You can either create a new one from scratch, or one that is shipped with cityEHR (like Elfin, Elfin2, or Ponseti). Instructions for making a New Application can be found in Section 13.1, and instructions for making an application that is shipped can be found in Section 13.2 </shortdesc>
     <body>
-            
-        <p> </p>
-        <p>There are two types of applications you can create. You can either create a new one from
-            scratch, or one that is shipped with cityEHR (like Elfin, Elfin2, or Ponseti).
-            Instructions for making a New Application can be found in Section 13.1, and instructions for making an application that is shipped can be found in Section 13.2 </p>
-        <p><b>Creating Your Own cityEHR Application – New Application</b></p>
+        <section id="Creating-Your-Own-cityEHR-Application-New-Application">
+            <title>Creating Your Own cityEHR Application – New Application</title>
         <p>These instructions assume you are making an application with the identifier myEHR. Note
             that this identifier can contain upper/lower case characters and digits but no spaces. </p>
         <ol id="ol_byr_14v_vcc">
@@ -100,9 +97,10 @@
             <p> your application will be “empty” until you create, configure, and import an information model for your application. Navigate to section 13 called “Manipulating an Information Model” for instructions on how to do this.</p>
         </li>
     </ol>
-    <p><b>Creating a Shipped Application</b></p>
+        </section>
+        <section id="Creating-a-Shipped-Application">
+            <title>Creating a Shipped Application</title>
         <p>This section will teach you how to create an application that ships with cityEHR, such as Elfin or Elfin2. For this example, we will create an application with the id Elfin. </p>
-        <p> </p>
     <ol>
         <li>
             <p>Navigate to Administration page and then to “New Application” under “System” in the menu on the left of the screen. </p>
@@ -156,4 +154,6 @@
             <p>9. Click Start and you will be navigated to the startup home page for Elfin2. </p>
         </li>
     </ol>
-</body></topic>
+        </section>
+</body>
+</topic>
