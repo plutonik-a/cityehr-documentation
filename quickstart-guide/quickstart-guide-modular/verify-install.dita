@@ -2,9 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "topic.dtd">
 <topic id="verify-install">
     <title>Verifying the installation</title>
-    <shortdesc> This is a small blurb about the section </shortdesc>
-    <body>           
-            <p><b>Log on</b></p>
+    <shortdesc> This topic confirms that cityEHR is correctly installed and accessible. It covers logging in to cityEHR using default credentials, building the default application, and navigating the Dashboard to review key system elements. Additionally, the chapter explains how to reload the default application if necessary, run cityEHR in debug mode to explore its underlying structures, and handle session timeouts. This chapter ensures users can successfully set up and verify the functionality of cityEHR before moving on to more advanced configurations. </shortdesc>
+    <body>
+        <section id="log-on">
+        <title>Log On</title>
             <p> With Apache Tomcat and cityEHR installed, the log-on page of cityEHR can be accessed
                 with the Firefox web browser using the address <i>http://localhost:8080/cityehr
                 </i>if you have the Tomcat server running on your local machine or if running on a
@@ -68,7 +69,9 @@
             </image>
         </p>
         <p> </p>
-                <p><b>Reloading the Default Application</b></p>
+        </section>
+        <section id="reloading-the-default-application">
+            <title>Reloading the Default Application</title>
             <p>The default application can be reloaded from the information models shipped with the
             cityEHR system. You may need to do this if you selected to start with an empty database
             the first time you ran cityEHR (in which case the Dashboard will show the number of
@@ -100,11 +103,12 @@
                 <alt>Text Box</alt>
             </image>
         </p>
-        <p> </p>
-        <p> </p>
+        </section>
+        <section id="running-in-debug-mode">
+            <title>Running in Debug Mode</title>
         <ol id="ol_fmr_14v_vcc">
             <li>
-                <p><b>Running in Debug Mode</b></p>
+                <p><b></b></p>
             </li>
         </ol>
         <p>cityEHR can run in a debugging mode in which you can see additional details of the
@@ -212,7 +216,9 @@
                 <alt>Text Box</alt>
             </image>
         </p>
-    <p><b>Session Time Out</b></p>
+       </section>
+        <section id="session-time-out">
+            <title>Session Time Out</title>
         <p>The cityEHR session is set to time out after a period on inactivity – this is controlled
             by the underlying session management of the Tomcat application server. If such a timeout occurs you will see an error dialogue which allows you to restart the application – see Figure 13. </p>
         <p> </p>
@@ -239,5 +245,6 @@
         <p><image href="data:image/png;id=image_ymr_14v_vcc;base64,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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF8XX3zx/+zDgWt2jMY7AAAAAElFTkSuQmCC">
             <alt>Text Box</alt>
         </image></p>
+        </section>
 </body>
 </topic>
