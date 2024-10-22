@@ -25,6 +25,12 @@
         <fo.generated-resources>${project.build.directory}/generated-resources/fo</fo.generated-resources>
         <html.generated-resources>${project.build.directory}/generated-resources/html</html.generated-resources>
         <website.output.folder>${project.build.directory}/website</website.output.folder>
+
+        <petal.api-url>https://petal.evolvedbinary.com</petal.api-url>
+        <petal.github-org-name>evolvedbinary</petal.github-org-name>
+        <petal.github-repo-name>cityehr-documentation</petal.github-repo-name>
+        <petal.github-branch>develop</petal.github-branch>
+        <petal.referrer-base-url>https://evolvedbinary.github.io/cityehr-documentation</petal.referrer-base-url>
     </properties>
 
     <build>
@@ -207,6 +213,26 @@
                                                 <parameter>
                                                     <name>output-folder</name>
                                                     <value>${html.generated-resources}</value>
+                                                </parameter>
+                                                <parameter>
+                                                    <name>petal-api-url</name>
+                                                    <value>${petal.api-url}</value>
+                                                </parameter>
+                                                <parameter>
+                                                    <name>petal-github-org-name</name>
+                                                    <value>${petal.github-org-name}</value>
+                                                </parameter>
+                                                <parameter>
+                                                    <name>petal-github-repo-name</name>
+                                                    <value>${petal.github-repo-name}</value>
+                                                </parameter>
+                                                <parameter>
+                                                    <name>petal-github-branch</name>
+                                                    <value>${petal.github-branch}</value>
+                                                </parameter>
+                                                <parameter>
+                                                    <name>petal-referrer-base-url</name>
+                                                    <value>${petal.referrer-base-url}</value>
                                                 </parameter>
                                             </parameters>
                                             <outputDir>${html.generated-resources}</outputDir>
