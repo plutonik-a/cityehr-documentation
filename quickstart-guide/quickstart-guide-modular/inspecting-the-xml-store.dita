@@ -15,7 +15,7 @@
                         ‘databases’ from the menu on the left hand side of the display screen <i> (Figure 95)</i>. The logical database will show you all the databases as if they are part of one database. The physical database can show you different nodes within that database. </p>
                 </li>
             </ol>
-            <p><image href="images/image_pvr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/admin-browse-logical-database.png" format="image/png"><alt>Browse Logical Database Page</alt></image>
             </p>
         </section>
         <section id="browsing-physical-databases">
@@ -39,13 +39,13 @@
                     <p>Click on the database store you would like to browse. We will select xmlstore for this example. </p>
                 </li>
             </ol>
-            <p><image href="images/image_wvr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/admin-browse-physical-database.png" format="image/png"><alt>Browse Physical Database Page</alt></image>
             </p>
             <p> </p>
             <p>The top level of the xmlstore database has collections for applications, systems, and
                 users. Any cityEHR installation can support multiple applications and a single set of
                 users each of whom has access to one or more of the applications. </p>
-            <p><image href="images/image_xvr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/admin-browse-physical-xmlstore.png" format="image/png"><alt>rowse Physical Database "xmlstore" Page</alt></image>
             </p>
             <p> </p>
             <ol id="ol_yvr_14v_vcc">
@@ -62,7 +62,7 @@
                 </li>
             </ol>
             <p> </p>
-            <p><image href="images/image_awr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/view-xmlstore.png" format="image/png"><alt>Viewing "xmlstore" Page Credentials</alt></image>
             </p>
             <ol id="ol_bwr_14v_vcc">
                 <li>
@@ -71,7 +71,7 @@
                 </li>
             </ol>
             <p> </p>
-            <p><image href="images/image_cwr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/view-xmlstore-dialogue.png" format="image/png"><alt>XML Document of User Details</alt></image>
             </p>
             <p> </p>
             <ol id="ol_dwr_14v_vcc">
@@ -89,7 +89,7 @@
                 </li>
             </ol>
             <p> </p>
-            <p><image href="images/image_gwr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/view-xmlstore-return-button.png" format="image/png"><alt>Returning "xmlstore" Top Level by Clicking the Back Button</alt></image>
             </p>
             <p> </p>
             <ol id="ol_hwr_14v_vcc">
@@ -103,7 +103,7 @@
                 </li>
             </ol>
             <p> </p>
-            <p><image href="images/image_jwr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/admin-browse-physical-toplevel.png" format="image/png"><alt>Top Level Collections for the Default cityEHR Application</alt></image>
             </p>
             <p> </p>
             <ol id="ol_kwr_14v_vcc">
@@ -117,7 +117,7 @@
                         in that patient's record. </p>
                 </li>
             </ol>
-            <p><image href="images/image_mwr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/admin-browse-physical-timestamp.png" format="image/png"><alt>Patient Timestamped Compositions</alt></image>
             </p>
             <ol id="ol_nwr_14v_vcc">
                 <li>
@@ -127,7 +127,7 @@
                 </li>
             </ol>
             <p> </p>
-            <p><image href="images/image_owr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/admin-browse-physical-timestamp-xml.png" format="image/png"><alt>HL7 CDA Document for Selected Event</alt></image>
             </p>
             <p> </p>
             <ol id="ol_pwr_14v_vcc">
