@@ -16,7 +16,7 @@
                     </p>
                 </li>
             </ol>
-            <p><image href="images/image_esr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/summary-bonechem.png" format="image/png"><alt>Summary View for Bone Chemistry – Messages </alt></image>
             </p>
             <p> </p>
             <ol id="ol_fsr_14v_vcc">
@@ -25,7 +25,7 @@
                 </li>
             </ol>
             <p> </p>
-            <p><image href="images/image_gsr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/summary-bonechem-change-view.png" format="image/png"><alt>Changing Summary View to “Historic Data” </alt></image>
             </p>
             <p> </p>
             <ol id="ol_hsr_14v_vcc">
@@ -37,7 +37,7 @@
                 </li>
             </ol>
             <p> </p>
-            <p><image href="images/image_isr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/summary-bonechem-historic-view.png" format="image/png"><alt>Selecting Analytes to View on Patient Chart</alt></image>
             </p>
             <p> </p>
             <ol id="ol_jsr_14v_vcc">
@@ -47,7 +47,7 @@
                 </li>
             </ol>
             <p> </p>
-            <p><image href="images/image_ksr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/summary-bonechem-historic-select.png" format="image/png"><alt>Summary of Analytes Selected and Overall Data Range Covered</alt></image>
             </p>
             <p> </p>
             <ol id="ol_lsr_14v_vcc">
@@ -57,7 +57,7 @@
                 </li>
             </ol>
             <p> </p>
-            <p><image href="images/image_msr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/summary-bonechem-historic-chart-button.png" format="image/png"><alt>Using Chart Button to Commit Analytes for Chart View</alt></image>
             </p>
             <p> </p>
             <ol id="ol_nsr_14v_vcc">
@@ -68,7 +68,7 @@
                 </li>
             </ol>
             <p> </p>
-            <p><image href="images/image_osr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/summary-bonechem-chart.png" format="image/png"><alt>Dialogue Window with Charts of the Analytes Selected</alt></image>
             </p>
             <p> </p>
             <ol id="ol_psr_14v_vcc">
@@ -78,14 +78,14 @@
                 </li>
             </ol>
             <p> </p>
-            <p><image href="images/image_qsr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/summary-bonechem-chart-close.png" format="image/png"><alt>Dismissing the Dialogue Window Using the Close Button</alt></image>
             </p>
         </section>
         <section id="viewing-the-longitudinal-record">
             <title>Viewing the Longitudinal Record</title>
             <p>To view all the events in the patient record, press the Events tab at the top of the
                 viewing pane. </p>
-            <p><image href="images/image_ssr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/events-view.png" format="image/png"><alt>Viewing all the Events in the Patient Record</alt></image>
             </p>
             <ol id="ol_tsr_14v_vcc">
                 <li>
@@ -109,7 +109,7 @@
                 </li>
             </ol>
             <p> </p>
-            <p><image href="images/image_xsr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/events-hads-select.png" format="image/png"><alt>Selecting a Historical Hospital Anxiety and Depression Scale Form for Annotations</alt></image>
             </p>
             <p> </p>
             <ol id="ol_ysr_14v_vcc">
@@ -121,9 +121,9 @@
                 </li>
             </ol>
             <p> </p>
-            <p><image href="images/image_atr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/events-hads-annotate-button.png" format="image/png"><alt>Clicking Flag and ‘+’ Buttons to Annotate</alt></image>
             </p>
-            <p><image href="images/image_btr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/events-hads-annotate.png" format="image/png"><alt>Annotating a Hospital Anxiety and Depression Scale Form</alt></image>
             </p>
             <p> </p>
             <ol id="ol_ctr_14v_vcc">
@@ -149,7 +149,7 @@
                         action and then Administrator as the role in the dropdown. </p>
                 </li>
             </ol>
-            <p><image href="images/image_htr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/events-hads-annotate-notify.png" format="image/png"><alt>Notifying Administrator Using Annotations</alt></image>
             </p>
             <ol id="ol_itr_14v_vcc">
                 <li>
