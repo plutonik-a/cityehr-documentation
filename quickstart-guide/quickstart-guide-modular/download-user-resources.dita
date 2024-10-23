@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "topic.dtd">
 <topic id="download-user-resources">
+    <title>Download User Resources</title>
     <body>
-        
         <p>Some of the features you will encounter later on in this Quick Start Guide will require
             the use of resources, such as sample patient records or information models. A set of
             useful resources is shipped with cityEHR and can be downloaded for your use. </p>
@@ -11,15 +11,15 @@
             of the page). </p>
         <ol id="ol_nqr_14v_vcc">
             <li>
-                <p>Click the Administration button (top right) to access the Administration page
-                </p>
+                <p>Click the Administration button (top right) to access the Administration page</p>
+            </li>
+            <li>
+                <p>On the Administration page, in the menu in the left hand pane, select the menu option “Manage System Parameters” from the System menu.</p>
             </li>
         </ol>
         <ol id="ol_oqr_14v_vcc">
             <li>
-                <p><image href="images/image_pqr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>On the Administration page, in the menu in the left hand pane, select
-                    the menu option “Manage System Parameters” from the System menu.<image href="images/image_qqr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
-                </p>
+                <p><image href="images/admin-download-user-resources.png" format="image/png"><alt>Download User Resources from Administration Page</alt></image></p>
             </li>
         </ol>
         <ol id="ol_rqr_14v_vcc">
@@ -35,7 +35,7 @@
             </li>
         </ol>
         <p> </p>
-        <p><image href="images/image_tqr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+        <p><image href="images/user-resources-zip.png" format="image/png"><alt>Zip Archive of User Resources Downloaded to Browser</alt></image>
         </p>
         <ol id="ol_uqr_14v_vcc">
             <li>
@@ -49,6 +49,6 @@
                     depending on how your machine is set up to handle .zip archives). </p>
             </li>
         </ol>
-        <p><image href="images/image_wqr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+        <p><image href="images/user-resources-file.png" format="image/png"><alt>User Resources Zip Archive</alt></image>
         </p>
     </body></topic>
