@@ -3,10 +3,8 @@
 <topic id="manipulating-the-information-model-as-a-spreadsheet">
     <title>Manipulating the Information Model as a Spreadsheet</title>
     <body>
-        
-        <p> </p>
         <p>If you have administrative access, your Administration Page, Figure 109. </p>
-        <p><image href="images/image_bxr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+        <p><image href="images/admin-view.png" format="image/png"><alt>Administration Page</alt></image>
         </p>
         <p>Manipulating the information model as an ontology is quite difficult and it is easy to
             make a mistake. There are several underlying reasons for this: </p>
@@ -63,7 +61,7 @@
         <p> </p>
         <ol id="ol_kxr_14v_vcc">
             <li>
-                <p><image href="images/image_lxr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+                <p><image href="images/featuredemo-spreadsheet.png" format="image/png"><alt>Specialty - Feature Demo.ods Information Model </alt></image>
                 </p>
             </li>
         </ol>
@@ -118,7 +116,7 @@
                     Information Model from the list of selections on the left. </p>
             </li>
         </ol>
-        <p><image href="images/image_txr_14v_vcc.png" format="image/png"/>
+        <p><image href="images/admin-info-model.png" format="image/png"><alt>Navigating to the Information Model page</alt></image>
         </p>
         <ol id="ol_uxr_14v_vcc">
             <li>
@@ -139,7 +137,7 @@
                 <p>If the model loaded successfully you can now navigate to the Patient Search page, find a patient, select Forms and you should see your new form available in the list of forms to create. </p>
             </li>
         </ol>
-        <p><image href="images/image_yxr_14v_vcc.png" format="image/png"/>
+        <p><image href="images/forms-view-new.png" format="image/png"><alt>Forms page displaying new form </alt></image>
         </p>
     </body>
 </topic>
