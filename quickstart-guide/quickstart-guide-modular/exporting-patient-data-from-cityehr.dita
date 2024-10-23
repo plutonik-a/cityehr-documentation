@@ -4,14 +4,14 @@
     <title>Exporting Patient Data from cityEHR</title>
     <shortdesc>Patient data can be exported in a number of different formats for individual patients or for cohorts of patients found through the cohort search facility.</shortdesc>
     <body>
-        <section>
+        <section id="exporting-data-for-an-individual-patinet">
             <title>Exporting Data for an Individual Patient</title>
             <ol id="ol_s5r_14v_vcc">
                 <li>
                     <p>The full record for an individual patient can be exported from the patient Events page. Click on a patient in Patient Search for which you would like to export their record. </p>
                 </li>
             </ol>
-            <p><image href="images/image_t5r_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/patient-search-select.png" format="image/png"><alt>Selecting a Patient for Record Export</alt></image>
             </p>
             <ol id="ol_u5r_14v_vcc">
                 <li>
@@ -19,21 +19,21 @@
                 </li>
             </ol>
             <p> </p>
-            <p><image href="images/image_v5r_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/events-view-select.png" format="image/png"><alt>Navigating to Patient Events Page</alt></image>
             </p>
             <ol id="ol_w5r_14v_vcc">
                 <li>
                     <p>Select the Event you would like to export. </p>
                 </li>
             </ol>
-            <p><image href="images/image_x5r_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/events-select.png" format="image/png"><alt>Selecting Patient Event to Export</alt></image>
             </p>
             <ol>
                 <li>
                     <p>Click the Export Record icon to export the Individual Patient Data.</p>
                 </li>
             </ol>
-            <p><image href="images/image_y5r_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/events-lifestyle-export.png" format="image/png"><alt>Selecting Patient Event to Export</alt></image>
             </p>
         </section>
         <section id="exporting-data-for-a-cohort-of-patients">
@@ -49,7 +49,7 @@
                         “Manage Cohort Searches”. </p>
                 </li>
             </ol>
-            <p><image href="images/image_cvr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/admin-manage-cohort-search.png" format="image/png"><alt>Manage Cohort Searches Page</alt></image>
             </p>
             <ol>
                 <li>
@@ -59,14 +59,14 @@
                     <p>Click the box next to the Cohort Search you wish to export.</p>
                 </li>
             </ol>
-            <p><image href="images/image_dvr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/admin-cohort-search-select.png" format="image/png"><alt>Selecting Desired Cohort Search for Export</alt></image>
             </p>
             <ol>
                 <li>
                     <p>Now click the “Export” button that will appear at the top right of your screen.</p>
                 </li>
             </ol>
-            <p><image href="images/image_evr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/admin-cohort-search-export.png" format="image/png"><alt>Exporting Desired Cohort Search</alt></image>
             </p>
             <ol>
                 <li>
@@ -74,23 +74,26 @@
                         Application </p>
                 </li>
             </ol>
-            <p><image href="images/image_fvr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/admin-cohort-search-dialogue.png" format="image/png"><alt>Cohort Export Dialogue Box</alt></image>
             </p>
             <ol>
                 <li>
                     <p>For this example, we will open with Microsoft Edge.</p>
                 </li>
             </ol>
-            <p><image href="images/image_gvr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/admin-cohort-search-extract-export.png" format="image/png"><alt>Extracting the Exported Cohort File’s XML Contents</alt></image>
             </p>
             <ol>
                 <li>
                     <p>A dialogue box will appear that allows you to extract the xml contents. Extract the
                         contents.</p>
                 </li>
+                <li>
+                    <p><image href="images/extracted-cohort-data.png" format="image/png"><alt>Window displaying extracted cohort XML file</alt></image></p>
+                    <p>A new window will open with the xml of the exported data.</p>
+                    
+                </li>
             </ol>
-            <p><image href="images/image_hvr_14v_vcc.png" format="image/png"/>9. A new window will open with the xml of the exported data. 
-            </p>
         </section>
         <section id="export-data-sets">
             <title>Export Data Sets</title>
@@ -102,21 +105,21 @@
                     <p>Navigate to Export Data Sets in Menu on the Left of the screen.</p>
                 </li>
             </ol>
-            <p><image href="images/image_jvr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/admin-manage-export-data.png" format="image/png"><alt>Manage Export Data Sets Page</alt></image>
             </p>
             <ol>
                 <li>
-                    <p>Name you Data Set <i>(see Figure 93)</i>.</p>
+                    <p>Name your Data Set</p>
                 </li>
             </ol>
-            <p><image href="images/image_kvr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/admin-manage-export-data-naming.png" format="image/png"><alt>Naming the Data Set</alt></image>
             </p>
             <ol>
                 <li>
                     <p>Select the Entries you want to add to your exported data set. They will appear on the column on the right. You can also filter the Entries by composition if you click the drop-down next to “Composition”.</p>
                 </li>
             </ol>
-            <p><image href="images/image_lvr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/admin-manage-export-data-select-entries.png" format="image/png"><alt>Selecting Entries to Add to Exported Data Set</alt></image>
             </p>
             <ol>
                 <li>
