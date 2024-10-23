@@ -11,16 +11,16 @@
                 should land on “Manage Information Model”. You will see a summary of the information
                 models loaded for this installation (if not, press the selection to Manage Information
                 Model in the left hand menu). </p>
-            <p><image href="images/image_swr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/admin-manage-info-model.png" format="image/png"><alt>Base Manage Information Model screen </alt></image>
             </p>
             <p>In the selection for Information Model, find the model for Specialty - cityEHR Feature
                 Demo. This is the model that was driving the interaction with the cityEHR that you have
                 just encountered. </p>
-            <p><image href="images/image_twr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/admin-manage-info-model-featuredemo.png" format="image/png"><alt>Selecting cityEHR Feature Demo information model </alt></image>
             </p>
             <p>The model is loaded to cityEHR as an ontology which you can browse by selecting “Feature
                 Demo” from the Information Model drop down shown below. You can then expand the ontology by clicking the + sign. See image below. </p>
-            <p><image href="images/image_uwr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/admin-manage-info-model-ontology.png" format="image/png"><alt>Changing information model and viewing ontology</alt></image>
             </p>
             <p>You can browse through the ontology by expanding the tree controls - you should see the
                 Folders, Views, Forms, Sections and Entries for the screens you have already worked
@@ -36,14 +36,14 @@
                     will take the ontology from the cityEHR database and return it to the browser as a zip
                     file. Click on the button that says OWL. </p></li>
             </ol>
-            <p><image href="images/image_wwr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/admin-manage-info-model-export.png" format="image/png"><alt>Exporting Ontology models </alt></image>
             </p>
             <ol>
                 <li>
                     <p>Save the file somewhere on your system, rename it to use a .zip extension and unzip to obtain the ontology (OWL/XML) file. If all has worked correctly, this file will be called export.xml. It is indeed an XML file, but it is in the OWL/XML vocabulary, so its useful to rename it to have a .owl extension.</p>
                 </li>
             </ol>
-            <p><image href="images/image_xwr_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/admin-manage-info-model-export-dialogue.png" format="image/png"><alt>Renaming export file pop-up</alt></image>
             </p>
             <ol>
                 <li>
