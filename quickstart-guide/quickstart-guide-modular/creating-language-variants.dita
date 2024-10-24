@@ -5,12 +5,10 @@
         <body>
                 <p>Create Language Pack </p>
                 <p> </p>
-                <p><image href="images/image_nbs_14v_vcc.png" format="image/png"/>
+                <p><image href="images/admin-manage-app-lang.png" format="image/png"><alt>Create new language pack</alt></image>
                 </p>
-                <p> </p>
                 <p>Enable user selection of language </p>
-                <p> </p>
-                <p><image href="images/image_obs_14v_vcc.png" format="image/png"/>
+                <p><image href="images/admin-manage-app-lang-user-select.png" format="image/png"><alt>Enable user selection of language</alt></image>
                 </p>
                 <p> </p>
         </body>
