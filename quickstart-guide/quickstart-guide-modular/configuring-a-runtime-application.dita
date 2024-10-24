@@ -6,8 +6,7 @@
     <body>
         <section id="Creating-Your-Own-cityEHR-Application-New-Application">
             <title>Creating Your Own cityEHR Application – New Application</title>
-            <p>These instructions assume you are making an application with the identifier myEHR. Note
-                that this identifier can contain upper/lower case characters and digits but no spaces. </p>
+            <p>These instructions assume you are making an application with the identifier myEHR. Note that this identifier can contain upper/lower case characters and digits but no spaces. </p>
             <ol id="ol_byr_14v_vcc">
                 <li>
                     <p>Navigate to cityEHR Log-in Page </p>
@@ -15,84 +14,55 @@
                 <li>
                     <p>Enter user credentials. If you are starting from a blank database, the admin page  will take a while to load. For this initial log-on, you will have to authenticate with username: user and password: password. This log-on may take some time as the system builds the application. Your screen may look like this:
                     </p>
+                    <p><image href="images/log-on-page-loading.png" format="image/png"><alt>cityEHR log on page loading</alt></image></p>
                 </li>
-            </ol>
-            <p><image href="images/image_dyr_14v_vcc.png" format="image/png"/></p>
-            <ol>
                 <li>
                     <p>Click "Start" </p>
+                    <p><image href="images/log-on-page-start-button.png" format="image/png"><alt>cityEHR log on page start up button</alt></image></p>
                 </li>
-            </ol>
-            <p><image href="images/image_eyr_14v_vcc.png" format="image/png"/>
-            </p>
-            <ol>
                 <li>
-                    <p>Navigate to the Administration Page at the top right of the screen next to “Quit”.
-                        Click “Administration”. </p>  
+                    <p>Navigate to the Administration Page at the top right of the screen next to “Quit”. Click “Administration”. </p>
+                    <p><image href="images/admin-view-button.png" format="image/png"><alt>Primary Administative page</alt></image></p>
                 </li>
-            </ol>
-            <p><image href="images/image_fyr_14v_vcc.png" format="image/png"/>
-            </p>
-            <ol>
                 <li>
-                    <p>6. Now navigate to and click on “New Application” in the menu left of the screen. See below. </p>
+                    <p>Now navigate to and click on “New Application” in the menu left of the screen. See below. </p>
+                    <p><image href="images/admin-new-app.png" format="image/png"><alt>New Application page within Administration</alt></image></p>
                 </li>
-            </ol>
-            <p><image href="images/image_gyr_14v_vcc.png" format="image/png"/>
-            </p>
-            <ol>
                 <li>
-                    <p>Now enter an Application Id. For this exercise, we will name the Application Id
-                        “myEHR”. Ids can be made up of upper and lower case characters a-z, digits 0 to 9, and
-                        dashes (-) or underscores (_). There cannot be spaces in the Id. Some installation Ids
-                        have configurations shipped with the cityEHR installation and if you pick one of those
-                        Ids it will install that configuration for you. if you pick a new Id, then it starts
-                        from scratch. myEHR will be our new Id for this exercise. </p> 
+                    <p>Now enter an Application Id. For this exercise, we will name the Application Id “myEHR”. Ids can be made up of upper and lower case characters a-z, digits 0 to 9, and dashes (-) or underscores (_). There cannot be spaces in the Id. Some installation Ids have configurations shipped with the cityEHR installation and if you pick one of those Ids it will install that configuration for you. if you pick a new Id, then it starts from scratch. myEHR will be our new Id for this exercise. </p> 
                 </li>
                 <li>
                     <p>Now click the button that has a check mark to verify your application Id. </p>
+                    <p><image href="images/admin-new-app-verify-button.png" format="image/png"><alt>Verifying the Application ID</alt></image></p>
                 </li>
-            </ol>
-            <p><image href="images/image_hyr_14v_vcc.png" format="image/png"/>9. If this ID has never been used before, your screen will
-                look like this: </p>
-            <p><image href="images/image_iyr_14v_vcc.png" format="image/png"/>
-            </p>
-            <ol>
+                <li>
+                    <p>If this ID has never been used before, your screen will look like this: </p>
+                    <p><image href="images/admin-new-app-config.png" format="image/png"><alt>New application configuration</alt></image>
+                    </p>
+                </li>
                 <li>
                     <p>You can change the display name of your new application and change the logos. </p>
                 </li>
                 <li>
-                    <p>Once you are finished changing the display name and logos (if you want), you can now
-                        click on “Create New Application ID” identified by the lighting bolt. See image below. </p>
+                    <p>Once you are finished changing the display name and logos (if you want), you can now click on “Create New Application ID” identified by the lighting bolt. See image below. </p>
+                    <p><image href="images/admin-new-app-config-create.png" format="image/png"><alt>Creating a new application ID</alt></image> </p>
                 </li>
-            </ol>
-            <p><image href="images/image_jyr_14v_vcc.png" format="image/png"/> </p>
-            <ol>
                 <li>
                     <p>A Dialogue Box will appear. Click Confirm.</p>
+                    <p><image href="images/admin-new-app-config-confirm.png" format="image/png"><alt>Dialogue box to create new application</alt></image></p>
                 </li>
-            </ol>
-            <p><image href="images/image_kyr_14v_vcc.png" format="image/png"/>
-            </p>
-            <ol>
                 <li>
                     <p>cityEHR will now create your new application. This may take a few moments. Your
                         screen should now look like this, with three completed steps: </p>
+                    <p><image href="images/admin-new-app-completed.png" format="image/png"><alt>Page displayed when new application is created</alt></image></p>
                 </li>
-            </ol>
-            <p><image href="images/image_lyr_14v_vcc.png" format="image/png"/>
-            </p>
-            <ol>
                 <li>
                     <p>Once cityEHR has finished creating your application, navigate to “Quit” in the Purple Dashboard. </p>
                 </li>
                 <li>
-                    <p>On the log-in page, you should now be able to select your new application in the
-                        drop-down menu. </p>
+                    <p>On the log-in page, you should now be able to select your new application in the drop-down menu. </p>
+                    <p><image href="images/log-on-page-app-select.png" format="image/png"><alt>Selecting alternative application on cityEHR log on page</alt></image></p>
                 </li>
-            </ol>
-            <p><image href="images/image_myr_14v_vcc.png" format="image/png"/></p>
-            <ol>
                 <li>
                     <p> your application will be “empty” until you create, configure, and import an information model for your application. Navigate to section 13 called “Manipulating an Information Model” for instructions on how to do this.</p>
                 </li>
@@ -104,45 +74,30 @@
             <ol>
                 <li>
                     <p>Navigate to Administration page and then to “New Application” under “System” in the menu on the left of the screen. </p>
+                    <p><image href="images/admin-new-app-nav.png" format="image/png"><alt>Navigating to NEw Application in Administration</alt></image></p>
                 </li>
-            </ol>
-            <p><image href="images/image_oyr_14v_vcc.png" format="image/png"/></p>
-            <ol>
                 <li>
-                    <p>Enter the shipped application id “Elfin” or “Elfin2” or
-                        “Ponseti”. For this exercise, enter the application ID “Elfin2”.</p>
+                    <p>Enter the shipped application id “Elfin” or “Elfin2” or “Ponseti”. For this exercise, enter the application ID “Elfin2”.</p>
+                    <p><image href="images/admin-new-app-elfin.png" format="image/png"><alt>Entering the shipped application name "Elfin2"</alt></image></p>
                 </li>
-            </ol>
-            <p><image href="images/image_pyr_14v_vcc.png" format="image/png"/>
-            </p>
-            <ol>
                 <li>
-                    <p>3. Click “Verify Application Id” (the check mark icon) in the top right of the display screen. </p>
+                    <p>Click “Verify Application Id” (the check mark icon) in the top right of the display screen. </p>
+                    <p><image href="images/admin-new-app-elfin-verify.png" format="image/png"><alt>Verifying the new application "Efin2"</alt></image></p>
                 </li>
-            </ol>
-            <p><image href="images/image_qyr_14v_vcc.png" format="image/png"/>
-            </p>
-            <ol>
                 <li>
-                    <p>4. Your screen should now look like the one below if you have typed in Elfin2. </p> 
+                    <p>Your screen should now look like the one below if you have typed in Elfin2. </p>
+                    <p><image href="images/admin-new-app-elfin-confirm.png" format="image/png"><alt>Configuration page and dialogue box for Elfin</alt></image></p>
                 </li>
-            </ol>
-            <p><image href="images/image_ryr_14v_vcc.png" format="image/png"/></p>
-            <ol>
                 <li>
-                    <p>If you have typed in “Ponseti” as the application ID,
-                        your screen will look like the one below. </p>
+                    <p>If you have typed in “Ponseti” as the application ID, your screen will look like the one below. </p>
+                    <p><image href="images/admin-new-app-config-ponseti.png" format="image/png"><alt>Shipped application, Ponseti configuration page</alt></image></p>
                 </li>
-            </ol>
-            <p><image href="images/image_syr_14v_vcc.png" format="image/png"/>
-            </p>
-            <p>These are two applications that ship with cityEHR that can be created in your local
-                database. </p>
-            <p><image href="images/image_tyr_14v_vcc.png" format="image/png"/> </p>
-            <ol>
                 <li>
-                    <p>Now click “Create New Application” (lightning bolt icon)
-                        and wait for it to load. This may take a few minutes.</p>
+                    <p>These are two applications that ship with cityEHR that can be created in your local database. </p>
+                    <p><image href="images/admin-new-app-elfin-completed.png" format="image/png"><alt>Page displayed when new application (Elfin) is created</alt></image> </p>
+                </li>
+                <li>
+                    <p>Now click “Create New Application” (lightning bolt icon) and wait for it to load. This may take a few minutes.</p>
                 </li>
                 <li>
                     <p>Once it has finished creating, navigate to Quit in the Purple Dashboard </p>
@@ -151,7 +106,7 @@
                     <p>You should now be able to select “Elfin 2” as an application from the log-in page </p>
                 </li>
                 <li>
-                    <p>9. Click Start and you will be navigated to the startup home page for Elfin2. </p>
+                    <p>Click Start and you will be navigated to the startup home page for Elfin2. </p>
                 </li>
             </ol>
         </section>
