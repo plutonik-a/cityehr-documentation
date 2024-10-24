@@ -72,15 +72,26 @@
       <xsl:apply-templates mode="body"/>
     </xsl:copy>
   </xsl:template>
-  
-  <xsl:template match="image" mode="body">
+
+  <xsl:template match="image[alt]" mode="body">
+    <figure>
+      <img src="{@href}">
+        <xsl:if test="alt">
+          <xsl:attribute name="alt" select="alt"/>
+        </xsl:if>
+      </img>
+      <figcaption><xsl:value-of select="alt"/></figcaption>
+    </figure>
+  </xsl:template>
+
+  <xsl:template match="image[empty(alt)]" mode="body">
     <img src="{@href}">
       <xsl:if test="alt">
         <xsl:attribute name="alt" select="alt"/>
       </xsl:if>
     </img>
   </xsl:template>
-  
+
   <xsl:template match="xref" mode="body">
     <a href="{@href}">
       <xsl:apply-templates mode="body"/>
