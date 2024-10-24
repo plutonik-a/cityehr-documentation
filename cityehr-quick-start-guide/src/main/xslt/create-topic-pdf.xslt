@@ -64,7 +64,7 @@
 
   <!-- PAGE CONTENT HEADER -->
   <xsl:template match="topic" mode="body">
-    <fo:block background-color="#B84747" color="#FFFFFF" font-weight="bold" font-size="14pt" display-align="center" margin-bottom="11pt" id="topic-{generate-id()}">
+    <fo:block background-color="#B84747" color="#FFFFFF" font-weight="bold" font-size="14pt" display-align="center" margin-bottom="11pt" id="section-{generate-id()}">
       <fo:block margin-left="8pt"><xsl:value-of select="title"/></fo:block>
     </fo:block>
     <xsl:apply-templates select="body" mode="body"/>
@@ -72,19 +72,26 @@
   
 
   <!-- PAGE CONTENT -->
-  
+
   <xsl:template match="body" mode="body">
     <fo:block id="body-{generate-id()}">
-      <xsl:apply-templates select="p" mode="body"/>
+      <xsl:apply-templates select="p|section" mode="body"/>
     </fo:block>
   </xsl:template>
-  
+
+  <xsl:template match="section" mode="body">
+    <fo:block background-color="#F17C7C" color="#FFFFFF" font-weight="bold" font-size="10pt" display-align="center" margin-bottom="11pt" id="section-{generate-id()}">
+      <fo:block margin-left="8pt"><xsl:value-of select="title"/></fo:block>
+    </fo:block>
+    <xsl:apply-templates select="p|section" mode="body"/>
+  </xsl:template>
+
   <xsl:template match="p" mode="body">
     <fo:block space-after="4pt"> <!-- NOTE(AR): 4pt spacing after each paragraph -->
       <xsl:apply-templates select="node()" mode="body"/>
     </fo:block>
   </xsl:template>
-  
+
   <xsl:template match="i|em" mode="body">
     <fo:inline font-style="italic"><xsl:apply-templates select="node()" mode="body"/></fo:inline>
   </xsl:template>

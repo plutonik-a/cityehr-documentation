@@ -86,7 +86,33 @@
       <xsl:apply-templates mode="body"/>
     </a>
   </xsl:template>
-  
+
+  <xsl:template match="section" mode="body">
+    <section>
+      <xsl:apply-templates select="title|p|section" mode="body"/>
+    </section>
+  </xsl:template>
+
+  <xsl:template match="title[parent::section/parent::body]" mode="body">
+    <h2><xsl:value-of select="."/></h2>
+  </xsl:template>
+
+  <xsl:template match="title[parent::section/parent::section/parent::body]" mode="body">
+    <h3><xsl:value-of select="."/></h3>
+  </xsl:template>
+
+  <xsl:template match="title[parent::section/parent::section/parent::section/parent::body]" mode="body">
+    <h4><xsl:value-of select="."/></h4>
+  </xsl:template>
+
+  <xsl:template match="title[parent::section/parent::section/parent::section/parent::section/parent::body]" mode="body">
+    <h5><xsl:value-of select="."/></h5>
+  </xsl:template>
+
+  <xsl:template match="title[parent::section/parent::section/parent::section/parent::section/parent::section/parent::body]" mode="body">
+    <h6><xsl:value-of select="."/></h6>
+  </xsl:template>
+
   <!--
     Generates an Edit button URL for Petal
   -->

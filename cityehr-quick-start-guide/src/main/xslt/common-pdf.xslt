@@ -132,7 +132,7 @@
       </fo:flow>
     </fo:page-sequence>
   </xsl:template>
-  
+
   <!-- TOC (Table of Contents) -->
   <xsl:template name="pcom:toc">
     <xsl:param name="sections" as="element()+"/>
@@ -143,20 +143,46 @@
           <fo:block margin-left="8pt">Table of Contents</fo:block>
         </fo:block>
         <xsl:for-each select="$sections">
-          <xsl:variable name="topic" select="com:get-topic(., .)"/>
-          <xsl:variable name="topic-id" select="generate-id($topic)"/>
-          <fo:block text-align-last="justify">
-            <fo:basic-link internal-destination="topic-{$topic-id}">
-              <xsl:number level="single" count="$sections"/>
-              <xsl:text>. </xsl:text><xsl:value-of select="$topic/title"/>
-              <fo:leader leader-length.minimum="12pt" leader-length.optimum="40pt" leader-length.maximum="100%" leader-pattern="dots"/>
-              <xsl:text> </xsl:text>
-              <fo:page-number-citation ref-id="topic-{$topic-id}"/>
-            </fo:basic-link>
-          </fo:block>
+          <xsl:variable name="section" select="if (local-name(.) eq 'topicref') then com:get-topic(., .) else ."/>
+          <xsl:call-template name="pcom:toc-entry">
+            <xsl:with-param name="section" select="$section"/>
+            <xsl:with-param name="level">1</xsl:with-param>
+            <xsl:with-param name="numbers" select="position()"/>
+          </xsl:call-template>
         </xsl:for-each>
       </fo:flow>
     </fo:page-sequence>
+  </xsl:template>
+
+  <!-- Entry in the TOC (Table of Contents) -->
+  <xsl:template name="pcom:toc-entry">
+    <xsl:param name="section"          as="element()"  required="yes"/>
+    <xsl:param name="level"            as="xs:integer" required="yes"/>
+    <xsl:param name="numbers"          as="xs:integer*"  required="no"/>
+
+    <xsl:variable name="section-id" select="generate-id($section)"/>
+
+    <!-- section -->
+    <fo:block text-align-last="justify">
+      <fo:basic-link internal-destination="section-{$section-id}" padding-left="{33 * ($level - 1)}pt">
+        <xsl:value-of select="string-join($numbers, '.')"/>
+        <!-- xsl:number level="single" count="$sections"/ -->
+        <xsl:text>. </xsl:text><xsl:value-of select="$section/title"/>
+        <fo:leader leader-length.minimum="12pt" leader-length.optimum="40pt" leader-length.maximum="100%" leader-pattern="dots"/>
+        <xsl:text> </xsl:text>
+        <fo:page-number-citation ref-id="section-{$section-id}"/>
+      </fo:basic-link>
+    </fo:block>
+    <!-- then process sub sections recursively (no more than 4 levels deep!) -->
+    <xsl:if test="$level le 4">
+      <xsl:for-each select="$section/body/section|$section/section">
+        <xsl:call-template name="pcom:toc-entry">
+          <xsl:with-param name="section" select="."/>
+          <xsl:with-param name="level" select="$level + 1"/>
+          <xsl:with-param name="numbers" select="($numbers, position())"/>
+        </xsl:call-template>
+      </xsl:for-each>
+    </xsl:if>
   </xsl:template>
 
   <!-- LAST PAGE -->

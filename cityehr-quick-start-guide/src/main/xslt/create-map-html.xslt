@@ -51,13 +51,7 @@
           <xsl:if test="exists($download-pdf-filename)">
             <div id="download-pdf-version"><a href="{$download-pdf-filename}">Download PDF version</a></div>
           </xsl:if>
-          <secton>
-            <h2>Table of Contents</h2>
-            <ol class="toc">
-              <xsl:apply-templates select="topicref" mode="create-topic-html"/>
-              <xsl:apply-templates select="topicref" mode="toc"/>
-            </ol>
-          </secton>
+          <xsl:apply-templates select="." mode="toc"/>
         </article>
       </body>
     </html>
@@ -82,9 +76,15 @@
     </xsl:result-document>
   </xsl:template>
   
-  <!-- Put an entry in the Table of Contents for each topic that is referenced -->
-  <xsl:template match="topicref" mode="toc">
-    <li><a href="{hcom:dita-filename-to-html(@href)}"><xsl:value-of select="com:get-topic-title(., .)"/></a></li>
+  <!-- TOC (Table of Contents) -->
+  <xsl:template match="map" mode="toc">
+    <secton>
+      <h2>Table of Contents</h2>
+      <xsl:apply-templates select="topicref" mode="create-topic-html"/>
+      <xsl:call-template name="hcom:toc">
+        <xsl:with-param name="sections" select="topicref"/>
+      </xsl:call-template>
+    </secton>
   </xsl:template>
 
   <!-- OVERRIDE this template from create-topic-html.xsd so that we can add previous and following links -->
