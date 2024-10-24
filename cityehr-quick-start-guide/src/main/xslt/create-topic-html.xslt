@@ -2,6 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
+  xmlns:htop="http://cityehr/html/topic"
   xmlns:hcom="http://cityehr/html/common"
   xmlns:com="http://cityehr/common"
   exclude-result-prefixes="xs hcom ditaarch"
@@ -39,12 +40,8 @@
 
         <!-- Petal Edit Button -->
         <div id="petal-edit-page-button">
-          <xsl:variable name="petal-source-file-uri" select="com:document-uri(.)" />
-          <xsl:variable name="petal-source-file" select="substring-after($petal-source-file-uri, $petal-github-repo-name || '/')" />
-          <xsl:variable name="petal-webpage-filename" select="hcom:dita-filename-to-html(com:filename($petal-source-file-uri))" />
-          <xsl:variable name="petal-full-url" select="concat($petal-api-url, '?ghrepo=', $petal-github-org-name, '/', $petal-github-repo-name, '&amp;source=', $petal-source-file, '&amp;branch=', $petal-github-branch, '&amp;referer=', $petal-referrer-base-url, '/', $petal-webpage-filename)" />
-          <a href="{$petal-full-url}">
-            <input type="button" value="Edit this page" />
+          <a href="{htop:petal-edit-url(.)}">
+            <input type="button" value="Edit this page"/>
           </a>
         </div>
 
@@ -90,4 +87,15 @@
     </a>
   </xsl:template>
   
+  <!--
+    Generates an Edit button URL for Petal
+  -->
+  <xsl:function name="htop:petal-edit-url" as="xs:string">
+    <xsl:param name="topic" as="element(topic)" required="yes"/>
+    <xsl:variable name="petal-source-file-uri" select="com:document-uri($topic)" />
+    <xsl:variable name="petal-source-file" select="substring-after($petal-source-file-uri, $petal-github-repo-name || '/')" />
+    <xsl:variable name="petal-webpage-filename" select="hcom:dita-filename-to-html(com:filename($petal-source-file-uri))" />
+    <xsl:sequence select="concat($petal-api-url, '?ghrepo=', $petal-github-org-name, '/', $petal-github-repo-name, '&amp;source=', $petal-source-file, '&amp;branch=', $petal-github-branch, '&amp;referer=', $petal-referrer-base-url, '/', $petal-webpage-filename)" />
+  </xsl:function>
+
 </xsl:stylesheet>
