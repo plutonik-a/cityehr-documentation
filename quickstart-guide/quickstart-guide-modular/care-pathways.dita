@@ -6,7 +6,8 @@
         <section id="Health-Lifestyle-Pathway">
             <title>Health Lifestyle Pathway</title>
             <ol>
-                <li><p>To review the pathways functionality in cityEHR, we will navigate through the Healthy Lifestyle pathway in the cityEHR Feature Demo application.</p>
+                <li>
+                    <p>To review the pathways functionality in cityEHR, we will navigate through the Healthy Lifestyle pathway in the cityEHR Feature Demo application.</p>
                 </li>
                 <li>
                     <p>Log-in to the cityEHR Feature Demo application.</p>
@@ -15,27 +16,41 @@
                     <p>Navigate to Patient Search and select a patient.</p>
                 </li>
                 <li>
-                    <p>Navigate to Pathways in the blue dashboard. See screenshot below.</p>
+                    <p>Navigate to Pathways in the blue dashboard. See below.</p>
+                    <p><image href="images/image_i1s_14v_vcc.png" format="image/png"><alt></alt></image></p>
+                </li>
+                <li>
+                    <p>In the menu on the left-hand side, navigate to the pathway called “Lifestyle Assessment”. </p>
+                    <p><image href="images/image_j1s_14v_vcc.png" format="image/png"><alt></alt></image></p>
+                </li>
+                <li>
+                    <p>Click the checkmark icon at the top-right of the screen below the blue and purple dashboards. See below. </p>
+                    <p><image href="images/image_k1s_14v_vcc.png" format="image/png"><alt></alt></image></p>
+                </li>
+                <li>
+                    <p>Once clicking Start Pathway, you will notice that the italicized “Lifestyle Assessment” turns into a blue hyperlink. Click this.</p>
+                    <p><image href="images/image_l1s_14v_vcc.png" format="image/png"><alt></alt></image></p>
+                </li>
+                <li>
+                    <p>Now click the “Action” button that appears at the top-right of the screen. The icon looks like an open book. See screenshot below. </p>
+                    <p><image href="images/image_m1s_14v_vcc.png" format="image/png"><alt></alt></image></p>
+                </li>
+                <li>
+                    <p>You should be navigated to a Lifestyle Assessment form. Fill out some values in this form. </p>
+                    <p><image href="images/image_n1s_14v_vcc.png" format="image/png"><alt></alt></image></p>
+                </li>
+                <li>
+                    <p>Click the Publish icon at the top-right of the screen and click Commit Form. </p>
+                </li>
+                <li>
+                    <p>Your in-progress pathway will appear on the left-hand side of the screen. Click on it. </p>
+                    <p><image href="images/image_o1s_14v_vcc.png" format="image/png"><alt></alt></image></p>
+                </li>
+                <li>
+                    <p>You should now see that the Lifestyle assessment section of your pathway has been completed. You can now click the icon called “Progress” to
+                continue documenting in the section Assessment Follow Up. </p>
                 </li>
             </ol>
-            <p><image href="images/image_i1s_14v_vcc.png" format="image/png"/>5. In the menu on the left-hand side, navigate to the
-                pathway called “Lifestyle Assessment”. </p>
-            <p><image href="images/image_j1s_14v_vcc.png" format="image/png"/>6. Click the checkmark icon at the top-right of the screen
-                below the blue and purple dashboards. See screenshot below. </p>
-            <p><image href="images/image_k1s_14v_vcc.png" format="image/png"/>7. Once clicking Start Pathway, you will notice that the
-                italicized “Lifestyle Assessment” turns into a blue hyperlink. Click this. </p>
-            <p><image href="images/image_l1s_14v_vcc.png" format="image/png"/>8. Now click the “Action” button that appears at the
-                top-right of the screen. The icon looks like an open book. See screenshot below. </p>
-            <p><image href="images/image_m1s_14v_vcc.png" format="image/png"/>9. You should be navigated to a Lifestyle Assessment form.
-                Fill out some values in this form. </p>
-            <p><image href="images/image_n1s_14v_vcc.png" format="image/png"/>10. Click the Publish icon at the top-right of the screen
-                and click Commit Form. </p>
-            <p>11. Your in-progress pathway will appear on the left-hand side of the screen. Click on
-                it. </p>
-            <p><image href="images/image_o1s_14v_vcc.png" format="image/png"/>12. You should now see that the Lifestyle assessment section
-                of your pathway has been completed. You can now click the icon called “Progress” to
-                continue documenting in the section Assessment Follow Up. See screenshot below. </p>
-            <p> </p>
         </section>
         <section id="Using-Sub-Pathways">
             <title>Using Sub-Pathways</title>
