@@ -2,29 +2,26 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "topic.dtd">
 <topic id="creating-an-information-model">
     <title>Creating an Information Model</title>
+    <shortdesc>Creating and Configuring the Information Model</shortdesc>
     <body>
-        
-        <p><b>Creating and Configuring the Information Model </b>
-        </p>
         <p>The information model for your EHR application can be created in a spreadsheet by copying the model for the default cityEHR application that is found in the files: </p>
-        <p>cityEHR - Specialty - Feature Demo </p>
-        <p>cityEHR - Class - Diagnosis </p>
-        <p>cityEHR - Class - Drugs </p>
-        <p>cityEHR - Class - LabTest </p>
+        <ul>
+            <li><p>cityEHR - Specialty - Feature Demo </p></li>
+            <li><p>cityEHR - Class - Diagnosis </p></li>
+            <li><p>cityEHR - Class - Drugs </p></li>
+            <li><p>cityEHR - Class - LabTest </p></li>
+        </ul>
         <p>All four spreadsheets have a Configuration sheet at the front which looks as follows: </p>
-        <p> </p>
-        <p><image href="images/image_wyr_14v_vcc.png" format="image/png"/>
-        </p>
+        <p><image href="images/spreadsheet-config.png" format="image/png"><alt>Configuration page of information models</alt></image></p>
         <ol>
             <li>
                 <p>To begin doing this, open the cityEHR webapps folder </p>
             </li>
             <li>
-                <p>2. Navigate to the following folder: webapps/cityehr/WEB-inf/resources/apps/ehr/resources/applications/ISO-13606-EHR-Extract-cityEHR/informationModel </p>
+                <p>2. Navigate to the following folder: <i>webapps/cityehr/WEB-inf/resources/apps/ehr/resources/applications/ISO-13606-EHR-Extract-cityEHR/informationModel</i> </p>
+                <p><image href="images/info-model-folder-path.png" format="image/png"><alt>Folder path of information models</alt></image></p>
+                <p>You should land on the page above </p>
             </li>
-        </ol>
-        <p><image href="images/image_xyr_14v_vcc.png" format="image/png"/>3. You should land on the page above </p>
-        <ol>
             <li>
                 <p>Open the file named: Open the file named cityEHR-Specialty-<b>CommonModel</b>. </p>
             </li>
@@ -42,21 +39,15 @@
             </li>
             <li>
                 <p>Change the ApplicationId on the Configuration page to exactly match the ApplicationId you assigned your new application. This is found on Line 2, Cell B on the Configuration Sheet (1st sheet). </p>
+                <p><image href="images/spreadsheet-config-app-id.png" format="image/png"><alt>Changing the Application ID within the information model</alt></image></p>
             </li>
-        </ol>
-        <p><image href="images/image_yyr_14v_vcc.png" format="image/png"/>
-        </p>
-        <ol>
             <li>
                 <p>Save your changes (File → Save) </p>
             </li>
             <li>
                 <p>Now, navigate to File ---&gt; Save As --&gt; keep the name the same --&gt; change the format to .xml under “All Formats” in the bottom right of the pop-up window. See image below. </p> 
+                <p><image href="images/spreadsheet-save-xml.png" format="image/png"><alt>Saving the file as an XML</alt></image></p>
             </li>
-        </ol>
-        <p><image href="images/image_zyr_14v_vcc.png" format="image/png"/>
-        </p>
-        <ol>
             <li>
                 <p>Close your windows </p> 
             </li>
@@ -68,38 +59,29 @@
             </li>
             <li>
                 <p>Now navigate to your EHR. This should be added in the drop-down under “You can access more than one application” </p>
+                <p><image href="images/log-on-page-app-drop-down.png" format="image/png"><alt>Selecting your application on cityEHR log on page</alt></image></p>
+                <p>Click Start</p>
             </li>
-        </ol>
-        <p><image href="images/image_azr_14v_vcc.png" format="image/png"/>16. Click Start </p>
-        <ol>
             <li>
                 <p>Navigate to Administration </p>
             </li>
             <li>
-                <p>Navigate to Information Model --&gt; import information model on the menu on the
-                    left-side of the screen </p>
+                <p>Navigate to Information Model --&gt; import information model on the menu on the left-side of the screen </p>
             </li>
             <li>
                 <p>Click Browse </p> 
             </li>
             <li>
-                <p>Find the .xml file you just saved. Note: It will not work if you don’t select the
-                    .xml file </p>
+                <p>Find the .xml file you just saved. Note: It will not work if you don’t select the .xml file </p>
             </li>
             <li>
                 <p>Select the .xml file </p>
+                <p><image href="images/admin-import-info-model-file-select.png" format="image/png"><alt>Selecting new XML file for import</alt></image></p>
             </li>
-        </ol>
-        <p><image href="images/image_bzr_14v_vcc.png" format="image/png"/>
-        </p>
-        <ol>
             <li>
                 <p>Import the information model using the icon at the top-right of the window. See image below. </p>
+                <p><image href="images/admin-import-info-model-button.png" format="image/png"><alt>Button to begin import of new information model</alt></image></p>
             </li>
-        </ol>
-        <p><image href="images/image_czr_14v_vcc.png" format="image/png"/>
-        </p>
-        <ol>
             <li>
                 <p>You should now land on a page that shows you the completion of 8 steps. </p>
             </li>
@@ -117,20 +99,15 @@
             </li>
             <li>
                 <p>Click “Edit” </p>
+                <p><image href="images/admin-manage-app-param-button.png" format="image/png"><alt>Editing Application parameters</alt></image></p>
             </li>
-        </ol>
-        <p><image href="images/image_dzr_14v_vcc.png" format="image/png"/>
-        </p>
-        <ol>
             <li>
-                <p>Navigate to the “commonModel” option on the screen and ensure that the option
-                    #ISO-13606:Folder:cityEHRBase is selected (see screenshot below) </p>
+                <p>Navigate to the “commonModel” option on the screen and ensure that the option #ISO-13606:Folder:cityEHRBase is selected (see below) </p>
+                <p><image href="images/admin-manage-app-param-cityehrbase.png" format="image/png"><alt></alt></image></p>
             </li>
-        </ol>
-        <p><image href="images/image_ezr_14v_vcc.png" format="image/png"/><image href="images/image_fzr_14v_vcc.png" format="image/png"/>30. Click Save </p>
-        <ol>
             <li>
-                <p>Navigate to Quit </p>
+                <p>Click Save and Navigate to Quit </p>
+                <p><image href="images/admin-manage-app-save-button.png" format="image/png"><alt></alt></image></p>
             </li>
             <li>
                 <p>Log back into your application </p>
@@ -139,31 +116,18 @@
                 <p>Navigate to Patient Search and Registration in the top-right fo the screen on the purple dashboard </p>
             </li>
             <li>
-                <p>You should see a fully formed Patient Search Page and a Registration Page.
-                    Screenshots of them are below: </p>
+                <p>You should see a fully formed Patient Search Page and a Registration Page. See below: </p>
+                <p><image href="images/patient-search-page.png" format="image/png"><alt>Populated patient search page on your application</alt></image></p>
             </li>
-        </ol>
-        <p><image href="images/image_gzr_14v_vcc.png" format="image/png"/>
-        </p>
-        <ol>
             <li>
                 <p>Navigate to Registration page </p> 
             </li>
             <li>
-                <p>On the Registration page, register one patient. Click the menu button at the top
-                    right of the screen to finalize the registration. </p> 
+                <p>On the Registration page, register one patient. Click the menu button at the top right of the screen to finalize the registration. </p> 
+                <p><image href="images/patient-reg.png" format="image/png"><alt>populated patient registration page on your application</alt></image></p>
             </li>
         </ol>
-        <p><image href="images/image_hzr_14v_vcc.png" format="image/png"/>
-        </p>
-        <ol>
-            <li>
-                <p>Congratulations! You have registered one patient and made your own base application. </p> 
-            </li>
-            <li>
-                <p>Activity complete! Quit cityEHR. If you would like to learn how to make changes to
-                    the spreadsheet to add Forms, Sections, Entries, Clusters, and Elements, please refer to the separate Information Modelling Guide. </p>
-            </li>
-        </ol>
+        <p><b>Congratulations!</b> You have registered one patient and made your own base application. </p> 
+        <p>Activity complete! Quit cityEHR. If you would like to learn how to make changes to the spreadsheet to add Forms, Sections, Entries, Clusters, and Elements, please refer to the separate Information Modelling Guide. </p>
     </body>
 </topic>
