@@ -83,7 +83,7 @@
     <fo:block background-color="#F17C7C" color="#FFFFFF" font-weight="bold" font-size="10pt" display-align="center" margin-bottom="11pt" id="section-{generate-id()}">
       <fo:block margin-left="8pt"><xsl:value-of select="title"/></fo:block>
     </fo:block>
-    <xsl:apply-templates select="p|section" mode="body"/>
+    <xsl:apply-templates select="p|b|i|ol|ul|li|image|section" mode="body"/>
   </xsl:template>
 
   <xsl:template match="p" mode="body">
@@ -106,7 +106,45 @@
       <xsl:apply-templates select="alt" mode="body"/>
     </fo:block>
   </xsl:template>
-  
+
+  <xsl:template match="ol" mode="body">
+    <fo:list-block padding="4pt" margin-left="10pt" margin-top="11pt">
+      <xsl:apply-templates select="li" mode="body-ol"/>
+    </fo:list-block>
+  </xsl:template>
+
+  <xsl:template match="li" mode="body-ol">
+    <fo:list-item margin-left="10pt" margin-top="11pt" margin-right="33pt">
+      <fo:list-item-label end-indent="label-end()">
+        <fo:block><xsl:value-of select="position()"/><xsl:text>. </xsl:text></fo:block>
+      </fo:list-item-label>
+      <fo:list-item-body start-indent="body-start()">
+        <fo:block margin-left="10pt">
+          <xsl:apply-templates select="element()" mode="body"/>
+        </fo:block>
+      </fo:list-item-body>
+    </fo:list-item>
+  </xsl:template>
+
+  <xsl:template match="ul" mode="body">
+    <fo:list-block padding="4pt" margin-left="10pt" margin-top="11pt">
+      <xsl:apply-templates select="li" mode="body-ul"/>
+    </fo:list-block>
+  </xsl:template>
+
+  <xsl:template match="li" mode="body-ul">
+    <fo:list-item margin-left="10pt" margin-top="11pt" margin-right="33pt">
+      <fo:list-item-label end-indent="label-end()">
+        <fo:block>&#x02022;</fo:block>
+      </fo:list-item-label>
+      <fo:list-item-body start-indent="body-start()">
+        <fo:block margin-left="10pt">
+          <xsl:apply-templates select="element()" mode="body"/>
+        </fo:block>
+      </fo:list-item-body>
+    </fo:list-item>
+  </xsl:template>
+
   <xsl:template match="alt" mode="body">
     <fo:block font-size="9pt"><xsl:value-of select="."/></fo:block>
   </xsl:template>

@@ -67,7 +67,7 @@
     <h1><xsl:value-of select="."/></h1>
   </xsl:template>
   
-  <xsl:template match="p|b|i|ol|li" mode="body">
+  <xsl:template match="p|b|i|ol|ul|li" mode="body">
     <xsl:copy copy-namespaces="no">
       <xsl:apply-templates mode="body"/>
     </xsl:copy>
@@ -89,7 +89,7 @@
 
   <xsl:template match="section" mode="body">
     <section>
-      <xsl:apply-templates select="title|p|section" mode="body"/>
+      <xsl:apply-templates select="title|p|b|i|ol|ul|li|image|section" mode="body"/>
     </section>
   </xsl:template>
 
