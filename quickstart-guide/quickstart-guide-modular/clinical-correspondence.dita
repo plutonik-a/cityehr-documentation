@@ -11,9 +11,9 @@
                 contains those components, which are then extracted from the composition and used to
                 instantiate the fields in the template. </p>
             <p>The letter templates are created outside of cityEHR as any regular document using
-                LibreOffice Write or MS Word. An example of a template is shown in Figure 111. </p>
+                LibreOffice Write or MS Word. An example of a template is shown below. </p>
             <p/>
-            <p><image href="images/image_t1s_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/letter-template.png" format="image/png"><alt> Letter Template for Patient Advice using LibreOffice Writer</alt></image>
             </p>
             <p>A Letter Template can contain any text and graphics, together with the fields which
                 reference content in the patient record. The text for those fields is then pulled into
@@ -39,27 +39,27 @@
                 When developing templates you can find the identifiers to use by accessing a Letter in
                 cityEHR running in debugging mode. Click the checkbox to Show Ids and the identifiers
                 for each component will be displayed. </p>
-            <p><image href="images/image_v1s_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p><image href="images/letters-ids-view.png" format="image/png"><alt>Show Ids When Running cityEHR in Debugging Mode</alt></image>
             </p>
         </section>
         <section id="Importing-and-Associating-a-Template">
             <title>Importing and Associating a Template</title>
             <p> Letter Templates can be imported from the Administration page by selecting the option for Manage Letters | Manage Letter Templates. This page lists all currently loaded templates and you can add a new one by pressing the + button in the top right menu and then browsing to the file location of the word processor document you with to import. Pressing the red X button next to any existing template in the list allows you to change (re-import) the associated word processor file. </p>
             <p/> 
-            <p><image href="images/image_x1s_14v_vcc.png" format="image/png"/>
+            <p><image href="images/admin-manage-letter-temps.png" format="image/png"><alt>Letter templates</alt></image>
             </p>
             <p/> 
             <p>Once your chosen template is loaded you can associate it with one or more Compositions in the clinical information model by selecting Manage Letters | Associate Templates </p>
             <p/> 
-            <p><image href="images/image_y1s_14v_vcc.png" format="image/png"/>
+            <p><image href="images/admin-assoc-temps.png" format="image/png"><alt>Associating letter templates with compositions</alt></image>
             </p>
         </section>
         <section id="Using-a-Template-with-a-Letter">
             <title>Using a Template with a Letter</title>
             <p>The templates associated with a Letter are available to select when it is being edited.
                 Select the template and press the Wordprocessor button. </p>
-            <p><image href="images/image_abs_14v_vcc.png" format="image/png"/><image href="images/image_bbs_14v_vcc.png" format="image/png"/>
-            </p>
+            <p><image href="images/screenshot-edit-template.png" format="image/png"><alt>Screenshot of Letter template being edited</alt></image></p>
+            <p><image href="images/letters-patient-advice.png" format="image/png"><alt>Patient advice letter template</alt></image></p>
         </section>
     </body>
 </topic>
