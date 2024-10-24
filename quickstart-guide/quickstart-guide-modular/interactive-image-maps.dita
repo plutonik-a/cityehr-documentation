@@ -2,30 +2,28 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "topic.dtd">
 <topic id="interactive-image-maps">
     <title>Interactive Image Maps</title>
-    <shortdesc>There are two ways in which an Entry in the clinical model can be linked to an image for
-            data entry and several ways in which the image maps themselves can be created. This
-            section explains how the different types of linkage work, using the sample image maps
-            that ship with the Feature Demo application.</shortdesc>
+    <shortdesc>There are two ways in which an Entry in the clinical model can be linked to an image for data entry and several ways in which the image maps themselves can be created. This section explains how the different types of linkage work, using the sample image maps that ship with the Feature Demo application.</shortdesc>
     <body>
         <section id="Linking-to-a-Simple-Entry">
             <title>Linking to a Simple Entry</title>
-            <p>The DAS 28 and DAS 68 forms in the Feature Demo contain examples of linking simple
-                entries. The image map is used to set the values of Elements in the Entry. </p>
-            <p><image href="images/image_ebs_14v_vcc.png" format="image/png"><alt>Text Box</alt></image><image href="images/image_fbs_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p>The DAS 28 and DAS 68 forms in the Feature Demo contain examples of linking simple entries. The image map is used to set the values of Elements in the Entry. </p>
+            <p><image href="images/das28-image.png" format="image/png">
+                    <alt>DAS 28 Image Map Display</alt>
+                </image>
+                <image href="images/das28-scores.png" format="image/png">
+                    <alt>DAS 28 Recorded Values</alt>
+                </image>
             </p>
         </section>
         <section id="Linking-to-a-Multiple-Entry">
             <title>Linking to a Multiple Entry</title>
-            <p>The Family History form in the Feature Demo contains an example of an image map linked to
-                a multiple entry; each click in the image map adds another entry, with the value of an
-                enumerated value element set through the selection in the map. </p>
-            <p><image href="images/image_hbs_14v_vcc.png" format="image/png"><alt>Text Box</alt></image>
+            <p>The Family History form in the Feature Demo contains an example of an image map linked to a multiple entry; each click in the image map adds another entry, with the value of an enumerated value element set through the selection in the map. </p>
+            <p><image href="images/famhist-example.png" format="image/png"><alt> Family History - Image Map Linked to a Multiple Entry</alt></image>
             </p>
         </section>
         <section id="Creating-a-New-Image-Map">
             <title>Creating a New Image Map</title>
-            <p>There are several steps to creating a new image map for an Entry in the clinical
-                information model: </p>
+            <p>There are several steps to creating a new image map for an Entry in the clinical information model: </p>
             <ol id="ol_jbs_14v_vcc">
                 <li>
                     <p>Set the Rendition of the Entry to ImageMap </p>
