@@ -95,7 +95,7 @@
   
   <xsl:template match="image" mode="body">
     <fo:block>
-      <fo:external-graphic src="{com:abs-uri(., @href)}"/>
+      <fo:external-graphic src="{com:abs-uri(., @href)}" width="100%" content-height="100%" content-width="scale-to-fit" scaling="uniform"/>
       <xsl:apply-templates select="alt" mode="body"/>
     </fo:block>
   </xsl:template>
