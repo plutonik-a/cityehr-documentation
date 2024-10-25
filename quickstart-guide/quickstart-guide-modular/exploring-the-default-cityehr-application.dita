@@ -2,6 +2,7 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "topic.dtd">
 <topic id="exploring-the-default-cityehr-application">
     <title>Exploring the Default cityEHR Application</title>
+    <shortdesc>This topic introduces the process of registering a new patient in the cityEHR application, guiding users through each step required to create a patient record. It explains how to access the registration form, complete required fields, and leverage features such as the demographics lookup service for auto-filling patient details. Additionally, the chapter covers options for entering GP details and addresses potential error messages. By the end, users will understand how to finalize patient registration and then search for them.</shortdesc>
     <body>
         <section id="registering-a-new-patient">
             <title>Registering a New Patient</title>
