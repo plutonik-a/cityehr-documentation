@@ -130,7 +130,7 @@
   <xsl:function name="htop:petal-edit-url" as="xs:string">
     <xsl:param name="topic" as="element(topic)" required="yes"/>
     <xsl:variable name="petal-source-file-uri" select="com:document-uri($topic)" />
-    <xsl:variable name="petal-source-file" select="substring-after($petal-source-file-uri, $petal-github-repo-name || '/')" />
+    <xsl:variable name="petal-source-file" select="substring-after($petal-source-file-uri, concat($petal-github-repo-name, '/'))" />
     <xsl:variable name="petal-webpage-filename" select="hcom:dita-filename-to-html(com:filename($petal-source-file-uri))" />
     <xsl:sequence select="concat($petal-api-url, '?ghrepo=', $petal-github-org-name, '/', $petal-github-repo-name, '&amp;source=', $petal-source-file, '&amp;branch=', $petal-github-branch, '&amp;referer=', $petal-referrer-base-url, '/', $petal-webpage-filename)" />
   </xsl:function>
