@@ -18,7 +18,7 @@
             
             <p><image href="images/initalize-new-cityehr-installation.png" format="image/png"><alt>Initalize New cityEHR Installation</alt></image></p>
             <p> </p>
-            <p>cityEHR will now run through a sequence of steps to build the default application; while this is in progress the screen will look like the one displayed in Figure 3. It take a minute or so for this process to complete, so you will need to wait while before continuing. </p>
+            <p>cityEHR will now run through a sequence of steps to build the default application; while this is in progress the screen will look like the one displayed in the Figure below. It take a minute or so for this process to complete, so you will need to wait while before continuing. </p>
             <p> </p>
             <p><image href="images/default-app-sequence-steps.png" format="image/png"><alt>Default Application Sequence Steps</alt></image></p>
             <p> </p>
