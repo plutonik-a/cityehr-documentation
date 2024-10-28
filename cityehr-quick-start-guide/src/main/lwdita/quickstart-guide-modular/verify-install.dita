@@ -29,7 +29,9 @@
             <p> </p>
             <p>Press the Start button to move to the default home page, which is pre-configured to be the dashboard page, as shown in <i>Figure 5</i>. </p>
             <p>The Dashboard shows a summary of the overall status of the cityEHR application, which ships by default with the base installation. There is one user registered (the 'admin' user you logged in as) and no patients (so the total patients is zero, there are no clinical documents recorded and no documents in progress). </p>
-            <p><b>Note the number of Information Models shown in the dashboard.</b> If this number is zero (0) then the default application was not loaded properly when you ran cityEHR forthe first time (probably because you selected to "Use Empty Database". In this case, follow the instructions in </p>
+            <note>
+                <p>The number of Information Models shown in the dashboard. If this number is zero (0) then the default application was not loaded properly when you ran cityEHR forthe first time (probably because you selected to "Use Empty Database".</p>
+            </note>
             <p> </p>
             <p><image href="images/default-home-page-dashboard.png" format="image/png"><alt>Default Home-page Dashboard</alt></image>
             </p>
