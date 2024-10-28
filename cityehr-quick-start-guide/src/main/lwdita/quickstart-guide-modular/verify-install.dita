@@ -6,7 +6,7 @@
     <body>
         <section id="log-on">
             <title>Log On</title>
-            <p> With Apache Tomcat and cityEHR installed, the log-on page of cityEHR can be accessed with the Firefox web browser using the address <i>http://localhost:8080/cityehr</i>if you have the Tomcat server running on your local machine or if running on a remote server, substitute the IP address of your server for 'localhost'. </p>
+            <p> With Apache Tomcat and cityEHR installed, the log-on page of cityEHR can be accessed with the Firefox web browser using the address <i>http://localhost:8080/cityehr</i> if you have the Tomcat server running on your local machine or if running on a remote server, substitute the IP address of your server for 'localhost'. </p>
             <p>Note that cityEHR 1.7 must be accessed using Firefox only (IE 11, Edge, Chrome and Safari will be supported from version 2.0 onwards). </p>
             <p>The base cityEHR installation has a single default user set up with the credentials </p>
             <p>username: admin </p>
