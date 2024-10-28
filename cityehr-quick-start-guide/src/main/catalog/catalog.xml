@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+
+    <public publicId="-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN"
+            uri="lwdita/lw-topic.dtd"/>
+    <system systemId="topic.dtd"
+            uri="lwdita/lw-topic.dtd"/>
+
+    <public publicId="-//OASIS//DTD LIGHTWEIGHT DITA Map//EN"
+            uri="lwdita/lw-map.dtd"/>
+    <system systemId="map.dtd"
+            uri="lwdita/lw-map.dtd"/>
+
+    <public publicId="http://www.w3.org/1999/XSL/Transform" uri="xslt2/schema-for-xslt20.xsd"/>
+
+</catalog>
