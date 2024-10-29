@@ -29,9 +29,7 @@
             <p> </p>
             <p>Press the Start button to move to the default home page, which is pre-configured to be the dashboard page, as shown in the figure below </p>
             <p>The Dashboard shows a summary of the overall status of the cityEHR application, which ships by default with the base installation. There is one user registered (the 'admin' user you logged in as) and no patients (so the total patients is zero, there are no clinical documents recorded and no documents in progress). </p>
-            <note>
-                <p>The number of Information Models shown in the dashboard. If this number is zero (0) then the default application was not loaded properly when you ran cityEHR forthe first time (probably because you selected to "Use Empty Database".</p>
-            </note>
+            <p><b>Note: </b>The number of Information Models shown in the dashboard. If this number is zero (0) then the default application was not loaded properly when you ran cityEHR forthe first time (probably because you selected to "Use Empty Database".</p>
             <p> </p>
             <p><image href="images/default-home-page-dashboard.png" format="image/png"><alt>Default Home-page Dashboard</alt></image>
             </p>
@@ -137,7 +135,7 @@
             <p>This means that it is not possible to copy and paste the URL of a cityEHR session or to bookmark a page (the URL will be invalid once the session page load time limit has expired). </p>
             <p>Logging in after a session has expired (i.e. a session that was not Quit by the user) will prompt for the session to be resumed at the point the previous session timed out or was aborted. </p>
             <p><image href="images/changing-page-load-time.png" format="image/png"><alt>Changing the Page Load Timeout on the Administration Page</alt></image></p>
-            <p><image href="images/resume-session-prompt.png" format="image/png"><alt>TPrompt to Resume Session on the Sign On Page</alt></image></p>
+            <p><image href="images/resume-session-prompt.png" format="image/png"><alt>Prompt to Resume Session on the Sign On Page</alt></image></p>
         </section>
     </body>
 </topic>
