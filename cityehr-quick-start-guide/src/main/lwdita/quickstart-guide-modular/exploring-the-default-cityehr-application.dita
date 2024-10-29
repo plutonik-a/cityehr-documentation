@@ -9,10 +9,10 @@
         <p>At the start, the database for the cityEHR application does not contain any patient records, so the first step in using the application is to create some through the patient registration page. </p>
         <ol id="ol_bnr_14v_vcc">
             <li>
-                <p>First log on as the default user (admin / password) as in the steps above. </p>
+                <p>First log on as the default user (admin / password) as in the steps previously. </p>
             </li>
             <li>
-                <p>To register a new patient click on the Registration button in the purple System Navigation pane at the top of the page. You should then see the registration form as shown in Figure 16 </p>
+                <p>To register a new patient click on the Registration button in the purple System Navigation pane at the top of the page. You should then see the registration form as shown in the Figure below. </p>
                 <p><image href="images/patient-reg-form.png" format="image/png"><alt>Patient Registration Form</alt></image></p>
             </li>
             <li>
@@ -43,7 +43,7 @@
                 <p><image href="images/patient-reg-button.png" format="image/png"><alt>Registering a Patient</alt></image></p>
             </li>
             <li>
-                <p>Provided that you have entered a Hospital Number and this hasn't already been used for a patient in the application, then you will be asked to confirm that you want to create a new record (see <i>Figure 20</i>). This dialogue also allows you to select where to navigate to next in the record of the new patient – you should leave this as the default (Go to Hospital Anxiety and Depression Scale form) so that you can continue to enter data for the patient. </p>
+                <p>Provided that you have entered a Hospital Number and this hasn't already been used for a patient in the application, then you will be asked to confirm that you want to create a new record- see figure below. This dialogue also allows you to select where to navigate to next in the record of the new patient – you should leave this as the default (Go to Hospital Anxiety and Depression Scale form) so that you can continue to enter data for the patient. </p>
             </li>
             <li>
                 <p>If the Hospital Number is not entered or a patient already exists for that number then you will be shown an error message which must be dismissed (press the Cancel button) before you can continue. In this case, fill out or change the Hospital Number and try again to register the patient. </p>
@@ -189,8 +189,7 @@
                 <p>Press the + button to add a new diagnosis </p>
             </li>
             <li>
-                <p>Select ... to browse to a diagnosis or use the auto-complete (e.g. type sw...)
-                </p>
+                <p>Select ... to browse to a diagnosis or use the auto-complete (e.g. type sw...)</p>
             </li>
             <li>
                 <p>Depending on the diagnosis you select, you may see an additional SDS to the right of the diagnosis once it is selected </p>
@@ -233,7 +232,7 @@
             <p>Once you have some patients recorded in your database you can search for them and select the patient whose record you want to view or input data for. </p>
     <ol id="ol_srr_14v_vcc">
         <li>
-            <p>To find a patient, press the Patient Search button in the purple system navigation pane at the top of the page. You should then see the search form as shown in <i>Figure 47</i>. </p>
+            <p>To find a patient, press the Patient Search button in the purple system navigation pane at the top of the page. You should then see the search form as shown in the figure below. </p>
             <p><image href="images/patient-search-empty.png" format="image/png"><alt>Patient Search Form</alt></image></p>
         </li>
         <li>
