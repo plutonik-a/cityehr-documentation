@@ -28,10 +28,10 @@
             </li>
             <li>
                 <p>The User Resources Folder is the folder you created when you downloaded User
-                    resources in Section 4, which should look similar to Figure 41. </p>
+                    resources in the previous section. </p>
             </li>
             <li>
-                <p>After uploading the <i>EHR_Extract-TimothyAbernathy.xml</i> file you should see the full set of options for generating test data, as shown in Figure 42 </p>
+                <p>After uploading the <i>EHR_Extract-TimothyAbernathy.xml</i> file you should see the full set of options for generating test data, as shown in the figure below </p>
             </li>
         </ol>
         <p><image href="images/user-resources-timabernathy.png" format="image/png"><alt>Locating “EHR_Extract-TimothyAbernathy.xml” in User Resources Folder</alt></image>
@@ -74,8 +74,7 @@
         </p>
         <ol id="ol_nrr_14v_vcc">
             <li>
-                <p> Once the test data is generated, your screen will look like <i>.Figure 45</i>
-                </p>
+                <p> Once the test data is generated, your screen will look like the figure below.</p>
             </li>
         </ol>
         <p> </p>

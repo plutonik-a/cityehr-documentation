@@ -66,7 +66,7 @@
             <ol>
                 <li>
                     <p>Now Navigate to the “Cohort” tab (located next to the “Search” tab). You should be
-                        able to view the patients in this cohort (see <i>Figure 67</i>).</p>
+                        able to view the patients in this cohort- see figure below.</p>
                 </li>
             </ol>
             <p><image href="images/cohort-search-view-selected.png" format="image/png"><alt>Viewing Patients in Selected Cohort</alt></image>
@@ -87,7 +87,7 @@
                     <p>The cohort is formed as patients who have any compositions of the specified type with
                         the author or effective time as constrained by the search criteria. If no context is
                         chosen then the cohort is formed based on any composition e.g. find all patients with
-                        any compositions committed by a specific author (user). Select the search criteria to be “author” and select any option from the context drop-down (see <i>Figure 69</i>)</p>
+                        any compositions committed by a specific author (user). Select the search criteria to be “author” and select any option from the context drop-down (see figure below).</p>
                 </li>
             </ol>
             <p><image href="images/cohort-search-author.png" format="image/png"><alt>Searching for Cohorts Using “Author” as Search Criteria</alt></image>
@@ -117,7 +117,7 @@
             <ol>
                 <li>
                     <p>Change the search term to Observation. You can change the parameters to run more
-                        specific cohort searches for these observations <i>(see Figure 72) </i>Make sure to click “Search” to retrieve your search results!</p>
+                        specific cohort searches for these observations. Make sure to click “Search” to retrieve your search results!</p>
                 </li>
             </ol>
             <p><image href="images/cohort-search-observations.png" format="image/png"><alt>Changing Cohort Search Term to Observation</alt></image>
@@ -125,7 +125,7 @@
             <ol>
                 <li>
                     <p>For this example, we have set the “Observation” as Fracture, time = Current, Scope =
-                        All Data. We can view our results in <i>Figure 73</i></p>
+                        All Data. We can view our results like in the figure below.</p>
                 </li>
             </ol>
             <p><image href="images/cohort-search-observation-fracture.png" format="image/png"><alt>Cohort Search Results for “Observation” as Fracture</alt></image>
@@ -143,7 +143,7 @@
                 to do that. </p>
             <ol>
                 <li>
-                    <p>Search for the Cohorts you wish to combine (see <i>Figure 74</i><i>)</i>. We have
+                    <p>Search for the Cohorts you wish to combine (see figure below). We haves
                         created two cohort searches under “Demographics” for “Gender equal to Female” and
                         “Gender equal to Male”.</p>
                 </li>
@@ -169,7 +169,7 @@
             </p>
             <ol>
                 <li>
-                    <p>See results of your search in the display window and select them by clicking the check box <i>(see Figure 62)</i>. Save this cohort search.</p>
+                    <p>See results of your search in the display window and select them by clicking the check box. Save this cohort search.</p>
                 </li>
             </ol>
             <p><image href="images/cohort-search-combine-results.png" format="image/png"><alt>Combined Cohort Results</alt></image>
@@ -185,8 +185,7 @@
             <p>Cohort lists can also be printed. This section will show you how to do that. </p>
             <ol>
                 <li>
-                    <p>Select the Cohort List(s) you would like to print (the Cohort Search Results). See
-                        <i>Figure 79</i>.</p>
+                    <p>Select the Cohort List(s) you would like to print (the Cohort Search Results) - see figure below</p>
                 </li>
             </ol>
             <p><image href="images/cohort-search-select-result-print.png" format="image/png"><alt>Selecting the Cohort List(s) for Printing</alt></image>
