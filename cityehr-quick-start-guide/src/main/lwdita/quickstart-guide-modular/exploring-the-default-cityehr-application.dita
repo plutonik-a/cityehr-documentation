@@ -1,259 +1,305 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "topic.dtd">
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "lw-topic.dtd">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "lw-topic.dtd">
 <topic id="exploring-the-default-cityehr-application">
     <title>Exploring the Default cityEHR Application</title>
-    <shortdesc>This topic introduces the process of registering a new patient in the cityEHR application, guiding users through each step required to create a patient record. It explains how to access the registration form, complete required fields, and leverage features such as the demographics lookup service for auto-filling patient details. Additionally, the chapter covers options for entering GP details and addresses potential error messages. By the end, users will understand how to finalize patient registration and then search for them.</shortdesc>
+    <shortdesc>This topic introduces the process of registering a new patient in the cityEHR application, guiding users through each step required to create a patient record. It explains how to access the registration form, complete required fields, and leverage features such as the demographics lookup service for auto-filling patient details. Additionally, the chapter covers options for entering GP details and addresses potential error messages. By the end, users will understand how to finalize patient registration and then search for them. </shortdesc>
     <body>
         <section id="registering-a-new-patient">
             <title>Registering a New Patient</title>
-        <p>At the start, the database for the cityEHR application does not contain any patient records, so the first step in using the application is to create some through the patient registration page. </p>
-        <ol id="ol_bnr_14v_vcc">
-            <li>
-                <p>First log on as the default user (admin / password) as in the steps above. </p>
-            </li>
-            <li>
-                <p>To register a new patient click on the Registration button in the purple System Navigation pane at the top of the page. You should then see the registration form as shown in Figure 16 </p>
-                <p><image href="images/patient-reg-form.png" format="image/png"><alt>Patient Registration Form</alt></image></p>
-            </li>
-            <li>
-                <p>The Hospital Number is a required entry (shows with a pink background) and is used as the unique identifier for patients stored in the system. All other fields on the form are optional. </p>
-            </li>
-            <li>
-                <p>You can fill out the patient details by entering data into each of the fields NHS Number, Title, Forename, etc. </p>
-            </li>
-            <li>
-                <p>Alternatively, you can fill out all the patient details using a simulated demographics service, which is configured to generate a set of random patient demographics. In a live installation, such a service may be configured to lookup from a local EPR system or a national demographics service. </p>
-            </li>
-            <li>
-                <p>To use the lookup service, fill out the NHS Number (in the default application this simulates a national patient identifier) and then check the Find Demographics check box that will appear once an NHS number has been filled out.</p>
-            </li>
-            <li>
-                <p>The demographics service will now fill out the remaining patient details, using a randomly generated set of demographics. </p>
-                <p><image href="images/patient-reg-find-demographics.png" format="image/png"><alt>Patient Registration “Find Demographics” Lookup Service</alt></image></p>
-            </li>
-            <li>
-                <p>Similarly, you can fill out the GP Details by typing in the fields, or by using the Find GP service. The demonstration service is quite limited – you must type 'Oxford' as the Town/City and then check the Find GP checkbox.</p>
-            </li>
-            <li>
-                <p>This will return a selection of two GPs – select one from the dropdown and the GP details will be filled out for you. </p>
-                <p><image href="images/patient-reg-find-gp.png" format="image/png"><alt>Patient Registration “Find GP” Lookup Service</alt></image></p>
-            </li>
-            <li>
-                <p>Once all the details are entered (either by typing in the fields or by using the lookup services) then press the Register button at the top right of the form (the name of this button will show when you hold your mouse over it). </p>
-                <p><image href="images/patient-reg-button.png" format="image/png"><alt>Registering a Patient</alt></image></p>
-            </li>
-            <li>
-                <p>Provided that you have entered a Hospital Number and this hasn't already been used for a patient in the application, then you will be asked to confirm that you want to create a new record (see <i>Figure 20</i>). This dialogue also allows you to select where to navigate to next in the record of the new patient – you should leave this as the default (Go to Hospital Anxiety and Depression Scale form) so that you can continue to enter data for the patient. </p>
-            </li>
-            <li>
-                <p>If the Hospital Number is not entered or a patient already exists for that number then you will be shown an error message which must be dismissed (press the Cancel button) before you can continue. In this case, fill out or change the Hospital Number and try again to register the patient. </p>
-            </li>
-            <li>
-                <p>Click the Register button and your patient should be registered! </p>
-                <p><image href="images/patient-reg-confirmation.png" format="image/png"><alt>Confirmation of Patient Registration</alt></image></p>
-            </li>
-        </ol>
+            <p>At the start, the database for the cityEHR application does not contain any patient records, so the first step in using the application is to create some through the patient registration page. </p>
+            <ol id="ol_bnr_14v_vcc">
+                <li>
+                    <p>First log on as the default user (admin / password) as in the steps above. </p>
+                </li>
+                <li>
+                    <p>To register a new patient click on the Registration button in the purple System Navigation pane at the top of the page. You should then see the registration form as shown in Figure 16 </p>
+                    <p><image href="https://raw.githubusercontent.com/marmoure/cityehr-documentation/refs/heads/develop/cityehr-quick-start-guide/src/main/lwdita/quickstart-guide-modular/images/patient-reg-form.png" format="image/png">
+                            <alt>Patient Registration Form</alt>
+                        </image></p>
+                </li>
+                <li>
+                    <p>The Hospital Number is a required entry (shows with a pink background) and is used as the unique identifier for patients stored in the system. All other fields on the form are optional. </p>
+                </li>
+                <li>
+                    <p>You can fill out the patient details by entering data into each of the fields NHS Number, Title, Forename, etc. </p>
+                </li>
+                <li>
+                    <p>Alternatively, you can fill out all the patient details using a simulated demographics service, which is configured to generate a set of random patient demographics. In a live installation, such a service may be configured to lookup from a local EPR system or a national demographics service. </p>
+                </li>
+                <li>
+                    <p>To use the lookup service, fill out the NHS Number (in the default application this simulates a national patient identifier) and then check the Find Demographics check box that will appear once an NHS number has been filled out.</p>
+                </li>
+                <li>
+                    <p>The demographics service will now fill out the remaining patient details, using a randomly generated set of demographics. </p>
+                    <p><image href="https://raw.githubusercontent.com/marmoure/cityehr-documentation/refs/heads/develop/cityehr-quick-start-guide/src/main/lwdita/quickstart-guide-modular/images/patient-reg-find-demographics.png" format="image/png">
+                            <alt>Patient Registration “Find Demographics” Lookup Service</alt>
+                        </image></p>
+                </li>
+                <li>
+                    <p>Similarly, you can fill out the GP Details by typing in the fields, or by using the Find GP service. The demonstration service is quite limited – you must type 'Oxford' as the Town/City and then check the Find GP checkbox.</p>
+                </li>
+                <li>
+                    <p>This will return a selection of two GPs – select one from the dropdown and the GP details will be filled out for you. </p>
+                    <p><image href="https://raw.githubusercontent.com/marmoure/cityehr-documentation/refs/heads/develop/cityehr-quick-start-guide/src/main/lwdita/quickstart-guide-modular/images/patient-reg-find-gp.png" format="image/png">
+                            <alt>Patient Registration “Find GP” Lookup Service</alt>
+                        </image></p>
+                </li>
+                <li>
+                    <p>Once all the details are entered (either by typing in the fields or by using the lookup services) then press the Register button at the top right of the form (the name of this button will show when you hold your mouse over it). </p>
+                    <p><image href="https://raw.githubusercontent.com/marmoure/cityehr-documentation/refs/heads/develop/cityehr-quick-start-guide/src/main/lwdita/quickstart-guide-modular/images/patient-reg-button.png" format="image/png">
+                            <alt>Registering a Patient</alt>
+                        </image></p>
+                </li>
+                <li>
+                    <p>Provided that you have entered a Hospital Number and this hasn't already been used for a patient in the application, then you will be asked to confirm that you want to create a new record (see <i>Figure 20</i>). This dialogue also allows you to select where to navigate to next in the record of the new patient – you should leave this as the default (Go to Hospital Anxiety and Depression Scale form) so that you can continue to enter data for the patient. </p>
+                </li>
+                <li>
+                    <p>If the Hospital Number is not entered or a patient already exists for that number then you will be shown an error message which must be dismissed (press the Cancel button) before you can continue. In this case, fill out or change the Hospital Number and try again to register the patient. </p>
+                </li>
+                <li>
+                    <p>Click the Register button and your patient should be registered! </p>
+                    <p><image href="https://raw.githubusercontent.com/marmoure/cityehr-documentation/refs/heads/develop/cityehr-quick-start-guide/src/main/lwdita/quickstart-guide-modular/images/patient-reg-confirmation.png" format="image/png">
+                            <alt>Confirmation of Patient Registration</alt>
+                        </image></p>
+                </li>
+            </ol>
         </section>
         <section id="entering-patient-data">
             <title>Entering Patient Data</title>
-        <ol id="ol_vnr_14v_vcc">
-            <li>
-                <p>After registering the new patient you should be taken to the page for entering patient data through web forms. This page is on the 'Forms' tab – if for some reason this page is not loaded for you directly, then press the Forms tab and wait for the page to load. </p>
-                <p><image href="images/locating-form-page.png" format="image/png"><alt>Locating Forms Page</alt></image></p>
-            </li>
-            <li>
-                <p>You will be presented with a list of new forms that can be entered for this patient. The forms are listed in various 'contexts of care' with the top category 'ctyEHR Feature Demo' containing all the forms available and the others containing smaller sets of forms for Administration and for Clinical Care. </p>
-            </li>
-        </ol>
-            
-        <p><b>Form with Enumerated Values and Calculated Data</b></p>
-        <ol id="ol_znr_14v_vcc">
-            <li>
-                <p>You can now select a form to enter new data for the patient. We will start using the form for HADS - Hospital Anxiety and Depression Scale, so just press on this tab in the list on the left hand side of the page. </p>
-                <p><image href="images/form-hads-empty.png" format="image/png"><alt>Hospital Anxiety and Depression Scale Form</alt></image></p>
-            </li>
-            <li>
-                <p>The form will load and you can now enter data into the fields by answering each question using the drop down menu selections. For this test, it doesn't really matter how you answer the questions – just make sure you continue to the bottom of the page and select an answer for every question. </p>
-            </li>
-            <li>
-                <p>At the top of the HADS form are two calculated entries for Anxiety Score and Depression Score. These will be calculated as soon as you have entered the answers to all the questions. </p>
-                <p><image href="images/form-hads-filled.png" format="image/png"><alt>HADS Form: Anxiety and Depression Scores</alt></image></p>
-            </li>
-            <li>
-                <p>Once you have finished entering data you can 'publish' the form to the patient record by clicking the Publish button at the top right of the form (the name of this button will show when you hold your mouse over it) </p>
-                <p><image href="images/form-hads-publishing.png" format="image/png"><alt>Publishing Completed HADS Form to the Patient Record</alt></image></p>
-            </li>
-            <li>
-                <p>Press the “Commit Form” button with the radio button “Show patient record” selected. </p>
-            </li>
-            <li>
-                <p>Once the data have been committed to the patient record you will be moved back to the patient record folder which shows a list of all data in the record for your patient, including the HADS data that you just entered. </p>
-                <p><image href="images/events-hads-form.png" format="image/png"><alt>Patient Record Folder with Completed Hospital Anxiety and Depression Scale Form</alt></image></p>
-            </li>
-        </ol>
-        <p><b>Form with Graphical Data Input</b></p>
-        <ol id="ol_n4r_14v_vcc">
-            <li>
-                <p>Return to the Forms tab and this time select the form for DAS 28. This form records the Disease Activity Score for the patient, by selecting joints that are either tender or swollen. The input of tender or swollen joints is made by clicking on the appropriate area in the image (called a homunculus). </p>
-                <p><image href="images/form-das28-filled.png" format="image/png"><alt>Disease Activity Score (DAS) 28 Form</alt></image></p>
-            </li>
-            <li>
-                <p>As you click to select the tender and swollen joints you will see the counts changing. Enter values for ESR (e.g. 2.3) and Visual Analogue Score (e.g. 4) and you will see the DAS Score calculated.</p>
-            </li>
-            <li>
-                <p>The DAS Score will be recalculated each time you select a tender or swollen joint or change either the ESR or Visual Analogue Score. </p>
-            </li>
-            <li>
-                <p>Once you have finished entering data you can 'publish' the form to the patient record by clicking the Publish button as before. Confirm the action and you will see the DAS 28 data stored in the patient record. </p>
-            </li>
-            <li>
-                <p>Press Commit Form on the Dialogue Box that appears after clicking Publish. </p>
-                <p><image href="images/form-das28-publishing.png" format="image/png"><alt>Committing Completed Disease Activity Score (DAS) 28 Form</alt></image></p>
-            </li>
-            <li>
-                <p>The patient record now displays the event, with the data you recorded. Note that this does not include the humunculus gaphics that you used for data entry. </p>
-                <p><image href="images/events-das28-form.png" format="image/png"><alt>Event Displayed in the Patient Record </alt></image></p>
-            </li>
-            <li>
-                <p>Return to the Forms page (press the Forms tab on the menu) and this time select the Family History form. </p>
-            </li>
-            <li>
-                <p>You may need to reduce the resolution of the page to fit the display of the form shown below, or you can press the small Hide button to collapse the left hand navigation pane and give more room for the form. </p>
-                <p><image href="images/form-famhist-filled.png" format="image/png"><alt>Family History Form</alt></image></p>
-            </li>
-            <li>
-                <p>This form has a representation of the family tree for the patient. Click on people icons in the image to select a family member – this will then add a new line to the list of family members where you can fill out the date and details of a general diagnosis for that person. </p>
-            </li>
-            <li>
-                <p>To enter the diagnosis you can either press the ... button to the right of the field, or just start typing for an auto-complete of the diagnosis </p>
-            </li>
-            <li>
-                <p>You can also add family members by pressing the small '+' button at the top of the family history list, or remove a family member by pressing the 'x' button to ts left in the list. </p>
-            </li>
-            <li>
-                <p>Once again, publish the form to the patient record when you are done. </p>
-                <p><image href="images/form-famhist-drop-down.png" format="image/png"><alt>Selecting the Diagnosis from a Dropdown</alt></image></p>
-            </li>
-        </ol>
-            
-        <p><b>Form with Sorting of Entries and Conditional Elements</b></p>
-        <ol id="ol_fpr_14v_vcc">
-            <li>
-                <p>Within the <i>Medication Record</i> Form, you can enter data for either Current Medications or Previous Medications by pressing the appropriate '+' button. </p>
-            </li>
-            <li>
-                <p>To enter the name of the medication you can either start typing in the input box, or press the very small '…' button to its right, which will bring up an expandable list of medications from which you can select. Its probably best to use this navigation list for you first few entries and then try typing names after you have seen what medications are available. </p>
-                <p><image href="images/form-medrecord-drop-down.png" format="image/png"><alt>Medication Form’s Expandable List of Medications</alt></image></p>
-            </li>
-            <li>
-                <p>When typing the name of the medication you will either get a single medication filled out automatically as soon as your input matches it uniquely, or a small drop down selection of matching medications. </p>
-            </li>
-            <li>
-                <p>Once you've added a collection of medications, try checking or unchecking the 'Stopped' button. When you do this, the medication will be moved between the lists for Current or Previous Medications. </p>
-            </li>
-            <li>
-                <p>Once again, publish the form to the patient record when you are done. </p>
-                <p><image href="images/form-medrecord-current-vs-stopped.png" format="image/png"><alt>Categorization of Current and Stopped Medications</alt></image></p>
-            </li>
-        </ol>
-            
-        <p><b>Form with Multiple Entries, Calculations and Pre-Filled Data</b></p>
-        <ol id="ol_npr_14v_vcc">
-            <li>
-                <p>Return to the Forms tab and select the Body Mass Index form. </p>
-            </li>
-            <li>
-                <p>On this form you can enter a set of measurements for height and weight of the patient on various dates – the Body Mass Index (BMI) will be calculated, along with the average height and weight for the patient. </p>
-            </li>
-            <li>
-                <p>Publish the form. </p>
-            </li>
-            <li>
-                <p>Now return to the Forms tab and select the Body Mass Index form again. </p>
-            </li>
-            <li>
-                <p>Here you should see the form pre-filled with the entries you added in the previous step. </p>
-            </li>
-            <li>
-                <p>You can enter new entries, but not remove or edit those that were pre-filled (the information model defining this behaviour could be set up to allow previous entries to be updated and/or deleted). </p>
-                <p><image href="images/form-bmi-filled.png" format="image/png"><alt>Body Mass Index Form with Calculations </alt></image></p>
-            </li>
-        </ol>
-            
-        <p><b>Form with Enumerated Class and Supplementary Data</b> </p>
-        <ol id="ol_vpr_14v_vcc">
-            <li>
-                <p>Return to the Forms tab and select the Diagnosis form. </p>
-            </li>
-            <li>
-                <p>Press the + button to add a new diagnosis </p>
-            </li>
-            <li>
-                <p>Select ... to browse to a diagnosis or use the auto-complete (e.g. type sw...)
+            <ol id="ol_vnr_14v_vcc">
+                <li>
+                    <p>After registering the new patient you should be taken to the page for entering patient data through web forms. This page is on the 'Forms' tab – if for some reason this page is not loaded for you directly, then press the Forms tab and wait for the page to load. </p>
+                    <p><image href="https://raw.githubusercontent.com/marmoure/cityehr-documentation/refs/heads/develop/cityehr-quick-start-guide/src/main/lwdita/quickstart-guide-modular/images/locating-form-page.png" format="image/png">
+                            <alt>Locating Forms Page</alt>
+                        </image></p>
+                </li>
+                <li>
+                    <p>You will be presented with a list of new forms that can be entered for this patient. The forms are listed in various 'contexts of care' with the top category 'ctyEHR Feature Demo' containing all the forms available and the others containing smaller sets of forms for Administration and for Clinical Care. </p>
+                </li>
+            </ol>
+            <p><b>Form with Enumerated Values and Calculated Data</b></p>
+            <ol id="ol_znr_14v_vcc">
+                <li>
+                    <p>You can now select a form to enter new data for the patient. We will start using the form for HADS - Hospital Anxiety and Depression Scale, so just press on this tab in the list on the left hand side of the page. </p>
+                    <p><image href="https://raw.githubusercontent.com/marmoure/cityehr-documentation/refs/heads/develop/cityehr-quick-start-guide/src/main/lwdita/quickstart-guide-modular/images/form-hads-empty.png" format="image/png">
+                            <alt>Hospital Anxiety and Depression Scale Form</alt>
+                        </image></p>
+                </li>
+                <li>
+                    <p>The form will load and you can now enter data into the fields by answering each question using the drop down menu selections. For this test, it doesn't really matter how you answer the questions – just make sure you continue to the bottom of the page and select an answer for every question. </p>
+                </li>
+                <li>
+                    <p>At the top of the HADS form are two calculated entries for Anxiety Score and Depression Score. These will be calculated as soon as you have entered the answers to all the questions. </p>
+                    <p><image href="https://raw.githubusercontent.com/marmoure/cityehr-documentation/refs/heads/develop/cityehr-quick-start-guide/src/main/lwdita/quickstart-guide-modular/images/form-hads-filled.png" format="image/png">
+                            <alt>HADS Form: Anxiety and Depression Scores</alt>
+                        </image></p>
+                </li>
+                <li>
+                    <p>Once you have finished entering data you can 'publish' the form to the patient record by clicking the Publish button at the top right of the form (the name of this button will show when you hold your mouse over it) </p>
+                    <p><image href="https://raw.githubusercontent.com/marmoure/cityehr-documentation/refs/heads/develop/cityehr-quick-start-guide/src/main/lwdita/quickstart-guide-modular/images/form-hads-publishing.png" format="image/png">
+                            <alt>Publishing Completed HADS Form to the Patient Record</alt>
+                        </image></p>
+                </li>
+                <li>
+                    <p>Press the “Commit Form” button with the radio button “Show patient record” selected. </p>
+                </li>
+                <li>
+                    <p>Once the data have been committed to the patient record you will be moved back to the patient record folder which shows a list of all data in the record for your patient, including the HADS data that you just entered. </p>
+                    <p><image href="https://raw.githubusercontent.com/marmoure/cityehr-documentation/refs/heads/develop/cityehr-quick-start-guide/src/main/lwdita/quickstart-guide-modular/images/events-hads-form.png" format="image/png">
+                            <alt>Patient Record Folder with Completed Hospital Anxiety and Depression Scale Form</alt>
+                        </image></p>
+                </li>
+            </ol>
+            <p><b>Form with Graphical Data Input</b></p>
+            <ol id="ol_n4r_14v_vcc">
+                <li>
+                    <p>Return to the Forms tab and this time select the form for DAS 28. This form records the Disease Activity Score for the patient, by selecting joints that are either tender or swollen. The input of tender or swollen joints is made by clicking on the appropriate area in the image (called a homunculus). </p>
+                    <p><image href="https://raw.githubusercontent.com/marmoure/cityehr-documentation/refs/heads/develop/cityehr-quick-start-guide/src/main/lwdita/quickstart-guide-modular/images/form-das28-filled.png" format="image/png">
+                            <alt>Disease Activity Score (DAS) 28 Form</alt>
+                        </image></p>
+                </li>
+                <li>
+                    <p>As you click to select the tender and swollen joints you will see the counts changing. Enter values for ESR (e.g. 2.3) and Visual Analogue Score (e.g. 4) and you will see the DAS Score calculated.</p>
+                </li>
+                <li>
+                    <p>The DAS Score will be recalculated each time you select a tender or swollen joint or change either the ESR or Visual Analogue Score. </p>
+                </li>
+                <li>
+                    <p>Once you have finished entering data you can 'publish' the form to the patient record by clicking the Publish button as before. Confirm the action and you will see the DAS 28 data stored in the patient record. </p>
+                </li>
+                <li>
+                    <p>Press Commit Form on the Dialogue Box that appears after clicking Publish. </p>
+                    <p><image href="https://raw.githubusercontent.com/marmoure/cityehr-documentation/refs/heads/develop/cityehr-quick-start-guide/src/main/lwdita/quickstart-guide-modular/images/form-das28-publishing.png" format="image/png">
+                            <alt>Committing Completed Disease Activity Score (DAS) 28 Form</alt>
+                        </image></p>
+                </li>
+                <li>
+                    <p>The patient record now displays the event, with the data you recorded. Note that this does not include the humunculus gaphics that you used for data entry. </p>
+                    <p><image href="https://raw.githubusercontent.com/marmoure/cityehr-documentation/refs/heads/develop/cityehr-quick-start-guide/src/main/lwdita/quickstart-guide-modular/images/events-das28-form.png" format="image/png">
+                            <alt>Event Displayed in the Patient Record </alt>
+                        </image></p>
+                </li>
+                <li>
+                    <p>Return to the Forms page (press the Forms tab on the menu) and this time select the Family History form. </p>
+                </li>
+                <li>
+                    <p>You may need to reduce the resolution of the page to fit the display of the form shown below, or you can press the small Hide button to collapse the left hand navigation pane and give more room for the form. </p>
+                    <p><image href="https://raw.githubusercontent.com/marmoure/cityehr-documentation/refs/heads/develop/cityehr-quick-start-guide/src/main/lwdita/quickstart-guide-modular/images/form-famhist-filled.png" format="image/png">
+                            <alt>Family History Form</alt>
+                        </image></p>
+                </li>
+                <li>
+                    <p>This form has a representation of the family tree for the patient. Click on people icons in the image to select a family member – this will then add a new line to the list of family members where you can fill out the date and details of a general diagnosis for that person. </p>
+                </li>
+                <li>
+                    <p>To enter the diagnosis you can either press the ... button to the right of the field, or just start typing for an auto-complete of the diagnosis </p>
+                </li>
+                <li>
+                    <p>You can also add family members by pressing the small '+' button at the top of the family history list, or remove a family member by pressing the 'x' button to ts left in the list. </p>
+                </li>
+                <li>
+                    <p>Once again, publish the form to the patient record when you are done. </p>
+                    <p><image href="https://raw.githubusercontent.com/marmoure/cityehr-documentation/refs/heads/develop/cityehr-quick-start-guide/src/main/lwdita/quickstart-guide-modular/images/form-famhist-drop-down.png" format="image/png">
+                            <alt>Selecting the Diagnosis from a Dropdown</alt>
+                        </image></p>
+                </li>
+            </ol>
+            <p><b>Form with Sorting of Entries and Conditional Elements</b></p>
+            <ol id="ol_fpr_14v_vcc">
+                <li>
+                    <p>Within the <i>Medication Record</i> Form, you can enter data for either Current Medications or Previous Medications by pressing the appropriate '+' button. </p>
+                </li>
+                <li>
+                    <p>To enter the name of the medication you can either start typing in the input box, or press the very small '…' button to its right, which will bring up an expandable list of medications from which you can select. Its probably best to use this navigation list for you first few entries and then try typing names after you have seen what medications are available. </p>
+                    <p><image href="https://raw.githubusercontent.com/marmoure/cityehr-documentation/refs/heads/develop/cityehr-quick-start-guide/src/main/lwdita/quickstart-guide-modular/images/form-medrecord-drop-down.png" format="image/png">
+                            <alt>Medication Form’s Expandable List of Medications</alt>
+                        </image></p>
+                </li>
+                <li>
+                    <p>When typing the name of the medication you will either get a single medication filled out automatically as soon as your input matches it uniquely, or a small drop down selection of matching medications. </p>
+                </li>
+                <li>
+                    <p>Once you've added a collection of medications, try checking or unchecking the 'Stopped' button. When you do this, the medication will be moved between the lists for Current or Previous Medications. </p>
+                </li>
+                <li>
+                    <p>Once again, publish the form to the patient record when you are done. </p>
+                    <p><image href="https://raw.githubusercontent.com/marmoure/cityehr-documentation/refs/heads/develop/cityehr-quick-start-guide/src/main/lwdita/quickstart-guide-modular/images/form-medrecord-current-vs-stopped.png" format="image/png">
+                            <alt>Categorization of Current and Stopped Medications</alt>
+                        </image></p>
+                </li>
+            </ol>
+            <p><b>Form with Multiple Entries, Calculations and Pre-Filled Data</b></p>
+            <ol id="ol_npr_14v_vcc">
+                <li>
+                    <p>Return to the Forms tab and select the Body Mass Index form. </p>
+                </li>
+                <li>
+                    <p>On this form you can enter a set of measurements for height and weight of the patient on various dates – the Body Mass Index (BMI) will be calculated, along with the average height and weight for the patient. </p>
+                </li>
+                <li>
+                    <p>Publish the form. </p>
+                </li>
+                <li>
+                    <p>Now return to the Forms tab and select the Body Mass Index form again. </p>
+                </li>
+                <li>
+                    <p>Here you should see the form pre-filled with the entries you added in the previous step. </p>
+                </li>
+                <li>
+                    <p>You can enter new entries, but not remove or edit those that were pre-filled (the information model defining this behaviour could be set up to allow previous entries to be updated and/or deleted). </p>
+                    <p><image href="https://raw.githubusercontent.com/marmoure/cityehr-documentation/refs/heads/develop/cityehr-quick-start-guide/src/main/lwdita/quickstart-guide-modular/images/form-bmi-filled.png" format="image/png">
+                            <alt>Body Mass Index Form with Calculations </alt>
+                        </image></p>
+                </li>
+            </ol>
+            <p><b>Form with Enumerated Class and Supplementary Data</b> </p>
+            <ol id="ol_vpr_14v_vcc">
+                <li>
+                    <p>Return to the Forms tab and select the Diagnosis form. </p>
+                </li>
+                <li>
+                    <p>Press the + button to add a new diagnosis </p>
+                </li>
+                <li>
+                    <p>Select ... to browse to a diagnosis or use the auto-complete (e.g. type sw...)
                 </p>
-            </li>
-            <li>
-                <p>Depending on the diagnosis you select, you may see an additional SDS to the right of the diagnosis once it is selected </p>
-            </li>
-            <li>
-                <p>Press this button to see the Supplementation Data Set dialogue </p>
-                <p><image href="images/form-diagnosis-supp-data-set.png" format="image/png"><alt>Entering a Supplementary Data Set</alt></image></p>
-            </li>
-            <li>
-                <p>Enter data in the dialogue box and press OK when finished. </p>
-                <p><image href="images/form-diagnosis-filled.png" format="image/png"><alt>Display of Supplementary Data Set</alt></image></p>
-            </li>
-            <li>
-                <p>The supplementary data is displayed next to the diagnosis it is associated with</p>
-            </li>
-            <li>
-                <p>Now add a diagnostics image by pressing the Browse button from Diagnostic Image</p>
-            </li>
-            <li>
-                <p>Navigate to a file on the file system to upload that image to the record </p>
-            </li>
-            <li>
-                <p>Note that the image is stored directly in the current composition when it is committed to the patient record – this feature is designed for informal images as the type that might be capture in a mobile phone, not full diagnostic images capture using some imaging modality – any such images would be managed in the PACS, not the EHR </p>
-            </li>
-            <li>
-                <p>Once the image has been uploaded it is displayed inline on the form </p>
-                <p><image href="images/form-diagnosis-uploaded-image.png" format="image/png"><alt>Diagnostic Image Uploaded from the Filesystem</alt></image></p>
-            </li>
-            <li>
-                <p>Press the Publish button to commit the form to the record an navigate to the
+                </li>
+                <li>
+                    <p>Depending on the diagnosis you select, you may see an additional SDS to the right of the diagnosis once it is selected </p>
+                </li>
+                <li>
+                    <p>Press this button to see the Supplementation Data Set dialogue </p>
+                    <p><image href="https://raw.githubusercontent.com/marmoure/cityehr-documentation/refs/heads/develop/cityehr-quick-start-guide/src/main/lwdita/quickstart-guide-modular/images/form-diagnosis-supp-data-set.png" format="image/png">
+                            <alt>Entering a Supplementary Data Set</alt>
+                        </image></p>
+                </li>
+                <li>
+                    <p>Enter data in the dialogue box and press OK when finished. </p>
+                    <p><image href="https://raw.githubusercontent.com/marmoure/cityehr-documentation/refs/heads/develop/cityehr-quick-start-guide/src/main/lwdita/quickstart-guide-modular/images/form-diagnosis-filled.png" format="image/png">
+                            <alt>Display of Supplementary Data Set</alt>
+                        </image></p>
+                </li>
+                <li>
+                    <p>The supplementary data is displayed next to the diagnosis it is associated with</p>
+                </li>
+                <li>
+                    <p>Now add a diagnostics image by pressing the Browse button from Diagnostic Image</p>
+                </li>
+                <li>
+                    <p>Navigate to a file on the file system to upload that image to the record </p>
+                </li>
+                <li>
+                    <p>Note that the image is stored directly in the current composition when it is committed to the patient record – this feature is designed for informal images as the type that might be capture in a mobile phone, not full diagnostic images capture using some imaging modality – any such images would be managed in the PACS, not the EHR </p>
+                </li>
+                <li>
+                    <p>Once the image has been uploaded it is displayed inline on the form </p>
+                    <p><image href="https://raw.githubusercontent.com/marmoure/cityehr-documentation/refs/heads/develop/cityehr-quick-start-guide/src/main/lwdita/quickstart-guide-modular/images/form-diagnosis-uploaded-image.png" format="image/png">
+                            <alt>Diagnostic Image Uploaded from the Filesystem</alt>
+                        </image></p>
+                </li>
+                <li>
+                    <p>Press the Publish button to commit the form to the record an navigate to the
                     patient events </p>
-            </li>
-            <li>
-                <p>Here you will see the recorded data, including the uploaded image </p>
-            </li>
-        </ol>
+                </li>
+                <li>
+                    <p>Here you will see the recorded data, including the uploaded image </p>
+                </li>
+            </ol>
         </section>
         <section id="finding-patients">
             <title>Finding Patients</title>
             <p>Once you have some patients recorded in your database you can search for them and select the patient whose record you want to view or input data for. </p>
-    <ol id="ol_srr_14v_vcc">
-        <li>
-            <p>To find a patient, press the Patient Search button in the purple system navigation pane at the top of the page. You should then see the search form as shown in <i>Figure 47</i>. </p>
-            <p><image href="images/patient-search-empty.png" format="image/png"><alt>Patient Search Form</alt></image></p>
-        </li>
-        <li>
-            <p>Enter some search criteria and press the Search button at the top of the form (the name of this button will show when you hold your mouse over it). Alternatively, just press the Enter key when you have typed into any of the text input fields. </p>
-        </li>
-        <li>
-            <p>Since the test patient data is randomly generated, you can be fairly sure that at least one patient exists with a surname starting with any commonly occurring letter, or try searching for patient identifiers like “K” (assuming you kept the default format for patient identifiers when you generated the test data). </p>
-            <p><image href="images/patient-search-filled.png" format="image/png"><alt>Searching Patients with Patient ID using “K” as a Patient Identifier</alt></image></p>
-        </li>
-        <li>
-            <p>The results from your patient search are listed with basic demographics details. If there are no results then you will be informed of this. If too many patients match your search (for example, this may happen if you just search for Male patients) then you will be informed that too many patients were found and you need to enter more specific search criteria. </p>
-        </li>
-        <li>
-            <p>Once some patients have been found in the search, the list of patients will be displayed and you can now select one to enter their record. Note that this list appears even if there is only a single patient found – this allows you to verify that the correct patient was found, before you move to view their record. </p>
-            <p><image href="images/patient-search-selecting.png" format="image/png"><alt>List of Patients Found Using Patient Search</alt></image></p>
-        </li>
-        <li>
-            <p>When you click to select a patient from the list, you will be taken to the default summary view for that patient's record, which will include features for viewing, charting and annotating the record. The next exercise will walk you through this process. </p>
-        </li>
-    </ol>
+            <ol id="ol_srr_14v_vcc">
+                <li>
+                    <p>To find a patient, press the Patient Search button in the purple system navigation pane at the top of the page. You should then see the search form as shown in <i>Figure 47</i>. </p>
+                    <p><image href="https://raw.githubusercontent.com/marmoure/cityehr-documentation/refs/heads/develop/cityehr-quick-start-guide/src/main/lwdita/quickstart-guide-modular/images/patient-search-empty.png" format="image/png">
+                            <alt>Patient Search Form</alt>
+                        </image></p>
+                </li>
+                <li>
+                    <p>Enter some search criteria and press the Search button at the top of the form (the name of this button will show when you hold your mouse over it). Alternatively, just press the Enter key when you have typed into any of the text input fields. </p>
+                </li>
+                <li>
+                    <p>Since the test patient data is randomly generated, you can be fairly sure that at least one patient exists with a surname starting with any commonly occurring letter, or try searching for patient identifiers like “K” (assuming you kept the default format for patient identifiers when you generated the test data). </p>
+                    <p><image href="https://raw.githubusercontent.com/marmoure/cityehr-documentation/refs/heads/develop/cityehr-quick-start-guide/src/main/lwdita/quickstart-guide-modular/images/patient-search-filled.png" format="image/png">
+                            <alt>Searching Patients with Patient ID using “K” as a Patient Identifier</alt>
+                        </image></p>
+                </li>
+                <li>
+                    <p>The results from your patient search are listed with basic demographics details. If there are no results then you will be informed of this. If too many patients match your search (for example, this may happen if you just search for Male patients) then you will be informed that too many patients were found and you need to enter more specific search criteria. </p>
+                </li>
+                <li>
+                    <p>Once some patients have been found in the search, the list of patients will be displayed and you can now select one to enter their record. Note that this list appears even if there is only a single patient found – this allows you to verify that the correct patient was found, before you move to view their record. </p>
+                    <p><image href="https://raw.githubusercontent.com/marmoure/cityehr-documentation/refs/heads/develop/cityehr-quick-start-guide/src/main/lwdita/quickstart-guide-modular/images/patient-search-selecting.png" format="image/png">
+                            <alt>List of Patients Found Using Patient Search</alt>
+                        </image></p>
+                </li>
+                <li>
+                    <p>When you click to select a patient from the list, you will be taken to the default summary view for that patient's record, which will include features for viewing, charting and annotating the record. The next exercise will walk you through this process. </p>
+                </li>
+            </ol>
         </section>
     </body>
 </topic>
