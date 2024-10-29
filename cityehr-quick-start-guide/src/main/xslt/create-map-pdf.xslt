@@ -21,7 +21,7 @@
   <xsl:output encoding="UTF-8" omit-xml-declaration="no" indent="yes"/>
   
   <xsl:variable name="authors" as="xs:string+" select="('John Chelsom', 'Stephanie Cabrera', 'Catriona Hopper', 'Jennifer Ramirez')"/>
-  <xsl:variable name="map-date" as="xs:date" select="xs:date('2023-08-05Z')"/>
+  <xsl:variable name="map-date" as="xs:date" select="xs:date('2024-10-05Z')"/>
   
   <xsl:template match="document-node()">
     <xsl:call-template name="pcom:fo-root"/>
