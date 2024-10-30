@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:description
+  xmlns:x="http://www.jenitennison.com/xslt/xspec"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:htop="http://cityehr/html/topic"
+  stylesheet="../../main/xslt/create-topic-html.xslt">
+  
+  <x:param name="petal-api-url"           as="xs:string">https://petal.evolvedbinary.com</x:param>
+  <x:param name="petal-github-org-name"   as="xs:string">evolvedbinary</x:param>
+  <x:param name="petal-github-repo-name"  as="xs:string">cityehr-documentation</x:param>
+  <x:param name="petal-github-branch"     as="xs:string">develop</x:param>
+  <x:param name="petal-referrer-base-url" as="xs:string">https://evolvedbinary.github.io/cityehr-documentation</x:param>
+  
+  <x:scenario label="Scenario for testing the petal-edit-url function">
+    <x:call function="htop:petal-edit-url">
+      <x:param name="petal-source-file-uri"   as="xs:string">file:/Users/aretter/code/evolvedbinary/customers/cityehr/cityehr-documentation/cityehr-quick-start-guide/src/main/lwdita/quickstart-guide-modular/verify-install.dita</x:param>
+      <x:param name="petal-api-url"           as="xs:string">https://petal.evolvedbinary.com</x:param>
+      <x:param name="petal-github-org-name"   as="xs:string">evolvedbinary</x:param>
+      <x:param name="petal-github-repo-name"  as="xs:string">cityehr-documentation</x:param>
+      <x:param name="petal-github-branch"     as="xs:string">develop</x:param>
+      <x:param name="petal-referrer-base-url" as="xs:string">https://evolvedbinary.github.io/cityehr-documentation</x:param>
+    </x:call>
+    <x:expect label="Correct Petal Edit URL" select="'https://petal.evolvedbinary.com?ghrepo=evolvedbinary/cityehr-documentation&amp;source=cityehr-quick-start-guide/src/main/lwdita/quickstart-guide-modular/verify-install.dita&amp;branch=develop&amp;referer=https://evolvedbinary.github.io/cityehr-documentation/verify-install.html'"/>
+  </x:scenario>
+  
+</x:description>
