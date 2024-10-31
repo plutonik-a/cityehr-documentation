@@ -44,7 +44,19 @@
   
   <!-- COVER PAGE FOOTER -->
   <xsl:template match="/map/topicmeta" mode="cover-page-footer">
-    <fo:block/>
+    <fo:block-container position="absolute">
+      <fo:block>
+        <fo:basic-link external-destination="{othermeta[@name eq 'dcterms:license'][2]/@content}"><fo:external-graphic src="{com:abs-uri(., 'images/by-nc-sa.png')}"/></fo:basic-link>
+      </fo:block>
+    </fo:block-container>
+    <fo:block-container position="absolute" margin-left="110pt" display-align="after" font-size="8pt">
+      <fo:block text-align="left">
+        <fo:basic-link external-destination="{othermeta[@name eq 'dcterms:rightsHolder']/@content}"><xsl:value-of select="othermeta[@name eq 'dcterms:rights']/@content"/></fo:basic-link>
+      </fo:block>
+      <fo:block text-align="left">
+        <fo:basic-link external-destination="{othermeta[@name eq 'dcterms:license'][2]/@content}"><xsl:value-of select="othermeta[@name eq 'dcterms:license'][1]/@content"/></fo:basic-link>
+      </fo:block>
+    </fo:block-container>
   </xsl:template>
   
   <!-- COVERPAGE SEQUENCE METADATA -->

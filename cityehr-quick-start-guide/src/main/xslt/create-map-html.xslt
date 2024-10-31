@@ -31,7 +31,7 @@
   <xsl:variable name="topicrefs" as="element(topicref)+" select="doc($map-uri)/map/topicref"/>
 
   <xsl:template match="map">
-    <html>
+    <html xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
       <head>
         <xsl:call-template name="hcom:meta">
           <xsl:with-param name="authors" select="$authors"/>
@@ -39,13 +39,14 @@
           <xsl:with-param name="modified-date" select="$map-date"/>
         </xsl:call-template>
       </head>
-      <body>
+      <body about="">
         <div id="cover-page">
           <div id="cover-page-logo">
             <img src="images/cityehr-logo.png"/>
           </div>
+          <xsl:apply-templates select="topicmeta" mode="cover-page"/>
         </div>
-        <article>
+        <article typeof="cc:Work">
           <time datetime="{$map-date}" pubdate="pubdate"></time>
           <xsl:apply-templates select="topicmeta" mode="body"/>
           <xsl:if test="exists($download-pdf-filename)">
@@ -61,12 +62,24 @@
     <xsl:apply-templates select="navtitle" mode="#current"/>
   </xsl:template>
   
+  <xsl:template match="topicmeta" mode="cover-page">
+    <div id="license" style="display: flex; align-items: center; justify-content: left">
+      <div id="license-image" style="max-width: 100%; max-height:100%;">
+        <a rel="license" href="{othermeta[@name eq 'dcterms:license'][2]/@content}"><img src="images/by-nc-sa.png" width="30%"/></a>
+      </div>
+      <div id="license-text" style="padding-left: 8pt; font-size: 8pt;">
+        <p><a property="cc:attributionName" rel="cc:attributionURL" href="{othermeta[@name eq 'dcterms:rightsHolder']/@content}"><xsl:value-of select="othermeta[@name eq 'dcterms:rights']/@content"/></a></p>
+        <p><a rel="license" href="{othermeta[@name eq 'dcterms:license'][2]/@content}"><xsl:value-of select="othermeta[@name eq 'dcterms:license'][1]/@content"/></a></p>
+      </div>
+    </div>
+  </xsl:template>
+
   <xsl:template match="navtitle" mode="metadata">
     <title><xsl:value-of select="."/></title>
   </xsl:template>
   
   <xsl:template match="navtitle" mode="body">
-    <h1><xsl:value-of select="."/></h1>
+    <h1 property="dct:title"><xsl:value-of select="."/></h1>
   </xsl:template>
   
   <!-- Create a new HTML file for each topic that is referenced -->

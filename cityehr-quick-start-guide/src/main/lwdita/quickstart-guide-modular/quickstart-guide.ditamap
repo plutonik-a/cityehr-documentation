@@ -4,6 +4,11 @@
 <map id="topic_vkq_5nv_vcc">
    <topicmeta>
       <navtitle>Quick Start Guide</navtitle>
+      <othermeta name="SPDX-License-Identifier" content="CC-BY-NC-SA-4.0"/>
+      <othermeta name="dcterms:license" content="Creative Commons Attribution NonCommercial ShareAlike 4.0"/>
+      <othermeta name="dcterms:license" content="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+      <othermeta name="dcterms:rights" content="Copyright 2023 Seven Informatics Limited"/>
+      <othermeta name="dcterms:rightsHolder" content="https://seveninformatics.com"/>
    </topicmeta>
    <topicref href="introduction.dita"/>
    <topicref href="verify-install.dita"/>
