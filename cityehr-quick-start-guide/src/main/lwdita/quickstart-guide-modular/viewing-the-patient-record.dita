@@ -14,72 +14,40 @@
                         the laboratory which performed the tests. (At least we are pretending this in
                         the test data, although the results used were originally generated in this way)
                     </p>
+                    <p><image href="images/summary-bonechem.png" format="image/png"><alt>Summary View for Bone Chemistry – Messages </alt></image></p>
                 </li>
-            </ol>
-            <p><image href="images/summary-bonechem.png" format="image/png"><alt>Summary View for Bone Chemistry – Messages </alt></image>
-            </p>
-            <p> </p>
-            <ol id="ol_fsr_14v_vcc">
                 <li>
                     <p>Initially, this summary just shows the most recent set of Bone Chemistry results. Now change the drop down at the top right of the pane to Historic Data and you should see the complete list of historic results for the patient. </p>
+                    <p><image href="images/summary-bonechem-change-view.png" format="image/png"><alt>Changing Summary View to “Historic Data” </alt></image></p>
                 </li>
-            </ol>
-            <p> </p>
-            <p><image href="images/summary-bonechem-change-view.png" format="image/png"><alt>Changing Summary View to “Historic Data” </alt></image>
-            </p>
-            <p> </p>
-            <ol id="ol_hsr_14v_vcc">
                 <li>
                     <p>Select two or three of the analytes (CTX, P1NP, Calcium, etc) that you want to
                         view on a chart, by selecting the check boxes to the left of each line. Note
                         that you only need to check the box in one set of results; all boxes for the
                         same analyte in other results sets will also be selected. </p>
+                   <p><image href="images/summary-bonechem-historic-view.png" format="image/png"><alt>Selecting Analytes to View on Patient Chart</alt></image></p> 
                 </li>
-            </ol>
-            <p> </p>
-            <p><image href="images/summary-bonechem-historic-view.png" format="image/png"><alt>Selecting Analytes to View on Patient Chart</alt></image>
-            </p>
-            <p> </p>
-            <ol id="ol_jsr_14v_vcc">
                 <li>
-                    <p>As you select the analytes, a summary of the number selected and the overall data range covered by the selected results will be updated at the top of the pane.
-                    </p>
+                    <p>As you select the analytes, a summary of the number selected and the overall data range covered by the selected results will be updated at the top of the pane.</p>
+                    <p><image href="images/summary-bonechem-historic-select.png" format="image/png"><alt>Summary of Analytes Selected and Overall Data Range Covered</alt></image></p>
                 </li>
-            </ol>
-            <p> </p>
-            <p><image href="images/summary-bonechem-historic-select.png" format="image/png"><alt>Summary of Analytes Selected and Overall Data Range Covered</alt></image>
-            </p>
-            <p> </p>
-            <ol id="ol_lsr_14v_vcc">
                 <li>
                     <p>Once you have selected two or three analytes, press the Chart button that should
                         now be visible at the top right of the pane. See figure below. </p>
+                    <p><image href="images/summary-bonechem-historic-chart-button.png" format="image/png"><alt>Using Chart Button to Commit Analytes for Chart View</alt></image></p>
                 </li>
-            </ol>
-            <p> </p>
-            <p><image href="images/summary-bonechem-historic-chart-button.png" format="image/png"><alt>Using Chart Button to Commit Analytes for Chart View</alt></image>
-            </p>
-            <p> </p>
-            <ol id="ol_nsr_14v_vcc">
                 <li>
                     <p>On pressing the Chart button you should see a new dialogue window with charts of
                         the analytes you selected. There are various parameters at the top of this
                         dialogue that you can use to adjust the charts that are displayed. </p>
+                    <p><image href="images/summary-bonechem-chart.png" format="image/png"><alt>Dialogue Window with Charts of the Analytes Selected</alt></image></p>
                 </li>
-            </ol>
-            <p> </p>
-            <p><image href="images/summary-bonechem-chart.png" format="image/png"><alt>Dialogue Window with Charts of the Analytes Selected</alt></image>
-            </p>
-            <p> </p>
-            <ol id="ol_psr_14v_vcc">
                 <li>
                     <p>Once you have seen enough, press the Close button at the top of the dialogue to
                         dismiss it- see figure below. </p>
+                    <p><image href="images/summary-bonechem-chart-close.png" format="image/png"><alt>Dismissing the Dialogue Window Using the Close Button</alt></image></p>
                 </li>
             </ol>
-            <p> </p>
-            <p><image href="images/summary-bonechem-chart-close.png" format="image/png"><alt>Dismissing the Dialogue Window Using the Close Button</alt></image>
-            </p>
         </section>
         <section id="viewing-the-longitudinal-record">
             <title>Viewing the Longitudinal Record</title>
@@ -87,7 +55,7 @@
                 viewing pane. </p>
             <p><image href="images/events-view.png" format="image/png"><alt>Viewing all the Events in the Patient Record</alt></image>
             </p>
-            <ol id="ol_tsr_14v_vcc">
+            <ol>
                 <li>
                     <p>You will see a list on the left hand side, of all the events recorded in the
                         patient's record and details of the most recent of these will be displayed in
@@ -102,31 +70,20 @@
         <section id="annotations-and-notifications">
             <title>Annotations and Notifications</title>
             <p>The Events page is used to access the full longitudinal record of events recorded for the patient. Since cityEHR must preserve a proper history of the patient's information, it is not possible to change any of the recorded events that have been committed (published); but it is possible to add annotations. </p>
-            <ol id="ol_wsr_14v_vcc">
+            <ol>
                 <li>
                     <p>In the Events page, select the historic event that you wish to annotate – for
                         example the HADs assessment. </p>
+                    <p><image href="images/events-hads-select.png" format="image/png"><alt>Selecting a Historical Hospital Anxiety and Depression Scale Form for Annotations</alt></image></p>
                 </li>
-            </ol>
-            <p> </p>
-            <p><image href="images/events-hads-select.png" format="image/png"><alt>Selecting a Historical Hospital Anxiety and Depression Scale Form for Annotations</alt></image>
-            </p>
-            <p> </p>
-            <ol id="ol_ysr_14v_vcc">
                 <li>
                     <p>To annotate the event, click the small Flag button to the top right of the record view. This will display the annotations for this event. </p>
                 </li>
                 <li>
                     <p>Click the ‘+’ button at the top left to add a new annotation. </p>
+                    <p><image href="images/events-hads-annotate-button.png" format="image/png"><alt>Clicking Flag and ‘+’ Buttons to Annotate</alt></image></p>
+                    <p><image href="images/events-hads-annotate.png" format="image/png"><alt>Annotating a Hospital Anxiety and Depression Scale Form</alt></image></p>
                 </li>
-            </ol>
-            <p> </p>
-            <p><image href="images/events-hads-annotate-button.png" format="image/png"><alt>Clicking Flag and ‘+’ Buttons to Annotate</alt></image>
-            </p>
-            <p><image href="images/events-hads-annotate.png" format="image/png"><alt>Annotating a Hospital Anxiety and Depression Scale Form</alt></image>
-            </p>
-            <p> </p>
-            <ol id="ol_ctr_14v_vcc">
                 <li>
                     <p>You can now enter the Type and Comments for the annotation – then press the Save
                         button that appears in the top right menu to commit your annotation to the
@@ -147,11 +104,8 @@
                     <p>Note that for a fresh installation of cityEHR, with only the single admin user,
                         you should only be able to notify roles of user, so select Notify Role as the
                         action and then Administrator as the role in the dropdown. </p>
+                    <p><image href="images/events-hads-annotate-notify.png" format="image/png"><alt>Notifying Administrator Using Annotations</alt></image></p>
                 </li>
-            </ol>
-            <p><image href="images/events-hads-annotate-notify.png" format="image/png"><alt>Notifying Administrator Using Annotations</alt></image>
-            </p>
-            <ol id="ol_itr_14v_vcc">
                 <li>
                     <p>When the details of your notification are completed, press the Save button to
                         commit to the annotation to the patient record. </p>
