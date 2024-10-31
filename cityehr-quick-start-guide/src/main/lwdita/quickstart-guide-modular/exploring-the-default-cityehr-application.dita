@@ -32,10 +32,10 @@
                 <p><image href="images/patient-reg-find-demographics.png" format="image/png"><alt>Patient Registration “Find Demographics” Lookup Service</alt></image></p>
             </li>
             <li>
-                <p>Similarly, you can fill out the GP Details by typing in the fields, or by using the Find GP service. The demonstration service is quite limited – you must type 'Oxford' as the Town/City and then check the Find GP checkbox.</p>
+                <p>Similarly, you can fill out the GP Details by typing in the fields, or by using the Find GP service. The demonstration service is quite limited – you must type 'Oxford' as the Town/City and then check the Find GP check-box.</p>
             </li>
             <li>
-                <p>This will return a selection of two GPs – select one from the dropdown and the GP details will be filled out for you. </p>
+                <p>This will return a selection of two GPs – select one from the drop-down and the GP details will be filled out for you. </p>
                 <p><image href="images/patient-reg-find-gp.png" format="image/png"><alt>Patient Registration “Find GP” Lookup Service</alt></image></p>
             </li>
             <li>
@@ -62,7 +62,7 @@
                 <p><image href="images/locating-form-page.png" format="image/png"><alt>Locating Forms Page</alt></image></p>
             </li>
             <li>
-                <p>You will be presented with a list of new forms that can be entered for this patient. The forms are listed in various 'contexts of care' with the top category 'ctyEHR Feature Demo' containing all the forms available and the others containing smaller sets of forms for Administration and for Clinical Care. </p>
+                <p>You will be presented with a list of new forms that can be entered for this patient. The forms are listed in various 'contexts of care' with the top category 'cityEHR Feature Demo' containing all the forms available and the others containing smaller sets of forms for Administration and for Clinical Care. </p>
             </li>
         </ol>
             
@@ -111,7 +111,7 @@
                 <p><image href="images/form-das28-publishing.png" format="image/png"><alt>Committing Completed Disease Activity Score (DAS) 28 Form</alt></image></p>
             </li>
             <li>
-                <p>The patient record now displays the event, with the data you recorded. Note that this does not include the humunculus gaphics that you used for data entry. </p>
+                <p>The patient record now displays the event, with the data you recorded. Note that this does not include the homunculus graphics that you used for data entry. </p>
                 <p><image href="images/events-das28-form.png" format="image/png"><alt>Event Displayed in the Patient Record </alt></image></p>
             </li>
             <li>
@@ -132,7 +132,7 @@
             </li>
             <li>
                 <p>Once again, publish the form to the patient record when you are done. </p>
-                <p><image href="images/form-famhist-drop-down.png" format="image/png"><alt>Selecting the Diagnosis from a Dropdown</alt></image></p>
+                <p><image href="images/form-famhist-drop-down.png" format="image/png"><alt>Selecting the Diagnosis from a Drop-down</alt></image></p>
             </li>
         </ol>
             
@@ -216,7 +216,7 @@
             </li>
             <li>
                 <p>Once the image has been uploaded it is displayed inline on the form </p>
-                <p><image href="images/form-diagnosis-uploaded-image.png" format="image/png"><alt>Diagnostic Image Uploaded from the Filesystem</alt></image></p>
+                <p><image href="images/form-diagnosis-uploaded-image.png" format="image/png"><alt>Diagnostic Image Uploaded from the File system</alt></image></p>
             </li>
             <li>
                 <p>Press the Publish button to commit the form to the record an navigate to the

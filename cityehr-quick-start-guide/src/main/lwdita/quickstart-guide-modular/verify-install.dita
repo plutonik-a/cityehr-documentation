@@ -103,7 +103,7 @@
                     <p>Note the banner informing you that cityEHR will start in debug mode </p>
                 </li>
                 <li>
-                    <p>Enter your credentials (admin / password) as usual and you should see an additional selection dropdown which you can use to view various cityEHR configuration parameters. </p>
+                    <p>Enter your credentials (admin / password) as usual and you should see an additional selection drop-down which you can use to view various cityEHR configuration parameters. </p>
                 </li>
                 <li>
                     <p>These are all represented as XML, so you can view directly in the system or press Download and view in a text editor, XML editor or any web browser </p>

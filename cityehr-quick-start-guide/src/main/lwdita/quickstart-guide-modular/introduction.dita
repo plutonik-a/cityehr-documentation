@@ -10,8 +10,8 @@
                 running on your local machine, cityEHR will be available on the URL
                     <i>localhost:8080/cityehr </i> or if running on a remote server, substitute the
                 IP address of your server for 'localhost'. </p>
-        <p>cityEHR is an XML application which uses declarative code only: xhtml, xml, xforms, xslt
-            and xquery. The source code can be found at <i>CATALINA_HOME/webapps/cityehr/WEB-INF/resources/apps/ehr </i></p>
+        <p>cityEHR is an XML application which uses declarative code only: xhtml, XML, XForms, XSLT
+            and XQuery. The source code can be found at <i>CATALINA_HOME/webapps/cityehr/WEB-INF/resources/apps/ehr </i></p>
         <p>where CATALINA_HOME is the location of your Tomcat installation. If you have cityEHR
             installed with a different application server or you have changed the locations of the
             standard installation then you will need to find where the <i>resources/apps/ehr</i>

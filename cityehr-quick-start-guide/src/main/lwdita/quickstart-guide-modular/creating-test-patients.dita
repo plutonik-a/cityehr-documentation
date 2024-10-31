@@ -3,7 +3,6 @@
 <topic id="creating-test-patients">
     <title>Creating Test Patients</title>
     <body>
-        
         <p>To continue exploring cityEHR you will need a larger sample of test patients – these can
             be generated using functions available on the Administration page, which is accessed by
             pressing the Administration button on the main system menu (top right of the page). </p>
@@ -36,10 +35,7 @@
                     between male, female and other gender categories, aged between 18 and 65. </p>
             </li>
             <li>
-                <p>To test these features this example will generate records for Male and Female
-                    patients, so you can change the percentages to 50 in each of these columns, and
-                    percentages of 0 to the rest (Non-binary, Intersex, and Unknown). The actual
-                    number of records to be generated will change as you change the percentages (and an error message will appear whenever the percentages don’t add up to 10). If you would like, once you have generated the 10 records, you can keep the same settings and try generating 100 records. However, be aware that it can take up to 5 seconds to generate each record, so 100 records can take over 5 minutes to complete. </p>
+                <p>To test these features this example will generate records for Male and Female patients, so you can change the percentages to 50 in each of these columns, and percentages of 0 to the rest (Non-binary, Intersex, and Unknown). The actual number of records to be generated will change as you change the percentages (and an error message will appear whenever the percentages don’t add up to 10). If you would like, once you have generated the 10 records, you can keep the same settings and try generating 100 records. However, be aware that it can take up to 5 seconds to generate each record, so 100 records can take over 5 minutes to complete. </p>
             </li>
             <li>
                 <p>Note that the button to generate test patients will only be active when the
@@ -61,9 +57,7 @@
                 <p><image href="images/admin-generate-test-data-done.png" format="image/png"><alt>Generating Test Data Completed </alt></image></p>
             </li>
             <li>
-                <p>Now you can press the Dashboard button in the main System Menu (top of the page)
-                    to leave the Admin page and view the Dashboard, which should now show that you
-                    have the new records loaded. </p>
+                <p>Now you can press the Dashboard button in the main System Menu (top of the page) to leave the Admin page and view the Dashboard, which should now show that you have the new records loaded. </p>
                 <p><image href="images/dashboard-updated-patient-num.png" format="image/png"><alt>Updated Dashboard with Generated Test Data </alt></image></p>
             </li>
         </ol>

@@ -97,13 +97,13 @@
                         in the patient record. </p>
                 </li>
                 <li>
-                    <p>To do this, add a new annotation but this time use the Action dropdown menu to
+                    <p>To do this, add a new annotation but this time use the Action drop-down menu to
                         select the users you wish to notify. </p>
                 </li>
                 <li>
                     <p>Note that for a fresh installation of cityEHR, with only the single admin user,
                         you should only be able to notify roles of user, so select Notify Role as the
-                        action and then Administrator as the role in the dropdown. </p>
+                        action and then Administrator as the role in the drop-down. </p>
                     <p><image href="images/events-hads-annotate-notify.png" format="image/png"><alt>Notifying Administrator Using Annotations</alt></image></p>
                 </li>
                 <li>
