@@ -73,13 +73,13 @@
     </xsl:copy>
   </xsl:template>
   
-  <xsl:template match="image" mode="body">
+<!--  <xsl:template match="image" mode="body">
     <figure>
       <img src="{@href}">
       <xsl:attribute name="width" select="960"/>
       </img>
     </figure>
-  </xsl:template>
+  </xsl:template>-->
 
   <xsl:template match="image[alt]" mode="body">
     <figure>
@@ -87,6 +87,7 @@
         <xsl:if test="alt">
           <xsl:attribute name="alt" select="alt"/>
         </xsl:if>
+        <xsl:attribute name="width" select="960"/>
       </img>
       <figcaption><xsl:value-of select="alt"/></figcaption>
     </figure>
@@ -97,6 +98,7 @@
       <xsl:if test="alt">
         <xsl:attribute name="alt" select="alt"/>
       </xsl:if>
+      <xsl:attribute name="width" select="960"/>
     </img>
   </xsl:template>
 
