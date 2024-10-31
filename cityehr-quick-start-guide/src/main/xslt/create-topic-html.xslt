@@ -76,8 +76,7 @@
   <xsl:template match="image" mode="body">
     <figure>
       <img src="{@href}">
-      <xsl:copy-of select="@*"/>
-      <xsl:attribute name="style">width: 960px;</xsl:attribute>
+      <xsl:attribute name="width">960</xsl:attribute>
       </img>
     </figure>
   </xsl:template>
