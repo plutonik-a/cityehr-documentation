@@ -7,19 +7,15 @@
         <p>To continue exploring cityEHR you will need a larger sample of test patients – these can
             be generated using functions available on the Administration page, which is accessed by
             pressing the Administration button on the main system menu (top right of the page). </p>
-        <ol id="ol_yqr_14v_vcc">
+        <ol>
             <li>
                 <p>On the Administration page, in the menu in the left hand pane, select the menu
                     option “Database” and then the sub-task for ‘Generate Test Data’. </p>
             </li>
             <li>
                 <p>Press the Browse button to load a file containing a sample patient record. </p>
+                <p><image href="images/admin-generate-test-data.png" format="image/png"><alt>Generating Test Data</alt></image></p>
             </li>
-        </ol>
-        <p> </p>
-        <p><image href="images/admin-generate-test-data.png" format="image/png"><alt>Generating Test Data</alt></image></p>
-        <p> </p>
-        <ol id="ol_brr_14v_vcc">
             <li>
                 <p>Press the ‘Browse’ button and navigate to your downloaded User Resources Folder.
                     Select the file called: <i>EHR_Extract-TimothyAbernathy.xml</i> (If you want to see
@@ -32,14 +28,9 @@
             </li>
             <li>
                 <p>After uploading the <i>EHR_Extract-TimothyAbernathy.xml</i> file you should see the full set of options for generating test data, as shown in the figure below </p>
+                <p><image href="images/user-resources-timabernathy.png" format="image/png"><alt>Locating “EHR_Extract-TimothyAbernathy.xml” in User Resources Folder</alt></image></p>
+                <p><image href="images/admin-generate-test-data-param.png" format="image/png"><alt>Generate Test Data Parameters, Following File Upload</alt></image></p>
             </li>
-        </ol>
-        <p><image href="images/user-resources-timabernathy.png" format="image/png"><alt>Locating “EHR_Extract-TimothyAbernathy.xml” in User Resources Folder</alt></image>
-        </p>
-        <p><image href="images/admin-generate-test-data-param.png" format="image/png"><alt>Generate Test Data Parameters, Following File Upload</alt></image>
-        </p>
-        <p> </p>
-        <ol id="ol_grr_14v_vcc">
             <li>
                 <p>By default, the parameters are set to generate 10 test records, split evenly
                     between male, female and other gender categories, aged between 18 and 65. </p>
@@ -57,38 +48,24 @@
             <li>
                 <p>In the columns for Male and Female patients, change the Forename selection to
                     Male Forename and Female Forename as appropriate. </p>
+                <p><image href="images/admin-generate-test-data-param-filled.png" format="image/png"><alt>Generate Test Data with Parameters Set</alt></image></p>
             </li>
-        </ol>
-        <p> </p>
-        <p><image href="images/admin-generate-test-data-param-filled.png" format="image/png"><alt>Generate Test Data with Parameters Set</alt></image>
-        </p>
-        <ol id="ol_lrr_14v_vcc">
             <li>
                 <p>Once you are happy with the parameters, press the small button on the right hand
                     side of the page to generate the test records. You will need to wait a while
                     until this process is finished. </p>
+                <p><image href="images/admin-generate-test-data-button.png" format="image/png"><alt>Generating Test Data</alt></image></p>
             </li>
-        </ol>
-        <p> </p>
-        <p><image href="images/admin-generate-test-data-button.png" format="image/png"><alt>Generating Test Data</alt></image>
-        </p>
-        <ol id="ol_nrr_14v_vcc">
             <li>
                 <p> Once the test data is generated, your screen will look like the figure below.</p>
+                <p><image href="images/admin-generate-test-data-done.png" format="image/png"><alt>Generating Test Data Completed </alt></image></p>
             </li>
-        </ol>
-        <p> </p>
-        <p><image href="images/admin-generate-test-data-done.png" format="image/png"><alt>Generating Test Data Completed </alt></image>
-        </p>
-        <ol id="ol_prr_14v_vcc">
             <li>
                 <p>Now you can press the Dashboard button in the main System Menu (top of the page)
                     to leave the Admin page and view the Dashboard, which should now show that you
                     have the new records loaded. </p>
+                <p><image href="images/dashboard-updated-patient-num.png" format="image/png"><alt>Updated Dashboard with Generated Test Data </alt></image></p>
             </li>
         </ol>
-        <p> </p>
-        <p><image href="images/dashboard-updated-patient-num.png" format="image/png"><alt>Updated Dashboard with Generated Test Data </alt></image>
-        </p>
     </body>
 </topic>
