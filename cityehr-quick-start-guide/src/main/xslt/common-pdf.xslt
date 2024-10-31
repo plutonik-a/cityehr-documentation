@@ -123,7 +123,7 @@
         <fo:block text-align="center" margin-top="20pt">
           <fo:external-graphic src="{com:abs-uri(., 'images/cityehr-logo.png')}" content-height="scale-to-fit" content-width="scale-to-fit" width="100%" scaling="uniform"/>
         </fo:block>
-        <fo:block background-color="#B84747" color="#FFFFFF" text-align="right" display-align="center" margin-top="200pt" padding-top="7pt" padding-right="7pt" padding-bottom="7pt">
+        <fo:block background-color="#A42420" color="#FFFFFF" text-align="right" display-align="center" margin-top="200pt" padding-top="7pt" padding-right="7pt" padding-bottom="7pt">
           <fo:block font-size="14pt"><xsl:value-of select="$title"/></fo:block>
           <fo:block font-size="14pt"><xsl:value-of select="$sub-title"/></fo:block>
           <fo:block font-size="12pt"><xsl:value-of select="com:format-inline-text-list($authors)"/></fo:block>
@@ -139,7 +139,7 @@
     <fo:page-sequence master-reference="PageMaster" id="toc-sequence">
       <fo:title>Table of Contents</fo:title>
       <fo:flow flow-name="xsl-region-body" hyphenate="true">
-        <fo:block background-color="#B84747" color="#FFFFFF" font-weight="bold" font-size="14pt" display-align="center" margin-bottom="11pt" id="toc-{generate-id()}">
+        <fo:block background-color="#A42420" color="#FFFFFF" font-weight="bold" font-size="14pt" display-align="center" margin-bottom="11pt" id="toc-{generate-id()}">
           <fo:block margin-left="8pt">Table of Contents</fo:block>
         </fo:block>
         <xsl:for-each select="$sections">
