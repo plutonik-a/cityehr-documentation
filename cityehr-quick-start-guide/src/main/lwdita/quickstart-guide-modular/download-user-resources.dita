@@ -9,34 +9,22 @@
         <p>These user resources are accessible for download from the Administration page, which is
             accessed by pressing the Administration button on the System Navigation menu (top right
             of the page). </p>
-        <ol id="ol_nqr_14v_vcc">
+        <ol>
             <li>
                 <p>Click the Administration button (top right) to access the Administration page</p>
             </li>
             <li>
                 <p>On the Administration page, in the menu in the left hand pane, select the menu option “Manage System Parameters” from the System menu.</p>
-            </li>
-        </ol>
-        <ol id="ol_oqr_14v_vcc">
-            <li>
                 <p><image href="images/admin-download-user-resources.png" format="image/png"><alt>Download User Resources from Administration Page</alt></image></p>
             </li>
-        </ol>
-        <ol id="ol_rqr_14v_vcc">
             <li>
                 <p>At the top right of this view, click the button to Download Resources, as shown
                     in the figure below. </p>
             </li>
             <li>
-                <p>The zip file of resources should now download to your browser and be accessible
-                    through your Downloads (exactly how, may depend on the set up for your browser).
-                </p>
+                <p>The zip file of resources should now download to your browser and be accessible through your Downloads (exactly how, may depend on the set up for your browser).</p>
+                <p><image href="images/user-resources-zip.png" format="image/png"><alt>Zip Archive of User Resources Downloaded to Browser</alt></image></p>
             </li>
-        </ol>
-        <p> </p>
-        <p><image href="images/user-resources-zip.png" format="image/png"><alt>Zip Archive of User Resources Downloaded to Browser</alt></image>
-        </p>
-        <ol id="ol_uqr_14v_vcc">
             <li>
                 <p>Open the zip file and you should now have access to the folders and files shipped
                     with cityEHR as User Resources. You will need these later on, at various poinst
@@ -46,8 +34,8 @@
                 <p>The full set of resources should be similar to the list shown in the figure below (this
                     is shown using the Linux Archive Manager — yours may look a bit different,
                     depending on how your machine is set up to handle .zip archives). </p>
+                <p><image href="images/user-resources-file.png" format="image/png"><alt>User Resources Zip Archive</alt></image></p>
             </li>
         </ol>
-        <p><image href="images/user-resources-file.png" format="image/png"><alt>User Resources Zip Archive</alt></image>
-        </p>
-    </body></topic>
+    </body>
+</topic>
