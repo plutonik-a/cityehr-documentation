@@ -16,7 +16,7 @@
             <p> </p>
 
             
-            <p><image href="images/initalize-new-cityehr-installation.png" format="image/png"><alt>Initalize New cityEHR Installation</alt></image></p>
+            <p><image href="images/initalize-new-cityehr-installation.png" format="image/png"><alt>Initialize New cityEHR Installation</alt></image></p>
             <p> </p>
             <p>cityEHR will now run through a sequence of steps to build the default application; while this is in progress the screen will look like the one displayed in the Figure below. It take a minute or so for this process to complete, so you will need to wait while before continuing. </p>
             <p> </p>
@@ -29,7 +29,7 @@
             <p> </p>
             <p>Press the Start button to move to the default home page, which is pre-configured to be the dashboard page, as shown in the figure below </p>
             <p>The Dashboard shows a summary of the overall status of the cityEHR application, which ships by default with the base installation. There is one user registered (the 'admin' user you logged in as) and no patients (so the total patients is zero, there are no clinical documents recorded and no documents in progress). </p>
-            <p><b>Note: </b>The number of Information Models shown in the dashboard. If this number is zero (0) then the default application was not loaded properly when you ran cityEHR forthe first time (probably because you selected to "Use Empty Database".</p>
+            <p><b>Note: </b>The number of Information Models shown in the dashboard. If this number is zero (0) then the default application was not loaded properly when you ran cityEHR for the first time (probably because you selected to "Use Empty Database".</p>
             <p> </p>
             <p><image href="images/default-home-page-dashboard.png" format="image/png"><alt>Default Home-page Dashboard</alt></image>
             </p>
@@ -87,7 +87,7 @@
                     <p>These steps are illustrated in the Figure below </p>
                 </li>
                 <li>
-                    <p>When operating in debug mode, cityEHR displays some additional action buttons and selections that allow yo uto explore the XML structures that underlie the configuration and clinical content (HL7 CDA) </p>
+                    <p>When operating in debug mode, cityEHR displays some additional action buttons and selections that allow you to explore the XML structures that underlie the configuration and clinical content (HL7 CDA) </p>
                 </li>
             </ol>
             <p> </p>
