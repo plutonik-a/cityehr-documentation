@@ -64,7 +64,7 @@
 
   <!-- PAGE CONTENT HEADER -->
   <xsl:template match="topic" mode="body">
-    <fo:block background-color="#B84747" color="#FFFFFF" font-weight="bold" font-size="14pt" display-align="center" margin-bottom="11pt" id="section-{generate-id()}">
+    <fo:block background-color="#A42420" color="#FFFFFF" font-weight="bold" font-size="14pt" display-align="center" margin-bottom="11pt" id="section-{generate-id()}">
       <fo:block margin-left="8pt"><xsl:value-of select="title"/></fo:block>
     </fo:block>
     <xsl:apply-templates select="body" mode="body"/>
@@ -80,7 +80,7 @@
   </xsl:template>
 
   <xsl:template match="section" mode="body">
-    <fo:block background-color="#F17C7C" color="#FFFFFF" font-weight="bold" font-size="10pt" display-align="center" margin-bottom="11pt" id="section-{generate-id()}">
+    <fo:block background-color="#b08d57" color="#FFFFFF" font-weight="bold" font-size="10pt" display-align="center" margin-bottom="11pt" id="section-{generate-id()}">
       <fo:block margin-left="8pt"><xsl:value-of select="title"/></fo:block>
     </fo:block>
     <xsl:apply-templates select="p|b|i|ol|ul|li|image|section" mode="body"/>
