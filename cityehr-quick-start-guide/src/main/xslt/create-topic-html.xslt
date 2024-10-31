@@ -72,6 +72,13 @@
       <xsl:apply-templates mode="body"/>
     </xsl:copy>
   </xsl:template>
+  
+  <xsl:template match="image" mode="body">
+    <image>
+      <xsl:copy-of select="@*"/>
+      <xsl:attribute name="width">960px</xsl:attribute>
+    </image>
+  </xsl:template>
 
   <xsl:template match="image[alt]" mode="body">
     <figure>
