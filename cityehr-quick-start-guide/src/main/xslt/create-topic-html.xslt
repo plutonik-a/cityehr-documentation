@@ -76,7 +76,7 @@
   <xsl:template match="image" mode="body">
     <figure>
       <img src="{@href}">
-      <xsl:attribute name="width">960</xsl:attribute>
+      <xsl:attribute name="width" select="960"/>
       </img>
     </figure>
   </xsl:template>
