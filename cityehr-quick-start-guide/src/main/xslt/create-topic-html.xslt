@@ -39,11 +39,11 @@
         </nav>
 
         <!-- Petal Edit Button -->
-        <div id="petal-edit-page-button">
+        <!-- <div id="petal-edit-page-button">
           <a href="{htop:petal-edit-url(com:document-uri(.), $petal-api-url, $petal-github-org-name, $petal-github-repo-name, $petal-github-branch, $petal-referrer-base-url)}">
             <input type="button" value="Edit this page"/>
           </a>
-        </div>
+        </div> -->
 
         <article>
           <xsl:apply-templates select="element()" mode="body"/>
