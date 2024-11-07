@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "topic.dtd">
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "lw-topic.dtd">
 <topic id="download-user-resources">
     <title>Download User Resources</title>
     <body>
@@ -15,7 +15,9 @@
             </li>
             <li>
                 <p>On the Administration page, in the menu in the left hand pane, select the menu option “Manage System Parameters” from the System menu.</p>
-                <p><image href="images/admin-download-user-resources.png" format="image/png"><alt>Download User Resources from Administration Page</alt></image></p>
+                <p><image href="images/admin-download-user-resources.png" format="image/png">
+                        <alt>Download User Resources from Administration Page</alt>
+                    </image></p>
             </li>
             <li>
                 <p>At the top right of this view, click the button to Download Resources, as shown
@@ -23,7 +25,9 @@
             </li>
             <li>
                 <p>The zip file of resources should now download to your browser and be accessible through your Downloads (exactly how, may depend on the set up for your browser).</p>
-                <p><image href="images/user-resources-zip.png" format="image/png"><alt>Zip Archive of User Resources Downloaded to Browser</alt></image></p>
+                <p><image href="images/user-resources-zip.png" format="image/png">
+                        <alt>Zip Archive of User Resources Downloaded to Browser</alt>
+                    </image></p>
             </li>
             <li>
                 <p>Open the zip file and you should now have access to the folders and files shipped
@@ -34,7 +38,9 @@
                 <p>The full set of resources should be similar to the list shown in the figure below (this
                     is shown using the Linux Archive Manager — yours may look a bit different,
                     depending on how your machine is set up to handle .zip archives). </p>
-                <p><image href="images/user-resources-file.png" format="image/png"><alt>User Resources Zip Archive</alt></image></p>
+                <p><image href="images/user-resources-file.png" format="image/png">
+                        <alt>User Resources Zip Archive</alt>
+                    </image></p>
             </li>
         </ol>
     </body>
