@@ -1,43 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "topic.dtd">
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "lw-topic.dtd">
 <topic id="verify-install">
     <title>Verifying the installation</title>
     <shortdesc> This topic confirms that cityEHR is correctly installed and accessible. It covers logging in to cityEHR using default credentials, building the default application, and navigating the Dashboard to review key system elements. Additionally, the chapter explains how to reload the default application if necessary, run cityEHR in debug mode to explore its underlying structures, and handle session timeouts. This chapter ensures users can successfully set up and verify the functionality of cityEHR before moving on to more advanced configurations. </shortdesc>
     <body>
         <section id="log-on">
-            <title>Log On</title>
+            <title>Log On Test</title>
             <p> With Apache Tomcat and cityEHR installed, the log-on page of cityEHR can be accessed with the Firefox web browser using the address <i>http://localhost:8080/cityehr </i> if you have the Tomcat server running on your local machine or if running on a remote server, substitute the IP address of your server for 'localhost'. </p>
             <p><b>Note that cityEHR 1.7 must be accessed using Firefox only (IE 11, Edge, Chrome and Safari will be supported from version 2.0 onwards).</b> </p>
             <p>The base cityEHR installation has a single default user set up with the credentials </p>
             <p>username: admin </p>
             <p>password: password </p>
-            <p><image href="images/log-on-page.png" format="image/png"><alt>cityEHR Log-on Page</alt></image></p>
+            <p><image href="images/log-on-page.png" format="image/png">
+                    <alt>cityEHR Log-on Page</alt>
+                </image></p>
             <p>When you log onto cityEHR for the very first time using the credentials above, cityEHR can build a default application, with an example information model and configuration. You will be prompted to build the default application or start with an empty database; choose the option to build a default application. </p>
             <p> </p>
-
-            
-            <p><image href="images/initalize-new-cityehr-installation.png" format="image/png"><alt>Initialize New cityEHR Installation</alt></image></p>
+            <p><image href="images/initalize-new-cityehr-installation.png" format="image/png">
+                    <alt>Initialize New cityEHR Installation</alt>
+                </image></p>
             <p> </p>
             <p>cityEHR will now run through a sequence of steps to build the default application; while this is in progress the screen will look like the one displayed in the Figure below. It take a minute or so for this process to complete, so you will need to wait while before continuing. </p>
             <p> </p>
-            <p><image href="images/default-app-sequence-steps.png" format="image/png"><alt>Default Application Sequence Steps</alt></image></p>
+            <p><image href="images/default-app-sequence-steps.png" format="image/png">
+                    <alt>Default Application Sequence Steps</alt>
+                </image></p>
             <p> </p>
             <p>After the default application has been built during your first log-on, and for every other time you log on, the screen will be as shown in the Figure below, after you have authenticated: </p>
             <p> </p>
-            <p><image href="images/post-authentication-page.png" format="image/png"><alt>Post Authentication Page</alt></image>
+            <p><image href="images/post-authentication-page.png" format="image/png">
+                    <alt>Post Authentication Page</alt>
+                </image>
             </p>
             <p> </p>
             <p>Press the Start button to move to the default home page, which is pre-configured to be the dashboard page, as shown in the figure below </p>
             <p>The Dashboard shows a summary of the overall status of the cityEHR application, which ships by default with the base installation. There is one user registered (the 'admin' user you logged in as) and no patients (so the total patients is zero, there are no clinical documents recorded and no documents in progress). </p>
             <p><b>Note: </b>The number of Information Models shown in the dashboard. If this number is zero (0) then the default application was not loaded properly when you ran cityEHR for the first time (probably because you selected to "Use Empty Database".</p>
             <p> </p>
-            <p><image href="images/default-home-page-dashboard.png" format="image/png"><alt>Default Home-page Dashboard</alt></image>
+            <p><image href="images/default-home-page-dashboard.png" format="image/png">
+                    <alt>Default Home-page Dashboard</alt>
+                </image>
             </p>
             <p> </p>
             <p>The Dashboard is your first glimpse of the pages in cityEHR, which can either be non-patient (like the Dashboard), cross-patient (the Patient Search page, for example) or patient specific (view of the record for a patient, as identified in the Patient Label) </p>
             <p>Whichever type, the general layout of all pages in the cityEHR system is the same, as shown in the figure below. </p>
             <p> </p>
-            <p><image href="images/system-page-layout.png" format="image/png"><alt>System Page Layout</alt></image>
+            <p><image href="images/system-page-layout.png" format="image/png">
+                    <alt>System Page Layout</alt>
+                </image>
             </p>
         </section>
         <section id="reloading-the-default-application">
@@ -59,7 +69,9 @@
                 </li>
             </ol>
             <p>Now wait while the models are reloaded (which may take a few minutes) - progress is displayed in the main view. Once completed, the progress display will be cleared and you should see a summary of the models as shown in the Figure below. </p>
-            <p><image href="images/information-model-summary.png" format="image/png"><alt>Information Model Summary</alt></image></p>
+            <p><image href="images/information-model-summary.png" format="image/png">
+                    <alt>Information Model Summary</alt>
+                </image></p>
         </section>
         <section id="running-in-debug-mode">
             <title>Running in Debug Mode</title>
@@ -91,7 +103,9 @@
                 </li>
             </ol>
             <p> </p>
-            <p><image href="images/edit-system-param-debug-mode.png" format="image/png"><alt>Edit system parameters to set Debug Mode </alt></image>
+            <p><image href="images/edit-system-param-debug-mode.png" format="image/png">
+                    <alt>Edit system parameters to set Debug Mode </alt>
+                </image>
             </p>
             <p> </p>
             <p>You can now restart a new session in debug mode </p>
@@ -112,30 +126,44 @@
             <p>Running in Debug Mode allows the user access to additional features that expose some of the underlying information structures in cityEHR. </p>
             <p>On the Sign On page, as shown in the Figure below, various of the internal XML instances, built during the log on process, are available to view by selecting in the Debug Info drop
                 down and then pressing the Debug button. </p>
-            <p><image href="images/startup-debug-mode.png" format="image/png"><alt>cityEHR start-up in Debugging mode</alt></image>
+            <p><image href="images/startup-debug-mode.png" format="image/png">
+                    <alt>cityEHR start-up in Debugging mode</alt>
+                </image>
             </p>
             <p> </p>
             <p>On patient-specific data input pages (Forms, Letters, etc) pressing the XML button will bring up a dialog box with a listing of the current HL7 CDA document associated with the data input form. This dialog also has a button to Download the HL7 CDA XML. </p>
-            <p><image href="images/xml-viewer-das28.png" format="image/png"><alt>XML viewer open for DAS 28 Form</alt></image></p>
+            <p><image href="images/xml-viewer-das28.png" format="image/png">
+                    <alt>XML viewer open for DAS 28 Form</alt>
+                </image></p>
             <p> </p>
             <p>Also on patient-specific data input pages are check boxes to Display ISO 13606 structure or to show the Identifiers for the ISO 13606 components on the form. </p>
             <p> </p>
-            <p><image href="images/iso13606-structure-debug-mode.png" format="image/png"><alt>Showing ISO 13606 Structure in Debug Mode</alt></image></p>
+            <p><image href="images/iso13606-structure-debug-mode.png" format="image/png">
+                    <alt>Showing ISO 13606 Structure in Debug Mode</alt>
+                </image></p>
             <p> </p>
-            <p><image href="images/iso13606-ids-debug-mode.png" format="image/png"><alt>Showing ISO 13606 Component Ids in Debug Mode</alt></image></p>
+            <p><image href="images/iso13606-ids-debug-mode.png" format="image/png">
+                    <alt>Showing ISO 13606 Component Ids in Debug Mode</alt>
+                </image></p>
         </section>
         <section id="session-time-out">
             <title>Session Time Out</title>
             <p>The cityEHR session is set to time out after a period on inactivity – this is controlled by the underlying session management of the Tomcat application server. If such a timeout occurs you will see an error dialogue which allows you to restart the application. </p>
             <p> </p>
-            <p><image href="images/session-timeout-dialogue.png" format="image/png"><alt>Session Time Out Dialogue</alt></image>
+            <p><image href="images/session-timeout-dialogue.png" format="image/png">
+                    <alt>Session Time Out Dialogue</alt>
+                </image>
             </p>
             <p>In addition, there is a session page load time limit which restricts the ability to refresh pages using the browser “reload current page” button. This limit is set by default at 10 minutes, but can be changed in the Admin page (System Parameters) if necessary. A change from the duration P10M (10 minutes) to PT1M (1 minute) is shown in</p>
             <p>If the browser reload page button is pressed within this time limit, then the page will reload as requested; outside the time limit the session will simply return to the sign on page. </p>
             <p>This means that it is not possible to copy and paste the URL of a cityEHR session or to bookmark a page (the URL will be invalid once the session page load time limit has expired). </p>
             <p>Logging in after a session has expired (i.e. a session that was not Quit by the user) will prompt for the session to be resumed at the point the previous session timed out or was aborted. </p>
-            <p><image href="images/changing-page-load-time.png" format="image/png"><alt>Changing the Page Load Timeout on the Administration Page</alt></image></p>
-            <p><image href="images/resume-session-prompt.png" format="image/png"><alt>Prompt to Resume Session on the Sign On Page</alt></image></p>
+            <p><image href="images/changing-page-load-time.png" format="image/png">
+                    <alt>Changing the Page Load Timeout on the Administration Page</alt>
+                </image></p>
+            <p><image href="images/resume-session-prompt.png" format="image/png">
+                    <alt>Prompt to Resume Session on the Sign On Page</alt>
+                </image></p>
         </section>
     </body>
 </topic>
